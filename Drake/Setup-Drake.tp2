@@ -10,8 +10,8 @@ LANGUAGE ~English~
          ~English~
          ~Drake/translations/english/Drake.tra~
 
-  BEGIN ~Drake NPC for Baldur's Gate: Enhanced Edition~
-  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~This component must be installed on BG:EE.~
+  BEGIN ~德雷克 NPC（博德之门：增强版）~
+  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~本组件须安装在 BG:EE 上。~
 
 ACTION_IF GAME_IS ~BGEE~ THEN BEGIN
 INCLUDE ~%MOD_FOLDER%/lib/liam_bgee_vars.tpa~
@@ -26,39 +26,39 @@ END
 INCLUDE ~%MOD_FOLDER%/lib/drake_bg1.tpa~
 ACTION_IF GAME_INCLUDES ~sod~
 THEN BEGIN
-  PRINT ~Installing content for Siege of Dragonspear...~
+  PRINT ~正在安装龙矛围城相关内容……~
 INCLUDE ~%MOD_FOLDER%/lib/drake_sod.tpa~
 END
 
-BEGIN ~Default Portrait (The Artisan)~
-FORCED_SUBCOMPONENT ~Choose a portrait for Drake:~
-  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~The main component must be installed.~
-  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~This component must be installed on BG:EE or EET.~
+BEGIN ~默认肖像（The Artisan）~
+FORCED_SUBCOMPONENT ~为德雷克选择肖像：~
+  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~必须先安装主组件。~
+  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~本组件须安装在 BG:EE 或 EET 上。~
 		COPY ~%MOD_FOLDER%/portraits/DrakeL.bmp~ ~override/DrakeL.bmp~
 		COPY ~%MOD_FOLDER%/portraits/DrakeM.bmp~ ~override/DrakeM.bmp~
 		COPY ~%MOD_FOLDER%/portraits/DrakeS.bmp~ ~override/DrakeS.bmp~
 		
-BEGIN ~BG2-style (The Artisan)~
-FORCED_SUBCOMPONENT ~Choose a portrait for Drake:~
-  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~The main component must be installed.~
-  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~This component must be installed on BG:EE or EET.~
+BEGIN ~BG2 风格肖像（The Artisan）~
+FORCED_SUBCOMPONENT ~为德雷克选择肖像：~
+  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~必须先安装主组件。~
+  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~本组件须安装在 BG:EE 或 EET 上。~
 		COPY ~%MOD_FOLDER%/portraits/Drake2.bmp~ ~override/DrakeL.bmp~
 		COPY ~%MOD_FOLDER%/portraits/Drake2.bmp~ ~override/DrakeM.bmp~
 		COPY ~%MOD_FOLDER%/portraits/Drake2.bmp~ ~override/DrakeS.bmp~
 		
-BEGIN ~Beta Portrait (Lava Del'Vortel)~
-FORCED_SUBCOMPONENT ~Choose a portrait for Drake:~
-  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~The main component must be installed.~
-  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~This component must be installed on BG:EE or EET.~
+BEGIN ~测试版肖像（Lava Del'Vortel）~
+FORCED_SUBCOMPONENT ~为德雷克选择肖像：~
+  REQUIRE_COMPONENT ~Setup-Drake.tp2~ ~0~ ~必须先安装主组件。~
+  REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~本组件须安装在 BG:EE 或 EET 上。~
 		COPY ~%MOD_FOLDER%/portraits/Drake.bmp~ ~override/DrakeL.bmp~
 		COPY ~%MOD_FOLDER%/portraits/Drake.bmp~ ~override/DrakeM.bmp~
 		COPY ~%MOD_FOLDER%/portraits/Drake.bmp~ ~override/DrakeS.bmp~
 		
-BEGIN ~OPTIONAL: Install Universal Crossbows, Crossbow Proficiency for Drake?~
+BEGIN ~可选：安装通用弩，并让德雷克获得弩械熟练？~
 
 INCLUDE ~%MOD_FOLDER%/lib/crossbows.tpa~
 
-BEGIN ~OPTIONAL: Original Soundset by BillyYank~
+BEGIN ~可选：BillyYank 制作的原始语音包~
 
 
 LAF HANDLE_AUDIO 
@@ -68,89 +68,89 @@ STR_VAR
 	END
 
 COPY_EXISTING ~C0Drake.cre~ ~override/C0Drake.cre~
-  SAY MORALE ~They say discretion is the better part of valor.~ [C0DRA001]
-  SAY HAPPY ~Hmm, not bad, not bad. Even those sods at the Order could learn a thing or two.~ [C0DRA002]
-  SAY UNHAPPY_ANNOYED ~You really sure you know what in the name of all nine layers of Hell you're doing?~ [C0DRA003]
-  SAY UNHAPPY_SERIOUS ~I can't tell if you're stupidly oblivious or... if you actually like making people hate you more than me. Either way, I suggest you stop.~ [C0DRA004]
-  SAY UNHAPPY_BREAKING_POINT ~That's it. I think even drinking myself into a stupor wouldn't be enough to ignore all of this tosh. Next time we meet, it'll be hammer first. To the Hells with you.~ [C0DRA005]
-  SAY LEADER ~Heh, so I'm the boss now, is that right? Wonder what the old coots in the Order would think if they saw where I am now... hope you won't regret this.~ [C0DRA006]
-  SAY TIRED ~Tyr's buttocks, what I wouldn't do for a warm fire and a stiff drink right now...~ [C0DRA007]
-  SAY BORED ~This standing around is just like waiting in attendance back in the Order, right down to the boredom. Can we get a move on?~ [C0DRA008]
-  SAY BATTLE_CRY1 ~I'll show you true justice!~ [C0DRA009]
-  SAY BATTLE_CRY2 ~I've got your judgment right here!~ [C0DRA010]
-  SAY BATTLE_CRY3 ~Best say your prayers... while you still can.~ [C0DRA011]
-  SAY BATTLE_CRY4 ~I've got a hammer and boot waiting to meet your arse!~ [C0DRA012]
-  SAY BATTLE_CRY5 ~Poor sod's just a dead man walking.~ [C0DRA013]
-  SAY DAMAGE ~Oof!~ [C0DRA014]
-  SAY DYING ~Ugh, how... shameful.~ [C0DRA015]
-  SAY HURT ~Agh... much as I'd like to see Tyr, I doubt he'd be eager to judge my arse this soon. Mind... offering a hand here?~ [C0DRA016]
-  SAY AREA_FOREST ~If I knew we'd be trekking through the forests, I'd have worn sturdier boots.~ [C0DRA017]
-  SAY AREA_CITY ~The smell of ale and stale vomit in the gutters is quite welcoming, don't you think?~ [C0DRA018]
-  SAY AREA_DUNGEON ~Hah... I'd say a prayer, but I doubt even the gods could hear us where we are now.~ [C0DRA019]
-  SAY AREA_DAY ~Not a bad day to dish out some judgment, don't you think?~ [C0DRA020]
-  SAY AREA_NIGHT ~The lowest of the low thrive in the dark... and I'll be ready to put 'em right.~ [C0DRA021]
-  SAY SELECT_COMMON1 ~Yeah?~ [C0DRA022]
-  SAY SELECT_COMMON2 ~Need something?~ [C0DRA023]
-  SAY SELECT_COMMON3 ~I'm listening.~ [C0DRA024]
-  SAY SELECT_COMMON4 ~Give your orders.~ [C0DRA025]
-  SAY SELECT_COMMON5 ~What is it?~ [C0DRA026]
-  SAY SELECT_COMMON6 ~Got something to say?~ [C0DRA027]
-  SAY SELECT_ACTION1 ~Right, right.~ [C0DRA028]
-  SAY SELECT_ACTION2 ~Simple enough.~ [C0DRA029]
-  SAY SELECT_ACTION3 ~As you say, friend.~ [C0DRA030]
-  SAY SELECT_ACTION4 ~You going to give me something to do already?~ [C0DRA031]
-  SAY SELECT_ACTION5 ~What's wrong with you this time? Broken limbs?~ [C0DRA032]
-  SAY SELECT_ACTION6 ~Quiet, please... I've got one hell of a headache.~ [C0DRA033]
-  SAY SELECT_ACTION7 ~You still owe me several drinks, you know.~ [C0DRA034]
-  SAY CRITICAL_HIT ~Hah! Looks like the scales favor *me*!~ [C0DRA035]
-  SAY CRITICAL_MISS ~Tch...! You didn't see that.~ [C0DRA036]
-  SAY TARGET_IMMUNE ~Not even a scratch? Well now, this is something.~ [C0DRA037]
-  SAY INVENTORY_FULL ~Afraid even two hands aren't enough for this hunk of junk. Get someone else to hold it.~ [C0DRA038]
-  SAY SPELL_DISRUPTED ~Wasn't my fault for botching that prayer for once.~ [C0DRA039]
-  SAY SET_A_TRAP ~This'll give the next bugger a nice shock.~ [C0DRA040]
-  SAY HIDDEN_IN_SHADOWS ~No one expects justice coming from the shadows.~ [C0DRA041]
-  SAY PICKED_POCKET ~Whoops... you dropped this.~ [C0DRA042]
+  SAY MORALE ~他们说审慎是勇武的更重要一半。~ [C0DRA001]
+  SAY HAPPY ~嗯，不错，不错。连骑士团那些家伙都能学个一两手。~ [C0DRA002]
+  SAY UNHAPPY_ANNOYED ~你真确定你知道自己在九层地狱的名义下干什么吗？~ [C0DRA003]
+  SAY UNHAPPY_SERIOUS ~我分不清你是糊涂得没救，还是……你真比我更喜欢让人恨你。不管哪样，我建议你停手。~ [C0DRA004]
+  SAY UNHAPPY_BREAKING_POINT ~够了。我看就算把自己灌到不省人事，也不够让我无视这一堆胡话。下回再见，我先动锤子。你下地狱去吧。~ [C0DRA005]
+  SAY LEADER ~嘿，这么说现在我是头儿了，对吧？真想知道骑士团那些老家伙看到我现在这样会怎么想……希望你别后悔。~ [C0DRA006]
+  SAY TIRED ~提尔的屁股啊，这会儿我有什么不肯换个暖火和一杯烈酒……~ [C0DRA007]
+  SAY BORED ~这么站着等就跟当年在骑士团当班站桩一样，连无聊都一模一样。我们能不能走快点？~ [C0DRA008]
+  SAY BATTLE_CRY1 ~我要让你见识真正的正义！~ [C0DRA009]
+  SAY BATTLE_CRY2 ~你的判决就在这儿！~ [C0DRA010]
+  SAY BATTLE_CRY3 ~最好趁还能，把祷词念了吧。~ [C0DRA011]
+  SAY BATTLE_CRY4 ~我的锤子和靴子都等着亲你屁股！~ [C0DRA012]
+  SAY BATTLE_CRY5 ~那可怜虫不过是个还在走路的死人。~ [C0DRA013]
+  SAY DAMAGE ~哎哟！~ [C0DRA014]
+  SAY DYING ~呃，真……丢人。~ [C0DRA015]
+  SAY HURT ~啊……我虽然想见提尔，可我看他不会这么早乐意审判我的屁股。能不能……搭把手？~ [C0DRA016]
+  SAY AREA_FOREST ~早知道要在林子里跋涉，我就该穿双结实点的靴子。~ [C0DRA017]
+  SAY AREA_CITY ~沟里那股麦酒和发酸呕吐物的味儿挺亲切，你不觉得？~ [C0DRA018]
+  SAY AREA_DUNGEON ~哈……我倒想祈祷，可我看我们现在这地方，连神也听不见。~ [C0DRA019]
+  SAY AREA_DAY ~今天倒是个发落判决的好日子，你不觉得？~ [C0DRA020]
+  SAY AREA_NIGHT ~最下等的渣滓在黑暗里活得滋润……我随时准备好把他们摆正。~ [C0DRA021]
+  SAY SELECT_COMMON1 ~嗯？~ [C0DRA022]
+  SAY SELECT_COMMON2 ~有事吗？~ [C0DRA023]
+  SAY SELECT_COMMON3 ~我听着。~ [C0DRA024]
+  SAY SELECT_COMMON4 ~下命令吧。~ [C0DRA025]
+  SAY SELECT_COMMON5 ~什么事？~ [C0DRA026]
+  SAY SELECT_COMMON6 ~有话要说？~ [C0DRA027]
+  SAY SELECT_ACTION1 ~好，好。~ [C0DRA028]
+  SAY SELECT_ACTION2 ~简单得很。~ [C0DRA029]
+  SAY SELECT_ACTION3 ~如你所说，朋友。~ [C0DRA030]
+  SAY SELECT_ACTION4 ~你到底给不给我点事做？~ [C0DRA031]
+  SAY SELECT_ACTION5 ~你这回又怎么了？断胳膊断腿？~ [C0DRA032]
+  SAY SELECT_ACTION6 ~请安静……我头快炸了。~ [C0DRA033]
+  SAY SELECT_ACTION7 ~你还欠我好几杯酒呢，你知道吧。~ [C0DRA034]
+  SAY CRITICAL_HIT ~哈！看来天平偏*我*这边！~ [C0DRA035]
+  SAY CRITICAL_MISS ~啧……！你什么都没看见。~ [C0DRA036]
+  SAY TARGET_IMMUNE ~一点擦伤都没有？哎呀，这可有点意思。~ [C0DRA037]
+  SAY INVENTORY_FULL ~怕是两只手都不够搬这坨破烂。找别人去拿。~ [C0DRA038]
+  SAY SPELL_DISRUPTED ~这回祈祷搞砸了可不怪我。~ [C0DRA039]
+  SAY SET_A_TRAP ~这够让下一个混蛋好好吃一惊。~ [C0DRA040]
+  SAY HIDDEN_IN_SHADOWS ~没人料到正义会从阴影里来。~ [C0DRA041]
+  SAY PICKED_POCKET ~哎哟……你把这个掉了。~ [C0DRA042]
   
 COPY_EXISTING ~C02Drake.cre~ ~override/C02Drake.cre~
-  SAY MORALE ~They say discretion is the better part of valor.~ [C0DRA001]
-  SAY HAPPY ~Hmm, not bad, not bad. Even those sods at the Order could learn a thing or two.~ [C0DRA002]
-  SAY UNHAPPY_ANNOYED ~You really sure you know what in the name of all nine layers of Hell you're doing?~ [C0DRA003]
-  SAY UNHAPPY_SERIOUS ~I can't tell if you're stupidly oblivious or... if you actually like making people hate you more than me. Either way, I suggest you stop.~ [C0DRA004]
-  SAY UNHAPPY_BREAKING_POINT ~That's it. I think even drinking myself into a stupor wouldn't be enough to ignore all of this tosh. Next time we meet, it'll be hammer first. To the Hells with you.~ [C0DRA005]
-  SAY LEADER ~Heh, so I'm the boss now, is that right? Wonder what the old coots in the Order would think if they saw where I am now... hope you won't regret this.~ [C0DRA006]
-  SAY TIRED ~Tyr's buttocks, what I wouldn't do for a warm fire and a stiff drink right now...~ [C0DRA007]
-  SAY BORED ~This standing around is just like waiting in attendance back in the Order, right down to the boredom. Can we get a move on?~ [C0DRA008]
-  SAY BATTLE_CRY1 ~I'll show you true justice!~ [C0DRA009]
-  SAY BATTLE_CRY2 ~I've got your judgment right here!~ [C0DRA010]
-  SAY BATTLE_CRY3 ~Best say your prayers... while you still can.~ [C0DRA011]
-  SAY BATTLE_CRY4 ~I've got a hammer and boot waiting to meet your arse!~ [C0DRA012]
-  SAY BATTLE_CRY5 ~Poor sod's just a dead man walking.~ [C0DRA013]
-  SAY DAMAGE ~Oof!~ [C0DRA014]
-  SAY DYING ~Ugh, how... shameful.~ [C0DRA015]
-  SAY HURT ~Agh... much as I'd like to see Tyr, I doubt he'd be eager to judge my arse this soon. Mind... offering a hand here?~ [C0DRA016]
-  SAY AREA_FOREST ~If I knew we'd be trekking through the forests, I'd have worn sturdier boots.~ [C0DRA017]
-  SAY AREA_CITY ~The smell of ale and stale vomit in the gutters is quite welcoming, don't you think?~ [C0DRA018]
-  SAY AREA_DUNGEON ~Hah... I'd say a prayer, but I doubt even the gods could hear us where we are now.~ [C0DRA019]
-  SAY AREA_DAY ~Not a bad day to dish out some judgment, don't you think?~ [C0DRA020]
-  SAY AREA_NIGHT ~The lowest of the low thrive in the dark... and I'll be ready to put 'em right.~ [C0DRA021]
-  SAY SELECT_COMMON1 ~Yeah?~ [C0DRA022]
-  SAY SELECT_COMMON2 ~Need something?~ [C0DRA023]
-  SAY SELECT_COMMON3 ~I'm listening.~ [C0DRA024]
-  SAY SELECT_COMMON4 ~Give your orders.~ [C0DRA025]
-  SAY SELECT_COMMON5 ~What is it?~ [C0DRA026]
-  SAY SELECT_COMMON6 ~Got something to say?~ [C0DRA027]
-  SAY SELECT_ACTION1 ~Right, right.~ [C0DRA028]
-  SAY SELECT_ACTION2 ~Simple enough.~ [C0DRA029]
-  SAY SELECT_ACTION3 ~As you say, friend.~ [C0DRA030]
-  SAY SELECT_ACTION4 ~You going to give me something to do already?~ [C0DRA031]
-  SAY SELECT_ACTION5 ~What's wrong with you this time? Broken limbs?~ [C0DRA032]
-  SAY SELECT_ACTION6 ~Quiet, please... I've got one hell of a headache.~ [C0DRA033]
-  SAY SELECT_ACTION7 ~You still owe me several drinks, you know.~ [C0DRA034]
-  SAY CRITICAL_HIT ~Hah! Looks like the scales favor *me*!~ [C0DRA035]
-  SAY CRITICAL_MISS ~Tch...! You didn't see that.~ [C0DRA036]
-  SAY TARGET_IMMUNE ~Not even a scratch? Well now, this is something.~ [C0DRA037]
-  SAY INVENTORY_FULL ~Afraid even two hands aren't enough for this hunk of junk. Get someone else to hold it.~ [C0DRA038]
-  SAY SPELL_DISRUPTED ~Wasn't my fault for botching that prayer for once.~ [C0DRA039]
-  SAY SET_A_TRAP ~This'll give the next bugger a nice shock.~ [C0DRA040]
-  SAY HIDDEN_IN_SHADOWS ~No one expects justice coming from the shadows.~ [C0DRA041]
-  SAY PICKED_POCKET ~Whoops... you dropped this.~ [C0DRA042]
+  SAY MORALE ~他们说审慎是勇武的更重要一半。~ [C0DRA001]
+  SAY HAPPY ~嗯，不错，不错。连骑士团那些家伙都能学个一两手。~ [C0DRA002]
+  SAY UNHAPPY_ANNOYED ~你真确定你知道自己在九层地狱的名义下干什么吗？~ [C0DRA003]
+  SAY UNHAPPY_SERIOUS ~我分不清你是糊涂得没救，还是……你真比我更喜欢让人恨你。不管哪样，我建议你停手。~ [C0DRA004]
+  SAY UNHAPPY_BREAKING_POINT ~够了。我看就算把自己灌到不省人事，也不够让我无视这一堆胡话。下回再见，我先动锤子。你下地狱去吧。~ [C0DRA005]
+  SAY LEADER ~嘿，这么说现在我是头儿了，对吧？真想知道骑士团那些老家伙看到我现在这样会怎么想……希望你别后悔。~ [C0DRA006]
+  SAY TIRED ~提尔的屁股啊，这会儿我有什么不肯换个暖火和一杯烈酒……~ [C0DRA007]
+  SAY BORED ~这么站着等就跟当年在骑士团当班站桩一样，连无聊都一模一样。我们能不能走快点？~ [C0DRA008]
+  SAY BATTLE_CRY1 ~我要让你见识真正的正义！~ [C0DRA009]
+  SAY BATTLE_CRY2 ~你的判决就在这儿！~ [C0DRA010]
+  SAY BATTLE_CRY3 ~最好趁还能，把祷词念了吧。~ [C0DRA011]
+  SAY BATTLE_CRY4 ~我的锤子和靴子都等着亲你屁股！~ [C0DRA012]
+  SAY BATTLE_CRY5 ~那可怜虫不过是个还在走路的死人。~ [C0DRA013]
+  SAY DAMAGE ~哎哟！~ [C0DRA014]
+  SAY DYING ~呃，真……丢人。~ [C0DRA015]
+  SAY HURT ~啊……我虽然想见提尔，可我看他不会这么早乐意审判我的屁股。能不能……搭把手？~ [C0DRA016]
+  SAY AREA_FOREST ~早知道要在林子里跋涉，我就该穿双结实点的靴子。~ [C0DRA017]
+  SAY AREA_CITY ~沟里那股麦酒和发酸呕吐物的味儿挺亲切，你不觉得？~ [C0DRA018]
+  SAY AREA_DUNGEON ~哈……我倒想祈祷，可我看我们现在这地方，连神也听不见。~ [C0DRA019]
+  SAY AREA_DAY ~今天倒是个发落判决的好日子，你不觉得？~ [C0DRA020]
+  SAY AREA_NIGHT ~最下等的渣滓在黑暗里活得滋润……我随时准备好把他们摆正。~ [C0DRA021]
+  SAY SELECT_COMMON1 ~嗯？~ [C0DRA022]
+  SAY SELECT_COMMON2 ~有事吗？~ [C0DRA023]
+  SAY SELECT_COMMON3 ~我听着。~ [C0DRA024]
+  SAY SELECT_COMMON4 ~下命令吧。~ [C0DRA025]
+  SAY SELECT_COMMON5 ~什么事？~ [C0DRA026]
+  SAY SELECT_COMMON6 ~有话要说？~ [C0DRA027]
+  SAY SELECT_ACTION1 ~好，好。~ [C0DRA028]
+  SAY SELECT_ACTION2 ~简单得很。~ [C0DRA029]
+  SAY SELECT_ACTION3 ~如你所说，朋友。~ [C0DRA030]
+  SAY SELECT_ACTION4 ~你到底给不给我点事做？~ [C0DRA031]
+  SAY SELECT_ACTION5 ~你这回又怎么了？断胳膊断腿？~ [C0DRA032]
+  SAY SELECT_ACTION6 ~请安静……我头快炸了。~ [C0DRA033]
+  SAY SELECT_ACTION7 ~你还欠我好几杯酒呢，你知道吧。~ [C0DRA034]
+  SAY CRITICAL_HIT ~哈！看来天平偏*我*这边！~ [C0DRA035]
+  SAY CRITICAL_MISS ~啧……！你什么都没看见。~ [C0DRA036]
+  SAY TARGET_IMMUNE ~一点擦伤都没有？哎呀，这可有点意思。~ [C0DRA037]
+  SAY INVENTORY_FULL ~怕是两只手都不够搬这坨破烂。找别人去拿。~ [C0DRA038]
+  SAY SPELL_DISRUPTED ~这回祈祷搞砸了可不怪我。~ [C0DRA039]
+  SAY SET_A_TRAP ~这够让下一个混蛋好好吃一惊。~ [C0DRA040]
+  SAY HIDDEN_IN_SHADOWS ~没人料到正义会从阴影里来。~ [C0DRA041]
+  SAY PICKED_POCKET ~哎哟……你把这个掉了。~ [C0DRA042]

@@ -5,16 +5,16 @@ See("C0Drake")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("X3Kale",CD_STATE_NOTVALID)
 Global("CrossDrakeKale","LOCALS",0)~ THEN X3KaleB KaleDrakeBanter1
-~You sure you're a knight, mate? Your armor doesn't seem nearly shiny enough.~
+~你确定自己是骑士？老兄，你盔甲可不够亮。~
 DO ~SetGlobal("CrossDrakeKale","LOCALS",1)~
-== BC0Drake ~Perhaps not. You're welcome to serve as my acting squire and take up the task of polishing it if it bothers you.~
-== X3KAleB ~Hey, I never play second fiddle- wait. You're joking, aren't you?~
-== BC0Drake ~Am I not permitted to make a harmless jest?~
-== X3KAleB ~Pfft, I've never met a knight that could crack a joke at all, let alone take one.~
-== BC0Drake ~A joking knight with tarnished armor... quite a shocking sight, I know.~
-== X3KAleB ~Should I expect you to start swearing up a storm next?~
-== BC0Drake ~You have yet to see me after downing three tankards of Sembian Dragon's Breath, my friend.~
-== X3KAleB ~Heh, now *that* you've got to show me. You ain't bad at all, Drake.~
+== BC0Drake ~也许吧。你要是不顺眼，欢迎来当我的临时侍从，擦甲的活就交给你。~
+== X3KAleB ~嘿，我可不打下手——等等，你是在开玩笑吧？~
+== BC0Drake ~我就不能开个无伤大雅的玩笑？~
+== X3KAleB ~嗤，我见过的骑士连句笑话都讲不出来，更别说挨人一句玩笑。~
+== BC0Drake ~一个会讲笑话、盔甲还发暗的骑士……我知道，够惊世骇俗。~
+== X3KAleB ~接下来是不是要张嘴骂街了？~
+== BC0Drake ~朋友，你还没见过我灌下三杯森比亚龙息酒之后的样子。~
+== X3KAleB ~呵呵，那我可得见识见识。德雷克，你还真不赖。~
 EXIT 
 
 // Drake-Kale 2
@@ -23,14 +23,14 @@ See("C0Drake")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 Global("CrossDrakeKale","LOCALS",1)~ THEN X3KaleB KaleDrakeBanter2
-~You eyein' me again, church man? Figurin' if I've got any more halfling ale in my bag?~
+~又盯着我看，教堂佬？在盘算我包里还有没有半身人麦酒？~
 DO ~SetGlobal("CrossDrakeKale","LOCALS",2)~
-== BC0Drake ~I wouldn't be opposed to the idea, but with your appetite, I have no doubt you've emptied your bottles long before now.~
-== X3KAleB ~Aye, you know it. Nothing personal, mate, I just get real thirsty after all those battlecries.~
-== BC0Drake ~Nothing soothes a parched throat, whether from shouting or prayers, quite like the intoxicating scent of a good, strong drink, wouldn't you say?~
-== X3KAleB ~Compared to your fancy brews, a nice mug of good halfling stout ale's like a cleansing warmth from top to bottom. You've got good taste, though. You ever smoke?~
-== BC0Drake ~Not since my adolescent days. My father is fond of your folk's pipeweed, though. Personally, I find the smell rather unappetizing... no offense meant, considering who I'm speaking to.~
-== X3KAleB ~Ah, none taken. Least you're not making any jabs at my height.~
-== BC0Drake ~Perhaps I was about to get to that.~
-== X3KAleB ~Don't even go there, longshank.~
+== BC0Drake ~我可不反对这主意，不过就你这胃口，瓶子怕早就见了底。~
+== X3KAleB ~是，你猜得没错。不是针对你，老兄，我打完仗喊得多，就是渴得慌。~
+== BC0Drake ~不管是因为喊阵还是祷告，要润干嗓子，没有比一杯浓烈好酒更醉人的香气了，你说是不是？~
+== X3KAleB ~跟你们那些花哨的酒比，一杯上好的半身人烈性黑啤，从头顶暖到脚底。不过你倒有品味。你抽烟斗吗？~
+== BC0Drake ~年少时抽过。不过我父亲很爱你们族人的烟草。我自己觉得那味儿实在难闻……考虑到我在跟谁说话，冒犯之处还请包涵。~
+== X3KAleB ~哎，不介意。至少你没拿我个子说事。~
+== BC0Drake ~说不定我正要说到那儿。~
+== X3KAleB ~别提那茬，长腿佬。~
 EXIT 

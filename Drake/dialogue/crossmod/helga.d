@@ -4,10 +4,10 @@ See("C0Drake")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("X3Helga",CD_STATE_NOTVALID)
 Global("C0DrakeX3Helga","LOCALS",0)~ THEN X3HelgaB DrakeHelga1
-~A fine arm, justiciar. The Tyrran church forges many a fine warrior among its ranks.~
+~好一副铁臂，审判官。提尔教会里铁打的战士可不少。~
 DO ~IncrementGlobal("C0DrakeX3Rec","LOCALS",1)~
-== BC0Drake ~Ha! High praise indeed, coming from one such as yourself. Should I have the courtesy not to shatter your illusions of my faith, and simply 'smile and nod', as some would put it?~
-== X3HelgaB ~Nay an illusion. Yer faith be yer own to live by. So long as ye fight well, I find little fault in what I see.~
-== BC0Drake ~Very well, then. Simple praise it is, and that I shall graciously accept. On my part, I shall do my best not to disappoint.~
-== X3HelgaB ~Eh, perhaps a single fault I see. Yer tongue wags too often for me liking.~
+== BC0Drake ~哈！从你这样的人嘴里说出来，可真是过奖了。要不要我识趣一点、别戳破你对我的信仰的幻想，就照人家说的“笑一笑点点头”？~
+== X3HelgaB ~幻想也罢。信仰是你自己的活法。只要你打得漂亮，我就挑不出多大毛病。~
+== BC0Drake ~那就这样吧。只是句平常的称赞，我欣然领受。我这边也会尽力不让你失望。~
+== X3HelgaB ~呃，倒也有一处毛病。你这张嘴动得太勤，不合我意。~
 EXIT 

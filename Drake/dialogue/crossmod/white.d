@@ -5,17 +5,17 @@ See("V#1WHI")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0DrakeWhite1","GLOBAL",0)~ THEN V#1WHIB C0DrakeWhite1
-~So... you like hammers, huh?~
+~所以……你喜欢锤子，对吧？~
 DO ~SetGlobal("C0DrakeWhite1","GLOBAL",1)~
-== BC0Drake ~I find them rather agreeable in the battlefield, aye. I take it you approve?~
-== V#1WHIB ~Oh, yes. I prefer something blunt and heavy to break some bones with. Two of them, in fact. It doesn't always to be a hammer, maces are nice, too. I never cared much for swords. Always found them rather overrated.~
-== BC0Drake ~Hmm. I suppose we have that particular taste in common. Very sensible, White.~
-== V#1WHIB ~Right... 'taste', that's a fine way to put it. I'll admit, I'm not all that fond of priests. There's are too many fanatics among your lot, but you? You're not so bad. At least you have a good taste in weapons.~
-== BC0Drake ~Is there a point to this conversation, White, or do you just fancy some 'weapons talk' from time to time?~
-== V#1WHIB ~Something like that. You seem to be enjoying it.~
-== BC0Drake ~Right... I was just curious, when this discussion about our blunt weaponry at our sides will suddenly move onto those of another kind. Is this some kind of subtle attempt at innuendo, White? If so, I'd say you need to work on it. Subtlety isn't really your thing.~
-== V#1WHIB ~Heh, actually not what I had in mind, believe it or not. Though now that you're mentioning it...~
-== BC0Drake ~Maybe some other time. A very distant time, in fact. This might come as a surprise, but I'd rather the talk of the tools concealed below my belt remain there. Now, might we leave this awkward conversation behind us?~
+== BC0Drake ~在战场上我觉得它们挺合手，是。我猜你也认可？~
+== V#1WHIB ~哦，是。我更喜欢又钝又沉、能砸断骨头的东西。实际上，两个。不一定非得是锤子，钉头锤也不错。我从不太喜欢剑。总觉得它们被吹过头了。~
+== BC0Drake ~嗯。我想我们这点品味倒是一致。很有见地，怀特。~
+== V#1WHIB ~对……“品味”，这说法不错。我承认，我不太喜欢牧师。你们这类人里狂热信徒太多了，可你？你还不赖。至少你挑武器的眼光不错。~
+== BC0Drake ~这话有重点吗，怀特，还是你就喜欢时不时来点“武器闲谈”？~
+== V#1WHIB ~差不多吧。你看上去挺享受的。~
+== BC0Drake ~对……我只是好奇，我们这关于手边钝器的谈话，什么时候会突然转到另一种钝器上去。这是不是某种含蓄的暗示，怀特？要真是，我得说你还得练练。含蓄可不是你的长处。~
+== V#1WHIB ~呵，信不信由你，我还真没往那儿想。不过既然你提了……~
+== BC0Drake ~改天吧。很久以后的某天，事实上。说来也许你会吃惊，我宁愿关于我腰带底下那些家伙的谈话就留在那儿。现在，我们能不能把这尴尬话题放下？~
 EXIT
 
 CHAIN IF ~InParty("V#1WHI")
@@ -25,21 +25,21 @@ See("V#1WHI")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0DrakeWhite2","GLOBAL",0)~ THEN V#1WHIB C0DrakeWhite2
-~You've got some nice scars, Drake. I'm surprised there isn't a pack of women lining up to count and caress them. Maybe even a few men. They always fall for that gloomy, hardened aura that you have.~
+~你这身伤疤不错，德雷克。我奇怪怎么没有一群女人排队来数、来摸。也许还有几个男人。她们就吃你那副阴郁、硬邦邦的气场。~
 DO ~SetGlobal("C0DrakeWhite2","GLOBAL",1)~
-== BC0Drake ~...Right.~
-== V#1WHIB ~Not to mention the beard. Heh. I'm sure you're quite the heartbreaker back home.~
-== BC0Drake ~I really ought to shave one of these days. I'd rather hearts not be shattered on my behalf, flattering though that may be.~
-== V#1WHIB ~Whose hearts, Drake? Women's, or men's?~
-== BC0Drake IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~Wouldn't you like to know. Though I'm sure yours will be excluded, given your attention is all on our dear leader.~
-== BC0Drake IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~Wouldn't you like to know.~
-== V#1WHIB ~I'm just curious.~
-== BC0Drake ~Just curious? Forgive me if I have difficulty believing that.~
-== V#1WHIB ~It's the truth. Did you think I had something else in mind?~
-== BC0Drake IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~Perhaps. I was thinking that you felt one man wasn't enough to share your company in the cold, lonely evenings.~
-== BC0Drake IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~Perhaps. I was thinking that you were feeling a little alone in your bedroll at night, if you catch my drift.~
-== V#1WHIB IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~That's harsh, Drake. No, believe it or not, I'm happy enough being with <CHARNAME>. I just thought you and I could break out a few pints of ale and share a story or two. It doesn't have to go further than that. I know where to draw the line.~
-== V#1WHIB IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~That's harsh, Drake. No, believe it or not, I've got no intention of seducing you. I just thought you and I could break out a few pints of ale and share a story or two. It doesn't have to go further than that. I know where to draw the line.~
-== BC0Drake ~That so? Perhaps I've misjudged you, then. Fine, then. If it's ale and company you wish, I'll indulge you as my own way of apologizing. Just don't expect me to prostrate myself before you for forgiveness. I reserve that for the gods.~
-== V#1WHIB ~Heh. Wouldn't dream of it.~
+== BC0Drake ~……对。~
+== V#1WHIB ~更别提那把胡子。呵。我敢说你回老家准是个伤人心的主儿。~
+== BC0Drake ~我真该找天把胡子刮了。我宁愿没人因我伤心，虽说这话听着挺顺耳。~
+== V#1WHIB ~谁的心，德雷克？女人的，还是男人的？~
+== BC0Drake IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~你不想知道吗。不过我敢说你的心不在此列，反正你的注意力全在我们亲爱的队长身上。~
+== BC0Drake IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~你不想知道吗。~
+== V#1WHIB ~我就是好奇。~
+== BC0Drake ~只是好奇？我若说我难信，还请见谅。~
+== V#1WHIB ~是真话。你以为我心里还想着别的？~
+== BC0Drake IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~也许。我原以为你觉得一个男人不足以在寒冷孤寂的夜里陪你作伴。~
+== BC0Drake IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~也许。我原以为你夜里裹着睡袋时有点孤单，懂我意思吧。~
+== V#1WHIB IF ~Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~这话真刻薄，德雷克。不，信不信由你，跟着<CHARNAME>我就够快活了。我只是想着你我能不能开几壶麦酒，各讲一两个故事。不必再往下走。我知道界线在哪儿。~
+== V#1WHIB IF ~!Global("WhiteRomanceActive","GLOBAL",2)~ THEN ~这话真刻薄，德雷克。不，信不信由你，我一点也没打算勾引你。我只是想着你我能不能开几壶麦酒，各讲一两个故事。不必再往下走。我知道界线在哪儿。~
+== BC0Drake ~是这样吗？那我大概是看错你了。好吧。既然你要的是麦酒和作伴，我就陪你，算是赔罪。只是别指望我跪在你面前求原谅。那是留给神的。~
+== V#1WHIB ~呵。想都不敢想。~
 EXIT

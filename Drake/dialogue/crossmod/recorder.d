@@ -4,20 +4,20 @@ See("C0Drake")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("X3RecB",CD_STATE_NOTVALID)
 Global("C0DrakeX3Rec","LOCALS",0)~ THEN BC0Drake DrakeRecorder1
-~I can feel your stare threatening to bore a hole through my armor, Ribbons. I'd much rather hear your dulcet tones than suffer your scrutiny.~
+~我都能感觉到你的目光快把我盔甲盯出洞来了，里本斯。我宁愿听你那甜润的嗓子，也不愿受你这番审视。~
 DO ~IncrementGlobal("C0DrakeX3Rec","LOCALS",1)~
-== X3RecB ~"Ribbons"? I...*ahem* I apologize. It was very rude of me to stare.~
-== BC0Drake ~No harm done. But do speak up–hearing confessions, that is what I am here for, after all. Heh.~
-== X3RecB ~That's just it, though. You, um... you don't exactly fit my image of proper Tyrran priest.~
-== BC0Drake ~Nor that of most men, I presume.~
-== X3RecB ~I've just never seen a knight that—~
-== BC0Drake ~Knight-to-be. With more than a little reluctance.~
-== X3RecB ~Still... Sir Mark Harmon always embodied the principles of Milil's faith. He was poetic, gentlemanly, well-read. And... well, you're...~
-== BC0Drake ~...slovenly, haphazard, a little too drunk?~
-== X3RecB ~Oh no no, I wasn't going to say that.~
-== BC0Drake ~But you were thinking it. People don't fit into perfectly-shaped boxes that are made for them, Ribbons.~
-== X3RecB ~I know. But would you mind behaving with just a little more decorum?~
-== BC0Drake ~Certainly not. It'd just make life a little too boring for my taste.~
+== X3RecB ~“里本斯”？我……*清嗓*我道歉。我那么盯着看太失礼了。~
+== BC0Drake ~不打紧。不过你有话就说——听人忏悔，我干的就是这行，毕竟。呵。~
+== X3RecB ~问题就在这儿。你，呃……你跟我心里那位正统提尔牧师的样子实在不符。~
+== BC0Drake ~大概也不符大多数人心里的样子。~
+== X3RecB ~我只是从没见过哪个骑士——~
+== BC0Drake ~准骑士。而且是相当不情愿的那种。~
+== X3RecB ~可……马克·哈蒙爵士一向是米利尔信仰的典范。他会写诗、有君子风度、博览群书。而你……嗯，你……~
+== BC0Drake ~……邋遢、随意、还有点太爱喝？~
+== X3RecB ~哦不不，我没打算这么说。~
+== BC0Drake ~可你就是这么想的。人不是都能塞进别人给他做好的方盒子里，里本斯。~
+== X3RecB ~我知道。不过你能不能稍微规矩一点？~
+== BC0Drake ~当然不能。那样日子对我而言就太无趣了。~
 EXIT 
 
 // Drake-Recorder 2
@@ -26,16 +26,16 @@ See("X3Rec")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("X3RecB",CD_STATE_NOTVALID)
 Global("C0DrakeX3Rec","LOCALS",1)~ THEN X3RecB DrakeRecorder2
-~The Caulfields... they're Amnian nobles, right? I don't think I've heard of them before.~
+~考尔菲尔德家……是安姆的贵族，对吧？我好像从没听过这名字。~
 DO ~IncrementGlobal("C0DrakeX3Rec","LOCALS",1)~
-== BC0Drake ~I'd be more surprised if you had. We don't own many lands, nor do we stick our hands within the trade economy further than it is welcome. By noble standards, we're nobodies.~
-== X3RecB ~Still... your father is a prelate of the Order of the Radiant Heart. Surely you must have some amount of reputation.~
-== BC0Drake ~Aye, certainly. Unless you're a war aficionado or very well-versed in Amnian history, however—ah, I forget who I'm speaking to. Perhaps the War of the Red Sands might ring a bell to you.~
-== X3RecB ~Oh... of course. Armand Caulfield, the Northern Lion. I'm very sorry, Drake. I didn't see the connection until now.~
-== BC0Drake ~Yes, I reckon I'm a few inches and a golden mane short of how the history books portray him, aye?~
-== X3RecB ~No, I can see the resemblance, now that I'm looking for it. But with such a lineage, wouldn't you want to live up to your legacy?~
-== BC0Drake ~Legacy? Ha! Ribbons, my forefathers fought for a realm that existed more than a hundred years past. And contrary to however history pens it, wars are never fought of morals alone. Look at the world we live in–is it any more bereft of greed, deceit, corruption? Perhaps retracing old footsteps is not the way.~
-== X3RecB ~You're thinking of the world as it now, Drake. I would rather think of what it could be.~
+== BC0Drake ~你要是听过我才更奇怪。我们没什么领地，也不把手伸进贸易经济里多捞一把。按贵族的标准，我们算无名之辈。~
+== X3RecB ~可……你父亲是光辉之心骑士团的教长。你总该有些名声吧。~
+== BC0Drake ~是，当然有。除非你是战争迷或对安姆史烂熟于心，不过——啊，我忘了在跟谁说话。也许“红沙之战”能让你想起来。~
+== X3RecB ~哦……当然。阿曼德·考尔菲尔德，北境雄狮。真抱歉，德雷克。我到这会儿才把关联想明白。~
+== BC0Drake ~是，我猜我比史书里写的矮了几寸，也少了一头金鬃，对吧？~
+== X3RecB ~不，我现在找着了，就能看出相像。可既然有这样的家世，你不想承继祖上的荣光吗？~
+== BC0Drake ~荣光？哈！里本斯，我祖辈为之征战的国度，一百多年前就不在了。而且不管史书怎么写，战争从来不只是为了道义打的。看看我们活着的这世界——它就少些贪婪、欺诈、腐败了吗？也许沿着老脚印走，不是办法。~
+== X3RecB ~你把世界当成它现在的样子，德雷克。我更愿意想它能成为什么样子。~
 EXIT 
 
 // Drake-Recorder 3
@@ -44,38 +44,38 @@ See("X3Rec")
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 !StateCheck("X3RecB",CD_STATE_NOTVALID)
 Global("C0DrakeX3Rec","LOCALS",2)~ THEN X3RecB DrakeRecorder3
-~I want to apologize to you, Drake.~
+~我想向你道歉，德雷克。~
 DO ~IncrementGlobal("C0DrakeX3Rec","LOCALS",1)~
-== BC0Drake ~Aye? I certainly hope this is not related to our little debate previously. I took no personal offense.~
-== X3RecB ~It... well, it is, but not directly. It just occurred to me that you're more sophisticated than I took you for. I shouldn't have judged purely on appearances.~
-== BC0Drake ~I would not change my mind so quickly, were I in your shoes. I *am* every bit as drunken and slovenly as you took me for, after all, and I have done nothing to try and prove the contrary.~
-== X3RecB ~Still, you're full of surprises. I never expected you to have be so well-read. Not only do you know history, but you even recognized my poem from last evening.~
-== BC0Drake ~I think you'll find I recall songs more easily than poetry, Ribbons. But, aye, 'twas a coincidence that I happened across that particular writing in my casual readings. Now... how did it go again?~
-== X3RecB ~'I wandered lonely as a cloud
-That floats on high o’er vales and hills,
-When all at once I saw a crowd,
-A host, of golden daffodils;
-Beside the lake, beneath the trees,
-Fluttering and dancing in the breeze.'~
-== BC0Drake ~'Continuous as the stars that shine
-And twinkle on the milky way,
-They stretched in never-ending line
-Along the margin of a bay:
-Ten thousand saw I at a glance,
-Tossing their heads in sprightly dance.'~
-== X3RecB ~'The waves beside them danced; but they
-Out-did the sparkling waves in glee:
-A poet could not but be gay,
-In such a jocund company:
-I gazed—and gazed—but little thought
-What wealth the show to me had brought.'~
-== BC0Drake ~Aye, that does ring familiar to my ear. And if my memory does not betray me, the next verse goes thusly...~
-== BC0Drake ~'For oft, when on my couch I lie
-In vacant or in pensive mood,
-They flash upon that inward eye
-Which is the bliss of solitude;
-And then my heart with pleasure fills,
-And dances with the daffodils.'~
-== X3RecB ~Look at you! You can even recite verses from memory. I think we have a lot to talk about in the future.~
-== BC0Drake ~Me? Nay, Ribbons, you ask too much of me. But do stop by our estate sometime should you find yourself in Athkatla–I'm certain my sister Claudia would absolutely adore you.~
+== BC0Drake ~是吗？我希望这跟我们之前那番小辩论无关。我没往心里去。~
+== X3RecB ~它……嗯，是有关，但不是直接有关。我只是忽然想到，你比我想的更有见识。我不该只看外表就下判断。~
+== BC0Drake ~换作我处在你的位置，不会这么快改主意。毕竟我*确实*跟你以为的一样爱喝又邋遢，而且我也没做过什么来证明不是。~
+== X3RecB ~可你身上全是意外。我从没想到你读过这么多书。你不只懂历史，连我昨晚那首诗都认出来了。~
+== BC0Drake ~你会发现我记歌比记诗容易，里本斯。不过，是，我随手翻书时恰好碰见那篇，真是巧。那么……它是怎么念的来着？~
+== X3RecB ~“我如云般独自漫游
+飘越溪谷与山丘之上，
+忽然望见一片人群，
+一簇金黄的水仙；
+在湖畔，在树下，
+摇曳起舞于微风之中。”~
+== BC0Drake ~“如星辰般连绵闪耀
+在银河上闪烁，
+它们一路延伸无尽头
+沿着海湾的边缘：
+一瞥便见万朵，
+昂首欢快地轻摆。”~
+== X3RecB ~“它们身旁的波浪也在舞；它们
+却比闪烁的波浪更欢：
+诗人怎能不欢喜，
+在这样欢愉的友伴里：
+我望了又望——却没想到
+这景象给了我多少财富。”~
+== BC0Drake ~是，这听着耳熟。要是我没记错，下一节该是这样的……~
+== BC0Drake ~“因为常常，当我躺在榻上
+心神空茫、沉思默想，
+它们便闪现在内眼之中
+那是独处的至福；
+于是我的心充满欢愉，
+与水仙一同起舞。”~
+== X3RecB ~瞧瞧你！连诗句都能凭记忆背出来。我想我们往后有很多可谈的。~
+== BC0Drake ~我？不，里本斯，你要求太高了。不过你要是到了阿斯卡特拉，就来我们庄园坐坐——我妹妹克劳迪娅准会喜欢你。~
 EXIT 

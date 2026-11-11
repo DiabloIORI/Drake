@@ -5,15 +5,15 @@ See("C0Drake")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0AuraDrake1","GLOBAL",0)~ THEN BC0Drake C0AuraDrake1
-~A question for you, little lady of miracles. Do you believe in the theory of life beyond our world? Not the planes, I mean literal worlds.~
+~问你一句，小小的奇迹之女。你相信我们这世界之外还有生命吗？我不是说各位面，是字面上的世界。~
 DO ~SetGlobal("C0AuraDrake1","GLOBAL",1)~
-== BC0Aura ~Life in the stars, you mean? I didn't think you'd know about such theories, Drake. You must have studied.~
-== BC0Drake ~Not studied, per se. Rather, I came across the topic while doing some light reading in the holy libraries of home. 'A Study of Celestial Visions and Ventures'... I believe it was called, or something like that. Written by some astrologist a little less than a hundred years ago. Are you familiar with the text?~
-== BC0Aura ~Oh, yes. It was someone from my homeland that wrote it. That was before I was born, though. The facts we've found have changed our perspective greatly since then.~
-== BC0Drake ~So do you believe it? The parts about beings in the stars, living in worlds parallel to ours? I must admit, it was a little too fantastical for me to believe, especially for such a scholarly work.~
-== BC0Aura ~Mmm, I'd say it's definitely possible... but we've no way to be certain so far. The only way to know for sure would be to find those worlds and see for ourselves, you know? *sigh* But that'll be long past our lifetimes, I'm sure.~
-== BC0Drake ~Perhaps. Though with a mind like yours...~
-== BC0Aura ~Hahaha, no. I'm not that good... not yet, anyway. Besides, I've got a thousand other things I want to do in my life first, and those won't take a lifetime to accomplish.~
+== BC0Aura ~你是指星辰之上的生命？德雷克，我没想到你知道这些理论。你肯定钻研过。~
+== BC0Drake ~谈不上钻研。只是在老家的圣典藏书里随手翻了翻，碰上了这题目。叫《诸天异象与远航考》什么的，大概这名字。不到一百年前某个占星家写的。你读过这本书吗？~
+== BC0Aura ~哦，读过。那是我故乡的人写的。不过那还是我出生之前的事。自那以后，我们发现的事实大大改变了我们的看法。~
+== BC0Drake ~那你信吗？那些关于星辰之上有生命、住在与我们平行的世界的部分？我得承认，这对我来说太飘渺，尤其这还算是部严肃的学说。~
+== BC0Aura ~嗯，我会说那确实有可能……但到现在我们也没法确定。唯一能确定的方法，就是找到那些世界亲眼看一看，你知道吗？*叹气* 不过那肯定远在我们的有生之年之后了。~
+== BC0Drake ~也许吧。不过以你这样的头脑……~
+== BC0Aura ~哈哈哈，不行。我没那么厉害……至少现在不行。再说我这一生还有千千万万想做的事，那些用不着一辈子才做得到。~
 EXIT
 
 CHAIN IF ~InParty("C0Drake")
@@ -23,18 +23,18 @@ See("C0Drake")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0AuraDrake1","GLOBAL",1)~ THEN BC0Aura C0AuraDrake2
-~I was wondering, Drake, does your god ever speak to you? I mean... have you ever heard his voice?~
+~我在想，德雷克，你的神会跟你说话吗？我是说……你听过他的声音吗？~
 DO ~SetGlobal("C0AuraDrake1","GLOBAL",2)~
-== BC0Drake ~Tyr's voice? Can't say I have.~
-== BC0Aura ~You haven't? Then... how do you know he really exists? Do you have any proof?~
-== BC0Drake ~I don't, no. But I do believe he exists. It's hard to explain. I can... feel it, in a way.~
-== BC0Aura ~Feel it? What do you mean?~
-== BC0Drake ~When you become a servant of the gods like I am, you just... know. I don't know about anyone else, but to me it's like... like a presence looming over me, every time I whisper a prayer.~
-== BC0Drake ~But what brought this question to your mind? Do you not believe in the gods?~
-== BC0Aura ~I do. I just... don't understand the gods in this land at all. When I lived in Kozakura, what the people knew as gods were... different.~
-== BC0Aura ~Sometimes I thought I could see them, even though they don't seem to care about us mortals at all. They were more like spirits of nature, acting as they pleased. Would you call them gods as well?~
-== BC0Drake ~Maybe. I don't know what a god is. I don't think anyone who lives and dies on this earth does, really.~
-== BC0Drake ~Anything greater than us that we don't understand could be called a god by somebody. The sky above and the wind around us - are those gods? I've met those who claimed it, and I couldn't argue with them.~
-== BC0Drake ~It could be that there's no real meaning to the word, only beings that we choose to attach it to. Who knows?~
-== BC0Aura ~You're probably right. I've sought and solved many mysteries, but the gods... I doubt I'll ever be able to solve that one.~
+== BC0Drake ~提尔的声音？不敢说听过。~
+== BC0Aura ~没听过？那……你怎么知道他真的存在？你有证据吗？~
+== BC0Drake ~没有。可我就是相信他存在。这很难解释。我能……感觉到，某种程度而已。~
+== BC0Aura ~感觉到？你什么意思？~
+== BC0Drake ~当你像我这样成了神的仆从，你就是……知道。我不知道别人如何，可对我而言，那就像……每次我低声祷告，都有一种临在悬在头顶。~
+== BC0Drake ~可你怎么会想到问这个？你不信神吗？~
+== BC0Aura ~我信。只是……我一点也不懂这片土地上的神。我住在科祖库拉的时候，人们认作神的那些东西……不一样。~
+== BC0Aura ~有时我觉得我能看见它们，尽管它们似乎根本不在乎我们这些凡人。它们更像自然之灵，随心所欲。你会把它们也叫作神吗？~
+== BC0Drake ~也许吧。我不知道神是什么。我觉得在这片大地上活过又死去的任何人，其实都不知道。~
+== BC0Drake ~凡是比我们更伟大、我们又不理解的东西，都可能被某些人叫作神。头顶的天、身边的风——那些是神吗？我见过说是的人，我辩不过他们。~
+== BC0Drake ~也可能这词本身没什么真实含义，只是我们选择把某种存在安上这个名。谁知道呢？~
+== BC0Aura ~你大概说得对。我追查并解开过许多谜团，可神……我怀疑我永远解不开这一个。~
 EXIT

@@ -5,7 +5,7 @@ THEN
   RESPONSE #100
 	SetGlobal("C02DrakeCoalitionComment","bd3000",1)
 	Wait(15)
-	DisplayStringHead("C0Drake",~This place brings back some old wartime memories.~)
+	DisplayStringHead("C0Drake",~这地方勾起些战时的旧回忆。~)
 END
 
 IF

@@ -10,7 +10,7 @@ THEN
   RESPONSE #100
     SetGlobal("bd_C0Drake_ot","bd4100",1)
     SetGlobalTimer("bd_mdd1352_ot_timer","bd4100",ONE_ROUND)
-    DisplayStringHead("C0Drake",~Well... I didn't think things would ever get this bad. I suppose that makes me the fool.~)
+    DisplayStringHead("C0Drake",~唉……我没想到事情会糟到这份上。看来我就是那个傻子。~)
 END
 
 IF
@@ -25,5 +25,5 @@ THEN
   RESPONSE #100
     SetGlobal("bd_C0Drake_ot","bd4100",1)
     SetGlobalTimer("bd_mdd1352_ot_timer","bd4100",9)
-    DisplayStringHead("C0Drake",~Heh... I must've had one too many to drink. The <CHARNAME> I know would never have done this.~)
+    DisplayStringHead("C0Drake",~嘿……我一定是喝多了。我认识的那个<CHARNAME>绝不会干这种事。~)
 END

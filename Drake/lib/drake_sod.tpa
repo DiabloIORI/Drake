@@ -17,44 +17,44 @@ COPY ~Drake/creatures/SoD/C02Drake.cre~ ~override/C02Drake.cre~
   WRITE_ASCII 0x2cc ~C02Drake~ #8   //pre-joining dialogue file
   WRITE_ASCII 0X34 ~DrakeM~ #8   //small portrait
   WRITE_ASCII 0x3c ~DrakeL~ #8   //medium portrait
-  SAY BIO ~When asked about his past, DRAKE gives a sardonic laugh and responds that history would breathe easier if his past was left forgotten. A cleric of Tyr in his mid-thirties, second son of the Caulfield family, former ensign in the Amnian militia and, with a touch of irony when mentioning it, recruit of the Radiant Heart auxiliary, he considers himself 'that thing they can't get rid of' within the Order. He openly admits that his unorthodox views on the tenets of the Order as well as the distribution of justice makes him something of a social pariah with both his fellows of the Radiant Heart and his family, almost all of whom have a history of service within the Order. According to him, while him being stationed outside of Amn was officially a mission to root out evil that plagued the Sword Coast, he believes it was nothing more than a formal means of sending him away and allowing his superiors to forget about him. Such an assignment seems to be to his preference, however, as he believes justice is best served with the edge of a blade - or in his case, the head of a hammer.
+  SAY BIO ~有人问起德雷克的过去时，他讥讽地笑一声，回答说要是他的过去被忘掉，历史会呼吸得更顺畅。他是提尔的祭司，三十五六岁，考尔菲尔德家次子，曾是安姆民兵的少尉，说起来还带着一丝自嘲地补充，是光辉之心辅助队的新募。他自认在骑士团里是“他们甩不掉的那号东西”。他坦承自己对骑士团教条和正义分配的非正统看法，让他成了光辉之心同袍和家里人眼里的社会弃儿，而他家人几乎个个都有在骑士团服役的履历。据他说，他驻在安姆之外，官方说法是去铲除祸害剑湾的邪恶，可他相信那不过是把他打发走、让上司忘掉他的正式手段。不过这样的差事似乎正合他意，因为他相信正义最好用刀刃来施行——或者，在他这儿，用锤头。
   
-  Though Drake was prepared to return to Amn after the resolution of the iron crisis, the threat of the Shining Lady's crusade has given him cause to remain at Baldur's Gate and take part in the march to Dragonspear. He seems eager to find out the reasons behind the crusade's existence.~
-  SAY MORALE ~No sense in fighting this one any longer!~ [C0DR001]
-  SAY HAPPY ~Not bad, not bad. You'd give any knight a run for his money.~ [C0DR002]
-  SAY UNHAPPY_ANNOYED ~I'll give you the benefit of the doubt this time, but watch yourself.~ [C0DR003]
-  SAY UNHAPPY_SERIOUS ~You're either hopelessly oblivious or utterly irredeemable. I pray you're the former.~ [C0DR004]
-  SAY UNHAPPY_BREAKING_POINT ~That's it. I'll need more than a few drinks to forget what I've seen. The next time we met, it'll be hammer first.~ [C0DR005]
-  SAY LEADER ~You're asking the wrong man for this. Seriously? You'd better not regret it.~ [C0DR006]
-  SAY TIRED ~What I wouldn't do for a hard drink and a soft bed right about now...~ [C0DR007]
-  SAY BORED ~I'm just about ready to piss myself, just like standing in attendance back at the Order. Might we get a move on?~ [C0DR008]
-  SAY BATTLE_CRY1 ~I'll bring you to judgment myself!~ [C0DR009]
-  SAY BATTLE_CRY2 ~You're just a dead man walking!~ [C0DR010]
-  SAY BATTLE_CRY3 ~Say your prayers while you still can!~ [C0DR011]
-  SAY BATTLE_CRY4 ~This one's on me!~ [C0DR012]
-  SAY BATTLE_CRY5 ~My hammer's waiting to meet your arse!~ [C0DR013]
-  SAY DAMAGE ~Oof!~ [C0DR014]
-  SAY DYING ~Ugh... damn it all...~ [C0DR015]
-  SAY HURT ~Agh... that all you got?~ [C0DR016]
-  SAY AREA_FOREST ~If I knew we'd be trekking through the forests, I'd have worn sturdier boots.~ [C0DR017]
-  SAY AREA_CITY ~Hawkers, foul odors, and cheap ale. Just the way I like it.~ [C0DR018]
-  SAY AREA_DUNGEON ~Watch your step. Fools rush in where angels fear to tread.~ [C0DR019]
-  SAY AREA_DAY ~The sun shines on above us, and I am again reminded that my armor still needs polishing.~ [C0DR020]
-  SAY AREA_NIGHT ~We could be getting drunk at a nice warm inn instead of lumbering about in the dark...~ [C0DR021]
-  SAY SELECT_COMMON1 ~Yeah?~ [C0DR022]
-  SAY SELECT_COMMON2 ~Need something?~ [C0DR023]
-  SAY SELECT_COMMON3 ~Give your orders.~ [C0DR024]
-  SAY SELECT_ACTION1 ~Sure, sure.~ [C0DR028]
-  SAY SELECT_ACTION2 ~Simple enough.~ [C0DR029]
-  SAY SELECT_ACTION3 ~On we march.~ [C0DR030]
-  SAY CRITICAL_HIT ~Ha! Looks like the scales favor *me*!~ [C0DR037]
-  SAY CRITICAL_MISS ~Tch... no one saw that.~ [C0DR038]	
-  SAY TARGET_IMMUNE ~No effect? Didn't see that one coming.~ [C0DR039]
-  SAY INVENTORY_FULL ~I'd need more than two hands for this junk. Get someone else to hold it.~ [C0DR040]
-  SAY SPELL_DISRUPTED ~Bloody hell!~ [C0DR041]
-  SAY SET_A_TRAP ~I pity the poor bastard who steps in this one.~ [C0DR042]
-  SAY HIDDEN_IN_SHADOWS ~Time to try a stealthy approach.~ [C0DR043]
-  SAY PICKED_POCKET ~Not very knightly, but nobody needs to know, eh?~ [C0DR044]
+  德雷克本打算在铁危机了结后回安姆，可光明女士的圣战军之威胁让他有理由留在博德之门，参加进军龙矛的行列。他似乎急着弄清圣战军存在的缘由。~
+  SAY MORALE ~跟这家伙再打下去没道理了！~ [C0DR001]
+  SAY HAPPY ~不错，不错。你够跟任何骑士较量的。~ [C0DR002]
+  SAY UNHAPPY_ANNOYED ~这回我先往好处想，可你自己当心。~ [C0DR003]
+  SAY UNHAPPY_SERIOUS ~你要么是糊涂得没救了，要么是烂得没救了。我祈祷你是前者。~ [C0DR004]
+  SAY UNHAPPY_BREAKING_POINT ~够了。我得喝不止几杯才能忘掉我看到的。下回再见，我先动锤子。~ [C0DR005]
+  SAY LEADER ~这事你问错人了。认真的？你最好别后悔。~ [C0DR006]
+  SAY TIRED ~这会儿我还有什么不肯换个烈酒和软床的……~ [C0DR007]
+  SAY BORED ~我快憋尿憋出来了，跟当年在骑士团当班站桩一样。我们能不能走快些？~ [C0DR008]
+  SAY BATTLE_CRY1 ~我要亲手把你送上审判！~ [C0DR009]
+  SAY BATTLE_CRY2 ~你不过是个还在走路的死人！~ [C0DR010]
+  SAY BATTLE_CRY3 ~趁还能，把祷词念了吧！~ [C0DR011]
+  SAY BATTLE_CRY4 ~这杯算我的！~ [C0DR012]
+  SAY BATTLE_CRY5 ~我的锤子等着亲你屁股！~ [C0DR013]
+  SAY DAMAGE ~哎哟！~ [C0DR014]
+  SAY DYING ~呃……该死……~ [C0DR015]
+  SAY HURT ~啊……你就这点本事？~ [C0DR016]
+  SAY AREA_FOREST ~早知道要在林子里跋涉，我就该穿双结实点的靴子。~ [C0DR017]
+  SAY AREA_CITY ~小贩、臭气、便宜麦酒。正合我意。~ [C0DR018]
+  SAY AREA_DUNGEON ~脚下留神。傻子才冲进天使都不敢踏的地方。~ [C0DR019]
+  SAY AREA_DAY ~太阳照在我们头顶，我又想起我的铠甲还得擦。~ [C0DR020]
+  SAY AREA_NIGHT ~我们本可以在暖和的旅店里喝醉，而不是在黑暗里笨重地走……~ [C0DR021]
+  SAY SELECT_COMMON1 ~嗯？~ [C0DR022]
+  SAY SELECT_COMMON2 ~有事吗？~ [C0DR023]
+  SAY SELECT_COMMON3 ~下命令吧。~ [C0DR024]
+  SAY SELECT_ACTION1 ~当然，当然。~ [C0DR028]
+  SAY SELECT_ACTION2 ~简单得很。~ [C0DR029]
+  SAY SELECT_ACTION3 ~我们走。~ [C0DR030]
+  SAY CRITICAL_HIT ~哈！看来天平偏*我*这边！~ [C0DR037]
+  SAY CRITICAL_MISS ~啧……没人看见。~ [C0DR038]	
+  SAY TARGET_IMMUNE ~没效果？这可没料到。~ [C0DR039]
+  SAY INVENTORY_FULL ~这破烂我得有两只以上的手才拿得住。找别人去搬。~ [C0DR040]
+  SAY SPELL_DISRUPTED ~该死的！~ [C0DR041]
+  SAY SET_A_TRAP ~我同情那踩上这玩意儿的可怜混蛋。~ [C0DR042]
+  SAY HIDDEN_IN_SHADOWS ~该试试潜行了。~ [C0DR043]
+  SAY PICKED_POCKET ~不太像骑士，可没人需要知道，对吧？~ [C0DR044]
   WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~OHTYR~))
 
 APPEND ~bddialog.2da~ ~C0Drake C02DrakP C02DrakJ C02DrakD~
@@ -97,186 +97,323 @@ EXTEND_TOP ~bdintro.bcs~ ~Drake/Scripts/SoD/bdintro.baf~
 EXTEND_TOP ~bdparty.bcs~ ~Drake/Scripts/SoD/bdparty.baf~
 
 COPY ~drake/items/sod/c02dchan.itm~ ~override~
-SAY NAME1 ~Chain Mail~
-SAY NAME2 ~Armor of Salvation~
-SAY DESC ~This suit of silver chain mail provides the wearer with a sense of calm, as though nothing in the world could put their lives at risk. Divine magic imbued within the armor allows it to mend its wearer's wounds at a faster rate the more severe their wounds become.
+SAY NAME1 ~链甲~
+SAY NAME2 ~救赎之甲~
+SAY DESC ~这套银色链甲能给穿戴者一种安宁感，仿佛世上没有什么能危及他们的性命。甲中灌注的神术能在穿戴者伤得越重时，以越快的速度为其愈合伤口。
 
-STATISTICS:
 
-Charge abilities:
- - Preservation once per day. For the next 2 rounds, the wearer is unable to be brought below 1 Hit Point. This does not protect the wearer from being killed through means outside of damage.
 
-Equipped abilities:
- - Immunity to fear and confusion
- - Regenerate 1 Hit Point per round while above 50% Hit Points
- - Regenerate 2 Hit Points per round while below 50% Hit Points
- - Regenerate 3 Hit Points per round while below 25% Hit Points
+属性：
 
-Armor Class: 2 (0 vs. slashing, 4 vs. crushing)
-Requires:
- 6 Strength
 
-Weight: 9~
+
+充能能力：
+
+ - 每日一次“保全”。接下来 2 轮内，穿戴者的生命值不会被降到 1 点以下。这不能保护穿戴者免于因伤害之外的手段致死。
+
+
+
+装备能力：
+
+ - 免疫恐惧与混乱
+
+ - 生命值高于 50% 时，每轮恢复 1 点生命值
+
+ - 生命值低于 50% 时，每轮恢复 2 点生命值
+
+ - 生命值低于 25% 时，每轮恢复 3 点生命值
+
+
+
+护甲等级：2（对挥砍 0，对钝击 4）
+
+需求：
+
+ 力量 6
+
+
+
+重量：9~
 
 COPY ~drake/items/sod/c02dplat.itm~ ~override~
-SAY NAME1 ~Full Plate Mail~
-SAY NAME2 ~Plate of Tyrran Might~
-SAY DESC ~Armors such as this are worn by high priests of Tyr, bestowing upon them both great protection and a stronger connection to the Maimed God.
+SAY NAME1 ~全身板甲~
+SAY NAME2 ~提尔之力板甲~
+SAY DESC ~这类铠甲由提尔的高阶祭司穿着，既给他们强大防护，也让他们与伤残之神的联系更紧密。
 
-STATISTICS:
 
-Equipped abilities:
- - Caster Level: +2 (Priests of Tyr), +1 (Other Clerics)
- - Upon killing a target, cast Divine Favor on self
 
-Armor Class: 0 (-4 vs. slashing, -3 vs. piercing and missile)
-Requires:
- 15 Strength
+属性：
 
-Weight: 35~
+
+
+装备能力：
+
+ - 施法者等级：+2（提尔祭司），+1（其他祭司）
+
+ - 击杀目标时，对自身施放“神恩”
+
+
+
+护甲等级：0（对挥砍 -4，对穿刺与远程 -3）
+
+需求：
+
+ 力量 15
+
+
+
+重量：35~
 
 COPY ~drake/items/sod/c02dpla2.itm~ ~override~
-SAY NAME1 ~Full Plate Mail~
-SAY NAME2 ~Armor of the Ancestors~
-SAY DESC ~This suit of incredibly heavy armor once belonged to a tribe of savage warriors, said to have been worn by their forefathers in eons past. Despite its aged appearance, it is still remarkably durable albeit intimidating and displeasing to the eye. The armor was taken by a tribe of orogs after its owners were slaughtered in a raid.
+SAY NAME1 ~全身板甲~
+SAY NAME2 ~先祖之甲~
+SAY DESC ~这套极重的铠甲原属一个野蛮战士部落，据说是其先祖在远古时代穿过的。虽看着古旧，它仍旧异常耐久，只是模样吓人、不讨人喜欢。原主人遭劫掠被屠杀后，这套铠甲落到一个奥罗格部落手里。
 
-STATISTICS:
 
-Equipped abilities:
- - THAC0: -2 penalty
- - Charisma: -2
- - Physical Damage Resistance: +10%
 
-Armor Class: -1 (-4 vs. slashing)
-Requires:
- 12 Strength
+属性：
 
-Weight: 80~
+
+
+装备能力：
+
+ - 零级命中值：-2 惩罚
+
+ - 魅力：-2
+
+ - 物理伤害抗性：+10%
+
+
+
+护甲等级：-1（对挥砍 -4）
+
+需求：
+
+ 力量 12
+
+
+
+重量：80~
 
 COPY ~drake/items/sod/c02ds2h1.itm~ ~override~
-SAY NAME1 ~Two-handed Sword~
-SAY NAME2 ~Brutal Force +2~
-SAY DESC ~This massive weapon was clearly made for someone far larger and stronger than a typical human. Its size and weight allows it to deal ludicrous amounts of bodily harm to anyone unfortunate enough to be on the receiving end, but considering the wielder would require a giant's strength to even swing it with any real effectiveness, most warriors would find it impractical.
+SAY NAME1 ~双手剑~
+SAY NAME2 ~蛮力 +2~
+SAY DESC ~这把巨兵显然是为比寻常人类高大强壮得多的人打造的。它的尺寸与重量能对任何不幸挨上的人造成荒唐可怖的肉体伤害，可考虑到持握者得有巨人的力气才能真正有效地挥动它，多数战士会觉得它不实用。
 
-STATISTICS:
 
-Combat abilities:
-- Each hit has a 20% chance to fatigue the wielder
-- Target must save vs. death or suffer 1d6 crushing damage and be stunned for 2 rounds
 
-Equipped abilities: 
-- Attacks per round set to 1
+属性：
 
-THAC0: -1
-Damage: 1d10+6 (slashing)
-Speed Factor: 9
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 18 Strength
 
-Weight: 30~
+
+战斗能力：
+
+- 每次命中都有 20% 几率使持握者疲惫
+
+- 目标须通过死亡豁免，否则受 1d6 点钝击伤害并昏迷 2 轮
+
+
+
+装备能力： 
+
+- 每轮攻击次数固定为 1
+
+
+
+零级命中值：-1
+
+伤害：1d10+6（挥砍）
+
+速度系数：9
+
+熟练类型：双手剑
+
+类型：双手
+
+需求：
+
+ 力量 18
+
+
+
+重量：30~
 
 COPY ~drake/items/sod/c02dxbow.itm~ ~override~
-SAY NAME1 ~Heavy Crossbow~
-SAY NAME2 ~The Suppressor~
-SAY DESC ~This heavy crossbow was once the favored weapon of Maeren Silus, prelate of the Order of the Radiant Heart two-hundred years ago. In times of war, the prelate wielded this weapon atop the walls of a besieged city, wielding this weapon with impeccable accuracy. Eyewitnesses recall how the bolts she launched struck with as much force as though they were fired from a ballista, knocking her foes off their feet.
+SAY NAME1 ~重弩~
+SAY NAME2 ~镇压者~
+SAY DESC ~这把重弩曾是两百年前光辉之心骑士团教长梅伦·西卢斯的爱用兵器。战时，这位教长在一座被围城的城墙上使这把武器，准头无可挑剔。目击者回忆，她射出的弩矢力道之大，仿佛是从投石车发射的，能把敌人掀翻在地。
 
-STATISTICS:
 
-Combat abilities:
- - On a critical hit, gain one bonus attack per round for the next round
- - Each hit has a 10% chance to knock the target unconscious for 1 round and send them flying on a failed save vs. breath.
 
-THAC0: +2
-Damage: +4
-Speed Factor: 9
-Proficiency Type: Crossbow
-Type: Two-handed
-Requires:
- 12 Strength
+属性：
 
-Weight: 12~
+
+
+战斗能力：
+
+ - 打出致命一击时，下一轮获得一次额外攻击
+
+ - 每次命中有 10% 几率使目标昏迷 1 轮，若目标吐息豁免失败还会被击飞。
+
+
+
+零级命中值：+2
+
+伤害：+4
+
+速度系数：9
+
+熟练类型：弩
+
+类型：双手
+
+需求：
+
+ 力量 12
+
+
+
+重量：12~
 
 COPY ~drake/items/sod/c02dshld.itm~ ~override~
-SAY NAME1 ~Large Shield~
-SAY NAME2 ~Grimjaws's Bulwark~
-SAY DESC ~It is said that this mighty shield was once carried by an avatar of Tyr during the Time of Troubles. Whether such a claim is true, especially with the god's maimed hand, is widely disputed, but there is no argument towards the shield's effectiveness. Its size gives its bearer near immunity to missiles while raised, while its weight makes it an effective battering ram for when the enemy is within striking range.
+SAY NAME1 ~大盾~
+SAY NAME2 ~狰狞之颚壁垒~
+SAY DESC ~据说这面威武的盾曾由提尔在动荡之年下凡时的化身携带。这说法是真是假——尤其考虑到那位神伤残的手——广有争议，可对盾的效用却无人质疑。它的尺寸让持盾者举起时几乎免疫远程攻击，它的重量又使它能在敌人进入打击距离时充当有效的破城锤。
 
-STATISTICS:
 
-Charge abilities:
- - Physical Mirror once per day
 
-Equipped abilities:
- - Armor Class: +3, an extra +5 vs. missiles
- - When the wielder is hit in melee range, 20% chance to deal 2d6 crushing damage to the attacker and stun them for 1 round on a failed save vs. breath.
+属性：
 
-Requires:
- 13 Strength
 
-Weight: 12~
+
+充能能力：
+
+ - 每日一次“物理镜像”
+
+
+
+装备能力：
+
+ - 护甲等级：+3，对远程额外 +5
+
+ - 持盾者在近战范围内被命中时，有 20% 几率对攻击者造成 2d6 点钝击伤害，并在其吐息豁免失败时使其昏迷 1 轮。
+
+
+
+需求：
+
+ 力量 13
+
+
+
+重量：12~
 
 COPY ~drake/items/sod/c02dhelm.itm~ ~override~
-SAY NAME1 ~Helmet~
-SAY NAME2 ~Helm of the Exalted~
-SAY DESC ~Fain the Foolhardy, a knight of the Order of the Radiant Heart, once wore this helmet during a campaign against a cadre of evil mages. During the battle, his companions were defeated in the battle, some driven mad by the mages' vile enchantments, until only he remained, held in stasis by magical force. With no voice to cry out with, he uttered a silent prayer to Tyr, whom responded by blessing his treasured helm with the power to break hostile enchantments. Freed from the mages' bindings, Fain raised his sword once more and slew them all, one by one, as he shrugged off each and every one of their spells with the blessings of his god.
+SAY NAME1 ~头盔~
+SAY NAME2 ~尊崇之盔~
+SAY DESC ~光辉之心骑士团的骑士“莽撞者”法因，曾在一场讨伐一伙邪恶法师的战役中戴着这顶头盔。战斗中，他的同伴一个个败下阵来，有些被法师的邪恶魔咒逼疯，最后只剩他一人，被魔法力量定在原地。他喊不出声，便向提尔默默祈祷，提尔回应了他，赐福他珍爱的头盔，使其有能力破除敌性附魔。挣脱法师束缚后，法因再次举剑，把他们一个个全杀了，凭他神的祝福挡开了他们的每一道法术。
 
-STATISTICS:
 
-Charge abilities:
- - Acclamation three times per day
 
-Equipped abilities:
- - Protects against critical hits
- - Saving Throws: +3
- - When helpless, 20% chance per round to cast Acclamation on self
+属性：
 
-Weight: 3~
+
+
+充能能力：
+
+ - 每日三次“喝彩”
+
+
+
+装备能力：
+
+ - 防致命一击
+
+ - 豁免检定：+3
+
+ - 无力状态时，每轮有 20% 几率对自身施放“喝彩”
+
+
+
+重量：3~
 
 COPY ~drake/items/sod/c02dhamm.itm~ ~override~
-SAY NAME1 ~Hammer~
-SAY NAME2 ~Fiend-Queller +3~
-SAY DESC ~This hammer seems to have some degree of awareness, as it glows with a silvery radiance when close to those of evil intent. However, its true power is unleashed when wielded against creatures of the Lower Planes, against which each swing smites with furious righteousness.
+SAY NAME1 ~战锤~
+SAY NAME2 ~屠魔 +3~
+SAY DESC ~这把锤子似乎有几分知觉，靠近心怀恶意的人时会泛起银白的光。可它真正的力量，是在对付下界生物时释放出来——每一击都以暴烈的正义重惩它们。
 
-STATISTICS:
 
-Combat abilities:
-- Deals 6 points of extra damage to fiends
 
-Equipped abilities:
-- Strength: +1
+属性：
 
-THAC0: +3
-Damage: 1d4+4 (crushing), +4 damage vs. evil creatures
-Speed Factor: 1
-Proficiency Type: War Hammer
-Type: One-handed
-Requires:
- 9 Strength
 
-Weight: 4~
 
-COPY ~drake/items/sod/c02dsw2h.itm~ ~override~
-SAY NAME1 ~Two-handed Sword~
-SAY NAME2 ~Blazing Justice +3~
-SAY DESC ~The favored weapon of Sir Elrik Redharbour, a veteran knight of the Order. Its burning red flames are said to seek those with evil in their hearts and burn their sins away with their flesh.
+战斗能力：
 
-STATISTICS:
+- 对邪魔额外造成 6 点伤害
 
-Equipped abilities:
-- Strength: +4
-- Armor Class: +4
 
-THAC0: +3
-Damage: 1d10+3 (slashing), 2d8+4 fire damage
-Speed Factor: 7
-Proficiency Type: Two-handed Sword
-Type: Two-handed
-Requires:
- 13 Strength
 
-Weight: 9~
+装备能力：
+
+- 力量：+1
+
+
+
+零级命中值：+3
+
+伤害：1d4+4（钝击），对邪恶生物额外 +4 伤害
+
+速度系数：1
+
+熟练类型：战锤
+
+类型：单手
+
+需求：
+
+ 力量 9
+
+
+
+重量：4~
+
+COPY ~双手剑~ ~override~
+SAY NAME1 ~双手剑~
+SAY NAME2 ~炽烈正义 +3~
+SAY DESC ~埃利克·红港爵士的受用兵器，他是骑士团的老练骑士。据说它燃烧的红焰会追索心中有恶的人，连同他们的血肉一起把罪烧净。
+
+
+
+属性：
+
+
+
+装备能力：
+
+- 力量：+4
+
+- 护甲等级：+4
+
+
+
+零级命中值：+3
+
+伤害：1d10+3（挥砍），外加 2d8+4 火焰伤害
+
+速度系数：7
+
+熟练类型：双手剑
+
+类型：双手
+
+需求：
+
+ 力量 13
+
+
+
+重量：9~
 
 // Creatures
 
@@ -284,61 +421,61 @@ COPY ~Drake/creatures/SoD/c02tomas.cre~ ~override/c02tomas.cre~
 WRITE_ASCII 0x248 ~c02tomas~  #8  // override
 WRITE_ASCII 0x2cc ~c02tomas~  #8  // dialogue
 WRITE_ASCII 0x280 ~c02tomas~ #32 // death variable
-SAY NAME1 ~Tomas~
-SAY NAME2 ~Squire Tomas~
+SAY NAME1 ~托马斯~
+SAY NAME2 ~侍从托马斯~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 COPY ~Drake/creatures/SoD/c02dknig.cre~ ~override/c02dkni1.cre~
 WRITE_ASCII 0x248 ~c02dknig~  #8  // override
 WRITE_ASCII 0x2cc ~c02dknig~  #8  // dialogue
 WRITE_ASCII 0x280 ~c02dkni1~ #32 // death variable
-SAY NAME1 ~Knight of the Order~
-SAY NAME2 ~Knight of the Order~
+SAY NAME1 ~骑士团骑士~
+SAY NAME2 ~骑士团骑士~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 COPY ~Drake/creatures/SoD/c02dknig.cre~ ~override/c02dkni2.cre~
 WRITE_ASCII 0x248 ~c02dknig~  #8  // override
 WRITE_ASCII 0x2cc ~c02dknig~  #8  // dialogue
 WRITE_ASCII 0x280 ~c02dkni2~ #32 // death variable
-SAY NAME1 ~Knight of the Order~
-SAY NAME2 ~Knight of the Order~
+SAY NAME1 ~骑士团骑士~
+SAY NAME2 ~骑士团骑士~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 COPY ~Drake/creatures/SoD/c02dknig.cre~ ~override/c02dkni3.cre~
 WRITE_ASCII 0x248 ~c02dknig~  #8  // override
 WRITE_ASCII 0x2cc ~c02dknig~  #8  // dialogue
 WRITE_ASCII 0x280 ~c02dkni3~ #32 // death variable
-SAY NAME1 ~Knight of the Order~
-SAY NAME2 ~Knight of the Order~
+SAY NAME1 ~骑士团骑士~
+SAY NAME2 ~骑士团骑士~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 COPY ~Drake/creatures/SoD/c02elrik.cre~ ~override/c02elrik.cre~
 WRITE_ASCII 0x248 ~c02elrik~  #8  // override
 WRITE_ASCII 0x2cc ~c02elrik~  #8  // dialogue
 WRITE_ASCII 0x280 ~c02elrik~ #32 // death variable
-SAY NAME1 ~Sir Elrik~
-SAY NAME2 ~Sir Elrik~
+SAY NAME1 ~埃利克爵士~
+SAY NAME2 ~埃利克爵士~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
-SAY INITIAL_MEETING ~By all that's holy!~ [ELTAN04]
+SAY INITIAL_MEETING ~以一切神圣之名！~ [ELTAN04]
 SAY UNHAPPY_BREAKING_POINT ~~
-SAY BATTLE_CRY1 ~By all that's holy!~ [ELTAN04]
-SAY BATTLE_CRY2 ~By all that's holy!~ [ELTAN04]
-SAY BATTLE_CRY3 ~By all that's holy!~ [ELTAN04]
+SAY BATTLE_CRY1 ~以一切神圣之名！~ [ELTAN04]
+SAY BATTLE_CRY2 ~以一切神圣之名！~ [ELTAN04]
+SAY BATTLE_CRY3 ~以一切神圣之名！~ [ELTAN04]
 SAY DAMAGE ~~ [ELTAN08]
 SAY DYING ~~ [ELTAN09]
-SAY SELECT_COMMON1 ~Honorable men are hard to come by.~ [ELTAN05]
-SAY SELECT_COMMON2 ~Honorable men are hard to come by.~ [ELTAN05]
-SAY SELECT_COMMON3 ~Honorable men are hard to come by.~ [ELTAN05]
-SAY SELECT_COMMON4 ~Honorable men are hard to come by.~ [ELTAN05]
-SAY SELECT_COMMON5 ~Honorable men are hard to come by.~ [ELTAN05]
-SAY SELECT_COMMON6 ~Honorable men are hard to come by.~ [ELTAN05]
+SAY SELECT_COMMON1 ~可敬之人难得。~ [ELTAN05]
+SAY SELECT_COMMON2 ~可敬之人难得。~ [ELTAN05]
+SAY SELECT_COMMON3 ~可敬之人难得。~ [ELTAN05]
+SAY SELECT_COMMON4 ~可敬之人难得。~ [ELTAN05]
+SAY SELECT_COMMON5 ~可敬之人难得。~ [ELTAN05]
+SAY SELECT_COMMON6 ~可敬之人难得。~ [ELTAN05]
   
 COPY ~Drake/creatures/SoD/c02dorog.cre~ ~override~
-SAY NAME1 ~Orog Chieftain~
-SAY NAME2 ~Orog Chieftain~
+SAY NAME1 ~奥罗格酋长~
+SAY NAME2 ~奥罗格酋长~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 // STORE
 
 COPY ~Drake/stores/c02dshop.sto~ ~override~
-SAY 0xc ~Order of the Radiant Heart~
+SAY 0xc ~光辉之心骑士团~

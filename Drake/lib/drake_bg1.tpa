@@ -37,42 +37,42 @@ COPY ~Drake/creatures/C0Drake.cre~ ~override/C0Drake.cre~
   WRITE_ASCII 0x2cc ~C0Drake~ #8   //pre-joining dialogue file
   WRITE_ASCII 0X34 ~DrakeM~ #8   //small portrait
   WRITE_ASCII 0x3c ~DrakeL~ #8   //medium portrait
-  SAY BIO ~When asked about his past, DRAKE gives a sardonic laugh and responds that history would breathe easier if his past was left forgotten. A cleric of Tyr in his mid-thirties, second son of the Caulfield family, former ensign in the Amnian militia and, with a touch of irony when mentioning it, recruit of the Radiant Heart auxiliary, he considers himself 'that thing they can't get rid of' within the Order. He openly admits that his unorthodox views on the tenets of the Order as well as the distribution of justice makes him something of a social pariah with both his fellows of the Radiant Heart and his family, almost all of whom have a history of service within the Order. According to him, while him being stationed outside of Amn was officially a mission to root out evil that plagued the Sword Coast, he believes it was nothing more than a formal means of sending him away and allowing his superiors to forget about him. Such an assignment seems to be to his preference, however, as he believes justice is best served with the edge of a blade - or in his case, the head of a hammer.~
-  SAY MORALE ~No sense in fighting this one any longer!~ [C0DR001]
-  SAY HAPPY ~Not bad, not bad. You'd give any knight a run for his money.~ [C0DR002]
-  SAY UNHAPPY_ANNOYED ~I'll give you the benefit of the doubt this time, but watch yourself.~ [C0DR003]
-  SAY UNHAPPY_SERIOUS ~You're either hopelessly oblivious or utterly irredeemable. I pray you're the former.~ [C0DR004]
-  SAY UNHAPPY_BREAKING_POINT ~That's it. I'll need more than a few drinks to forget what I've seen. The next time we met, it'll be hammer first.~ [C0DR005]
-  SAY LEADER ~You're asking the wrong man for this. Seriously? You'd better not regret it.~ [C0DR006]
-  SAY TIRED ~What I wouldn't do for a hard drink and a soft bed right about now...~ [C0DR007]
-  SAY BORED ~I'm just about ready to piss myself, just like standing in attendance back at the Order. Might we get a move on?~ [C0DR008]
-  SAY BATTLE_CRY1 ~I'll bring you to judgment myself!~ [C0DR009]
-  SAY BATTLE_CRY2 ~You're just a dead man walking!~ [C0DR010]
-  SAY BATTLE_CRY3 ~Say your prayers while you still can!~ [C0DR011]
-  SAY BATTLE_CRY4 ~This one's on me!~ [C0DR012]
-  SAY BATTLE_CRY5 ~My hammer's waiting to meet your arse!~ [C0DR013]
-  SAY DAMAGE ~Oof!~ [C0DR014]
-  SAY DYING ~Ugh... damn it all...~ [C0DR015]
-  SAY HURT ~Agh... that all you got?~ [C0DR016]
-  SAY AREA_FOREST ~If I knew we'd be trekking through the forests, I'd have worn sturdier boots.~ [C0DR017]
-  SAY AREA_CITY ~Hawkers, foul odors, and cheap ale. Just the way I like it.~ [C0DR018]
-  SAY AREA_DUNGEON ~Watch your step. Fools rush in where angels fear to tread.~ [C0DR019]
-  SAY AREA_DAY ~The sun shines on above us, and I am again reminded that my armor still needs polishing.~ [C0DR020]
-  SAY AREA_NIGHT ~We could be getting drunk at a nice warm inn instead of lumbering about in the dark...~ [C0DR021]
-  SAY SELECT_COMMON1 ~Yeah?~ [C0DR022]
-  SAY SELECT_COMMON2 ~Need something?~ [C0DR023]
-  SAY SELECT_COMMON3 ~Give your orders.~ [C0DR024]
-  SAY SELECT_ACTION1 ~Sure, sure.~ [C0DR028]
-  SAY SELECT_ACTION2 ~Simple enough.~ [C0DR029]
-  SAY SELECT_ACTION3 ~On we march.~ [C0DR030]
-  SAY CRITICAL_HIT ~Ha! Looks like the scales favor *me*!~ [C0DR037]
-  SAY CRITICAL_MISS ~Tch... no one saw that.~ [C0DR038]	
-  SAY TARGET_IMMUNE ~No effect? Didn't see that one coming.~ [C0DR039]
-  SAY INVENTORY_FULL ~I'd need more than two hands for this junk. Get someone else to hold it.~ [C0DR040]
-  SAY SPELL_DISRUPTED ~Bloody hell!~ [C0DR041]
-  SAY SET_A_TRAP ~I pity the poor bastard who steps in this one.~ [C0DR042]
-  SAY HIDDEN_IN_SHADOWS ~Time to try a stealthy approach.~ [C0DR043]
-  SAY PICKED_POCKET ~Not very knightly, but nobody needs to know, eh?~ [C0DR044]
+  SAY BIO ~有人问起德雷克的过去时，他讥讽地笑一声，回答说要是他的过去被忘掉，历史会呼吸得更顺畅。他是提尔的祭司，三十五六岁，考尔菲尔德家次子，曾是安姆民兵的少尉，说起来还带着一丝自嘲地补充，是光辉之心辅助队的新募。他自认在骑士团里是“他们甩不掉的那号东西”。他坦承自己对骑士团教条和正义分配的非正统看法，让他成了光辉之心同袍和家里人眼里的社会弃儿，而他家人几乎个个都有在骑士团服役的履历。据他说，他驻在安姆之外，官方说法是去铲除祸害剑湾的邪恶，可他相信那不过是把他打发走、让上司忘掉他的正式手段。不过这样的差事似乎正合他意，因为他相信正义最好用刀刃来施行——或者，在他这儿，用锤头。~
+  SAY MORALE ~跟这家伙再打下去没道理了！~ [C0DR001]
+  SAY HAPPY ~不错，不错。你够跟任何骑士较量的。~ [C0DR002]
+  SAY UNHAPPY_ANNOYED ~这回我先往好处想，可你自己当心。~ [C0DR003]
+  SAY UNHAPPY_SERIOUS ~你要么是糊涂得没救了，要么是烂得没救了。我祈祷你是前者。~ [C0DR004]
+  SAY UNHAPPY_BREAKING_POINT ~够了。我得喝不止几杯才能忘掉我看到的。下回再见，我先动锤子。~ [C0DR005]
+  SAY LEADER ~这事你问错人了。认真的？你最好别后悔。~ [C0DR006]
+  SAY TIRED ~这会儿我还有什么不肯换个烈酒和软床的……~ [C0DR007]
+  SAY BORED ~我快憋尿憋出来了，跟当年在骑士团当班站桩一样。我们能不能走快些？~ [C0DR008]
+  SAY BATTLE_CRY1 ~我要亲手把你送上审判！~ [C0DR009]
+  SAY BATTLE_CRY2 ~你不过是个还在走路的死人！~ [C0DR010]
+  SAY BATTLE_CRY3 ~趁还能，把祷词念了吧！~ [C0DR011]
+  SAY BATTLE_CRY4 ~这杯算我的！~ [C0DR012]
+  SAY BATTLE_CRY5 ~我的锤子等着亲你屁股！~ [C0DR013]
+  SAY DAMAGE ~哎哟！~ [C0DR014]
+  SAY DYING ~呃……该死……~ [C0DR015]
+  SAY HURT ~啊……你就这点本事？~ [C0DR016]
+  SAY AREA_FOREST ~早知道要在林子里跋涉，我就该穿双结实点的靴子。~ [C0DR017]
+  SAY AREA_CITY ~小贩、臭气、便宜麦酒。正合我意。~ [C0DR018]
+  SAY AREA_DUNGEON ~脚下留神。傻子才冲进天使都不敢踏的地方。~ [C0DR019]
+  SAY AREA_DAY ~太阳照在我们头顶，我又想起我的铠甲还得擦。~ [C0DR020]
+  SAY AREA_NIGHT ~我们本可以在暖和的旅店里喝醉，而不是在黑暗里笨重地走……~ [C0DR021]
+  SAY SELECT_COMMON1 ~嗯？~ [C0DR022]
+  SAY SELECT_COMMON2 ~有事吗？~ [C0DR023]
+  SAY SELECT_COMMON3 ~下命令吧。~ [C0DR024]
+  SAY SELECT_ACTION1 ~当然，当然。~ [C0DR028]
+  SAY SELECT_ACTION2 ~简单得很。~ [C0DR029]
+  SAY SELECT_ACTION3 ~我们走。~ [C0DR030]
+  SAY CRITICAL_HIT ~哈！看来天平偏*我*这边！~ [C0DR037]
+  SAY CRITICAL_MISS ~啧……没人看见。~ [C0DR038]	
+  SAY TARGET_IMMUNE ~没效果？这可没料到。~ [C0DR039]
+  SAY INVENTORY_FULL ~这破烂我得有两只以上的手才拿得住。找别人去搬。~ [C0DR040]
+  SAY SPELL_DISRUPTED ~该死的！~ [C0DR041]
+  SAY SET_A_TRAP ~我同情那踩上这玩意儿的可怜混蛋。~ [C0DR042]
+  SAY HIDDEN_IN_SHADOWS ~该试试潜行了。~ [C0DR043]
+  SAY PICKED_POCKET ~不太像骑士，可没人需要知道，对吧？~ [C0DR044]
   WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~OHTYR~))
   
   COMPILE EVAL ~Drake/Dialogue/C0Drake.d~
@@ -103,16 +103,16 @@ COPY ~Drake/creatures/c0dstone.cre~ ~override/c0dstone.cre~
 WRITE_ASCII 0x248 ~c0dstone~  #8  // override
 WRITE_ASCII 0x2cc ~c0dstone~  #8  // dialogue
 WRITE_ASCII 0x280 ~c0dstone~ #32 // death variable
-SAY NAME1 ~Stoneheart~
-SAY NAME2 ~Stoneheart~
+SAY NAME1 ~石心~
+SAY NAME2 ~石心~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 
 COPY_EXISTING ~slythe.cre~ ~override/c0dthf01.cre~
 WRITE_ASCII 0x2cc ~c0dthf01~  #8  // dialogue
 WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf01~ #8
 WRITE_ASCII 0x280 ~c0dthf01~ #32 // death variable
-SAY NAME1 ~Aiden Vail~
-SAY NAME2 ~Aiden Vail~
+SAY NAME1 ~艾登·韦尔~
+SAY NAME2 ~艾登·韦尔~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 SAY INITIAL_MEETING ~~
 SAY UNHAPPY_BREAKING_POINT ~~
@@ -141,21 +141,21 @@ COPY_EXISTING ~nimbul.cre~ ~override/c0dthf02.cre~
 WRITE_ASCII 0x2cc ~c0dthf02~  #8  // dialogue
 WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf02~ #8
 WRITE_ASCII 0x280 ~c0dthf02~ #32 // death variable
-SAY NAME1 ~Gideon~
-SAY NAME2 ~Gideon~
+SAY NAME1 ~吉迪恩~
+SAY NAME2 ~吉迪恩~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
-SAY INITIAL_MEETING ~Hi, friend.~ [GENMG06]
+SAY INITIAL_MEETING ~你好，朋友。~ [GENMG06]
 SAY UNHAPPY_BREAKING_POINT ~~
-SAY BATTLE_CRY1 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
-SAY BATTLE_CRY2 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
-SAY BATTLE_CRY3 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
+SAY BATTLE_CRY1 ~抱歉，朋友，你跟下头有个约。~ [GENMT05]
+SAY BATTLE_CRY2 ~抱歉，朋友，你跟下头有个约。~ [GENMT05]
+SAY BATTLE_CRY3 ~抱歉，朋友，你跟下头有个约。~ [GENMT05]
 SAY DAMAGE ~~
 SAY DYING ~~
-SAY SELECT_COMMON1 ~Hi, friend.~ [GENMG06]
-SAY SELECT_COMMON2 ~Hi, friend.~ [GENMG06]
-SAY SELECT_COMMON3 ~Hi, friend.~ [GENMG06]
-SAY SELECT_COMMON4 ~Hi, friend.~ [GENMG06]
-SAY SELECT_COMMON5 ~Hi, friend.~ [GENMG06]
+SAY SELECT_COMMON1 ~你好，朋友。~ [GENMG06]
+SAY SELECT_COMMON2 ~你好，朋友。~ [GENMG06]
+SAY SELECT_COMMON3 ~你好，朋友。~ [GENMG06]
+SAY SELECT_COMMON4 ~你好，朋友。~ [GENMG06]
+SAY SELECT_COMMON5 ~你好，朋友。~ [GENMG06]
 REMOVE_CRE_ITEM ~ring21~
 REMOVE_CRE_ITEM ~boot04~
 REMOVE_CRE_ITEM ~scrl6d~
@@ -167,8 +167,8 @@ COPY_EXISTING ~marek.cre~ ~override/c0dthf03.cre~
 WRITE_ASCII 0x2cc ~c0dthf03~  #8  // dialogue
 WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf03~ #8
 WRITE_ASCII 0x280 ~c0dthf03~ #32 // death variable
-SAY NAME1 ~Klaus~
-SAY NAME2 ~Klaus~
+SAY NAME1 ~克劳斯~
+SAY NAME2 ~克劳斯~
   WRITE_ASCII 0X34 ~~ #8   //small portrait
 REMOVE_CRE_ITEM ~dagg03~
 REMOVE_CRE_ITEM ~COMPB08~
@@ -187,61 +187,103 @@ ADD_JOURNAL TITLE (@0) @1 @2 USING ~Drake/translations/english/drake.tra~
 // Items
 
 COPY ~Drake/items/c0dsw1h.itm~ ~override~
-SAY NAME1 ~Long Sword~
-SAY NAME2 ~Venomous Edge +2~
-SAY DESC ~Aiden Vail was as much a skilled fencer as he was a master thief, but the secret to his success within the ranks of the Shadow Thieves can be attributed to this magical sword. Runes inlaid across the grip heighten the wielder's senses, making them aware of hidden assaults. Additionally, the blade is coated with a slow-acting yet potent venom, no doubt to give Vail a greater edge in combat.
+SAY NAME1 ~长剑~
+SAY NAME2 ~毒锋 +2~
+SAY DESC ~艾登·韦尔既是老练的剑客，也是手段高明的盗贼，但他在影贼内部得以出头的秘密，可以归功于这把魔法长剑。剑柄上镶嵌的符文能强化持握者的感官，使其察觉暗藏的袭击。此外，剑刃上涂着一层发作缓慢却极猛烈的毒药，无疑是要让韦尔在战斗中多一分优势。
 
-STATISTICS:
 
-Equipped abilities:
- - Dexterity: +1
- - Immunity to backstab
- - 1 extra attack per round (Thieves only)
 
-Combat abilities:
- - Hit target suffers 1 point of poison damage per round for 5 rounds (Save vs. Poison at -2 negates)
+属性：
 
-THAC0: +2
-Damage: 1d8+2, +2 poison damage
-Damage type: Slashing
-Speed Factor: 3
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 6 Strength
 
-Weight: 3~
+
+装备能力：
+
+ - 敏捷：+1
+
+ - 免疫背刺
+
+ - 每轮额外 1 次攻击（仅盗贼）
+
+
+
+战斗能力：
+
+ - 命中的目标每轮受 1 点毒素伤害，持续 5 轮（毒素豁免 -2 可免）
+
+
+
+零级命中值：+2
+
+伤害：1d8+2，外加 2 点毒素伤害
+
+伤害类型：挥砍
+
+速度系数：3
+
+熟练类型：长剑
+
+类型：单手
+
+需求：
+
+ 力量 6
+
+
+
+重量：3~
 
 COPY ~Drake/items/c0dring.itm~ ~override~
-SAY NAME1 ~Ring~
-SAY NAME2 ~Night's Ring~
-SAY DESC ~A treasured item for rogues and plunderers, this magical ring is capable of bestowing even the most inept thief with the skills of a master, as well as surrounding them with a shroud which protects them from means of magical detection.
+SAY NAME1 ~戒指~
+SAY NAME2 ~暗夜之戒~
+SAY DESC ~对盗贼与掠夺者而言是件珍品，这枚魔法戒指能让最笨拙的窃贼具备大师的手艺，还能在持有者周围罩上一层庇护，使其免遭魔法侦测。
 
-STATISTICS:
 
-Equipped abilities:
- - Open Locks: +25%
- - Pick Pockets: +25%
- - Find Traps: +25%
- - Non-detection
+
+属性：
+
+
+
+装备能力：
+
+ - 开锁：+25%
+
+ - 扒窃：+25%
+
+ - 侦测陷阱：+25%
+
+ - 不可侦测
+
  
-Weight: 0~
+
+重量：0~
  
 COPY ~Drake/items/c0dlock.itm~ ~override~
-SAY NAME1 ~Locket~
-SAY NAME2 ~Caulfield Locket~
-SAY DESC ~This brass metal locket has been a treasured family heirloom within the Caulfield family for several generations. Although its monetary value seems negligible at best, it seems to have picked up some enchantments over the decades that it has been carried.
+SAY NAME1 ~吊坠~
+SAY NAME2 ~考尔菲尔德吊坠~
+SAY DESC ~这只黄铜吊坠在考尔菲尔德家传了好几代，是件珍视的传家宝。它的金钱价值充其量微不足道，可随人携带几十年，似乎也沾上了些附魔。
 
-A hand-drawn portrait of a younger Drake, enchanted to never fade, sits in the center of the locket when opened.
 
-STATISTICS:
 
-Equipped abilities:
- - Luck: +1
- - THAC0: +1 (melee only)
- - Missile Damage Resistance: +25%
+打开吊坠，中间嵌着一幅手绘的德雷克年轻时肖像，被施了永不褪色的法术。
+
+
+
+属性：
+
+
+
+装备能力：
+
+ - 幸运：+1
+
+ - 零级命中值：+1（仅近战）
+
+ - 远程伤害抗性：+25%
+
  
-Weight: 1~
+
+重量：1~
 
 // SPELLS
 
@@ -276,41 +318,41 @@ END
 // Aura-Glam
 ACTION_IF MOD_IS_INSTALLED ~SETUP-GLAMNPCPACK.TP2~ ~0~
 THEN BEGIN
-  PRINT ~Adding crossmod banters between Drake and Glam's NPC Pack~
+  PRINT ~正在添加德雷克与 Glam NPC Pack 的 crossmod 闲聊~
 COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialogue/crossmod/glamvrock.d~
 END
 
 // Drake-Sirene
 ACTION_IF FILE_EXISTS_IN_GAME ~bc0siren.dlg~
 THEN BEGIN
-  PRINT ~Adding crossmod banters between Drake and Sirene~
+  PRINT ~正在添加德雷克与西瑞妮的 crossmod 闲聊~
 COMPILE ~Drake/dialogue/crossmod/sirene.d~
 END
 
 // Drake-White
 ACTION_IF FILE_EXISTS_IN_GAME ~V#1WHIB.dlg~
 THEN BEGIN
-  PRINT ~Adding crossmod banters between Drake and White~
+  PRINT ~正在添加德雷克与怀特的 crossmod 闲聊~
 COMPILE ~Drake/dialogue/crossmod/white.d~
 END
 
 // Drake-Verr
 ACTION_IF FILE_EXISTS_IN_GAME ~L#1VerrB.dlg~
 THEN BEGIN
-  PRINT ~Adding crossmod banters between Drake and Verr'Sza~
+  PRINT ~正在添加德雷克与维尔萨的 crossmod 闲聊~
 COMPILE ~Drake/dialogue/crossmod/verrsza.d~
 END
 
 // Drake-Aura
 ACTION_IF FILE_EXISTS_IN_GAME ~bc0aura.dlg~
 THEN BEGIN
-  PRINT ~Adding crossmod banters between Drake and Aura~
+  PRINT ~正在添加德雷克与奥拉的 crossmod 闲聊~
 COMPILE ~Drake/dialogue/crossmod/Aura.d~
 END
 
 // Drake-SotSC
 ACTION_IF MOD_IS_INSTALLED ~Setup-SotSC.tp2~ ~0~
 THEN BEGIN
-  PRINT ~Adding crossmod content between Drake and Shades of the Sword Coast~
+  PRINT ~正在添加德雷克与《剑湾之影》的 crossmod 内容~
 COMPILE ~Drake/dialogue/crossmod/sotsc.d~
 END

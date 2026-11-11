@@ -1,0 +1,316 @@
+APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
+  ~0x80101FEF CD_STATE_NOTVALID~
+  UNLESS ~CD_STATE_NOTVALID~
+  
+COPY ~Drake/areas~ ~override~
+COPY ~Drake/audio~ ~override~
+COPY ~Drake/items~ ~override~
+COPY ~Drake/Portraits~ ~override~
+
+EXTEND_TOP ~%Beregost_BurningWizard_L1_BCS%.bcs~ ~Drake/Scripts/ar3307.baf~ EVAL
+EXTEND_TOP ~%EBaldursGate_ElfsongTavern_L1_BCS%.bcs~ ~Drake/Scripts/ar0705.baf~ EVAL
+
+ACTION_IF GAME_IS ~EET~ THEN BEGIN
+
+COPY_EXISTING ~C0DAR1.ARE~ ~OVERRIDE~
+  WRITE_ASCII 0x8 BG5101
+  WRITE_ASCII 0x145 BG0225
+
+  END
+
+// Journal
+ADD_JOURNAL TITLE (@0) @1 @2 USING ~%MOD_FOLDER%/translations/english/journal.tra~
+LOAD_TRA ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
+OUTER_SET %Drake_BG1_Quest_1% = RESOLVE_STR_REF (@1)
+OUTER_SET %Drake_BG1_Quest_2% = RESOLVE_STR_REF (@2)
+LOAD_TRA ~%MOD_FOLDER%/translations/%LANGUAGE%/setup.tra~
+
+//AUDIO
+
+LAF HANDLE_AUDIO END
+
+COPY ~Drake/creatures/C0Drake.cre~ ~override/C0Drake.cre~
+  SAY NAME1 ~Drake~
+  SAY NAME2 ~Drake~
+  WRITE_ASCII 0x248 ~C0Drake~ #8  //override script
+  WRITE_ASCII 0x280 ~C0Drake~ #32  //DV
+  WRITE_ASCII 0x2cc ~C0Drake~ #8   //pre-joining dialogue file
+  WRITE_ASCII 0X34 ~DrakeM~ #8   //small portrait
+  WRITE_ASCII 0x3c ~DrakeL~ #8   //medium portrait
+  SAY BIO ~When asked about his past, DRAKE gives a sardonic laugh and responds that history would breathe easier if his past was left forgotten. A cleric of Tyr in his mid-thirties, second son of the Caulfield family, former ensign in the Amnian militia and, with a touch of irony when mentioning it, recruit of the Radiant Heart auxiliary, he considers himself 'that thing they can't get rid of' within the Order. He openly admits that his unorthodox views on the tenets of the Order as well as the distribution of justice makes him something of a social pariah with both his fellows of the Radiant Heart and his family, almost all of whom have a history of service within the Order. According to him, while him being stationed outside of Amn was officially a mission to root out evil that plagued the Sword Coast, he believes it was nothing more than a formal means of sending him away and allowing his superiors to forget about him. Such an assignment seems to be to his preference, however, as he believes justice is best served with the edge of a blade - or in his case, the head of a hammer.~
+  SAY MORALE ~No sense in fighting this one any longer!~ [C0DR001]
+  SAY HAPPY ~Not bad, not bad. You'd give any knight a run for his money.~ [C0DR002]
+  SAY UNHAPPY_ANNOYED ~I'll give you the benefit of the doubt this time, but watch yourself.~ [C0DR003]
+  SAY UNHAPPY_SERIOUS ~You're either hopelessly oblivious or utterly irredeemable. I pray you're the former.~ [C0DR004]
+  SAY UNHAPPY_BREAKING_POINT ~That's it. I'll need more than a few drinks to forget what I've seen. The next time we met, it'll be hammer first.~ [C0DR005]
+  SAY LEADER ~You're asking the wrong man for this. Seriously? You'd better not regret it.~ [C0DR006]
+  SAY TIRED ~What I wouldn't do for a hard drink and a soft bed right about now...~ [C0DR007]
+  SAY BORED ~I'm just about ready to piss myself, just like standing in attendance back at the Order. Might we get a move on?~ [C0DR008]
+  SAY BATTLE_CRY1 ~I'll bring you to judgment myself!~ [C0DR009]
+  SAY BATTLE_CRY2 ~You're just a dead man walking!~ [C0DR010]
+  SAY BATTLE_CRY3 ~Say your prayers while you still can!~ [C0DR011]
+  SAY BATTLE_CRY4 ~This one's on me!~ [C0DR012]
+  SAY BATTLE_CRY5 ~My hammer's waiting to meet your arse!~ [C0DR013]
+  SAY DAMAGE ~Oof!~ [C0DR014]
+  SAY DYING ~Ugh... damn it all...~ [C0DR015]
+  SAY HURT ~Agh... that all you got?~ [C0DR016]
+  SAY AREA_FOREST ~If I knew we'd be trekking through the forests, I'd have worn sturdier boots.~ [C0DR017]
+  SAY AREA_CITY ~Hawkers, foul odors, and cheap ale. Just the way I like it.~ [C0DR018]
+  SAY AREA_DUNGEON ~Watch your step. Fools rush in where angels fear to tread.~ [C0DR019]
+  SAY AREA_DAY ~The sun shines on above us, and I am again reminded that my armor still needs polishing.~ [C0DR020]
+  SAY AREA_NIGHT ~We could be getting drunk at a nice warm inn instead of lumbering about in the dark...~ [C0DR021]
+  SAY SELECT_COMMON1 ~Yeah?~ [C0DR022]
+  SAY SELECT_COMMON2 ~Need something?~ [C0DR023]
+  SAY SELECT_COMMON3 ~Give your orders.~ [C0DR024]
+  SAY SELECT_ACTION1 ~Sure, sure.~ [C0DR028]
+  SAY SELECT_ACTION2 ~Simple enough.~ [C0DR029]
+  SAY SELECT_ACTION3 ~On we march.~ [C0DR030]
+  SAY CRITICAL_HIT ~Ha! Looks like the scales favor *me*!~ [C0DR037]
+  SAY CRITICAL_MISS ~Tch... no one saw that.~ [C0DR038]	
+  SAY TARGET_IMMUNE ~No effect? Didn't see that one coming.~ [C0DR039]
+  SAY INVENTORY_FULL ~I'd need more than two hands for this junk. Get someone else to hold it.~ [C0DR040]
+  SAY SPELL_DISRUPTED ~Bloody hell!~ [C0DR041]
+  SAY SET_A_TRAP ~I pity the poor bastard who steps in this one.~ [C0DR042]
+  SAY HIDDEN_IN_SHADOWS ~Time to try a stealthy approach.~ [C0DR043]
+  SAY PICKED_POCKET ~Not very knightly, but nobody needs to know, eh?~ [C0DR044]
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~OHTYR~))
+  
+  COMPILE EVAL ~Drake/Dialogue/C0Drake.d~
+		  	 ~Drake/Dialogue/BC0Drake.d~
+  			 ~Drake/Dialogue/C0DrakeJ.d~
+  			 ~Drake/Dialogue/C0DrakeP.d~
+  			 ~Drake/Dialogue/C0DStone.d~
+  			 ~Drake/Dialogue/C0DThf01.d~
+  
+  COMPILE EVAL ~Drake/Scripts/C0Drake.baf~
+  			 ~Drake/Scripts/C0DrakeD.baf~
+  			 ~Drake/Scripts/C0DReset.baf~
+  			 ~Drake/Scripts/C0DStone.baf~
+  			 ~Drake/Scripts/C0DThf02.baf~
+  			 ~Drake/Scripts/C0DAR1.baf~
+  
+APPEND ~pdialog.2da~
+~C0Drake        C0DrakeP	C0DrakeJ	C0DrakeD~
+UNLESS ~C0Drake~
+
+APPEND ~interdia.2da~
+~C0Drake       BC0Drake C0DrakEE~
+UNLESS ~C0Drake~
+
+// Creatures
+
+COPY ~Drake/creatures/c0dstone.cre~ ~override/c0dstone.cre~
+WRITE_ASCII 0x248 ~c0dstone~  #8  // override
+WRITE_ASCII 0x2cc ~c0dstone~  #8  // dialogue
+WRITE_ASCII 0x280 ~c0dstone~ #32 // death variable
+SAY NAME1 ~Stoneheart~
+SAY NAME2 ~Stoneheart~
+  WRITE_ASCII 0X34 ~~ #8   //small portrait
+
+COPY_EXISTING ~slythe.cre~ ~override/c0dthf01.cre~
+WRITE_ASCII 0x2cc ~c0dthf01~  #8  // dialogue
+WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf01~ #8
+WRITE_ASCII 0x280 ~c0dthf01~ #32 // death variable
+SAY NAME1 ~Aiden Vail~
+SAY NAME2 ~Aiden Vail~
+  WRITE_ASCII 0X34 ~~ #8   //small portrait
+SAY INITIAL_MEETING ~~
+SAY UNHAPPY_BREAKING_POINT ~~
+SAY BATTLE_CRY1 ~~
+SAY BATTLE_CRY2 ~~
+SAY BATTLE_CRY3 ~~
+SAY DAMAGE ~~
+SAY DYING ~~
+SAY SELECT_COMMON1 ~~
+SAY SELECT_COMMON2 ~~
+SAY SELECT_COMMON3 ~~
+SAY SELECT_COMMON4 ~~
+SAY SELECT_COMMON5 ~~
+REMOVE_CRE_ITEM ~scrl2k~
+REMOVE_CRE_ITEM ~misc78~
+REMOVE_CRE_ITEM ~clck06~
+REMOVE_CRE_ITEM ~xbow04~
+REMOVE_CRE_ITEM ~sw1h10~
+REMOVE_CRE_ITEM ~leat04~
+REMOVE_CRE_ITEM ~mage04~
+ADD_CRE_ITEM ~leat08~ #0 #0 #0 ~NONE~ ~armor~
+ADD_CRE_ITEM ~c0dsw1h~ #0 #0 #0 ~NONE~ ~weapon1~
+ADD_CRE_ITEM ~dagg15~ #0 #0 #0 ~NONE~ ~shield~
+
+COPY_EXISTING ~nimbul.cre~ ~override/c0dthf02.cre~
+WRITE_ASCII 0x2cc ~c0dthf02~  #8  // dialogue
+WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf02~ #8
+WRITE_ASCII 0x280 ~c0dthf02~ #32 // death variable
+SAY NAME1 ~Gideon~
+SAY NAME2 ~Gideon~
+  WRITE_ASCII 0X34 ~~ #8   //small portrait
+SAY INITIAL_MEETING ~Hi, friend.~ [GENMG06]
+SAY UNHAPPY_BREAKING_POINT ~~
+SAY BATTLE_CRY1 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
+SAY BATTLE_CRY2 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
+SAY BATTLE_CRY3 ~Sorry, friend, but you've got a date down under.~ [GENMT05]
+SAY DAMAGE ~~
+SAY DYING ~~
+SAY SELECT_COMMON1 ~Hi, friend.~ [GENMG06]
+SAY SELECT_COMMON2 ~Hi, friend.~ [GENMG06]
+SAY SELECT_COMMON3 ~Hi, friend.~ [GENMG06]
+SAY SELECT_COMMON4 ~Hi, friend.~ [GENMG06]
+SAY SELECT_COMMON5 ~Hi, friend.~ [GENMG06]
+REMOVE_CRE_ITEM ~ring21~
+REMOVE_CRE_ITEM ~boot04~
+REMOVE_CRE_ITEM ~scrl6d~
+REMOVE_CRE_ITEM ~ax1h04~
+REMOVE_CRE_ITEM ~scrl3b~
+ADD_CRE_ITEM ~chan13~ #0 #0 #0 ~NONE~ ~armor~
+
+COPY_EXISTING ~marek.cre~ ~override/c0dthf03.cre~
+WRITE_ASCII 0x2cc ~c0dthf03~  #8  // dialogue
+WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0dthf03~ #8
+WRITE_ASCII 0x280 ~c0dthf03~ #32 // death variable
+SAY NAME1 ~Klaus~
+SAY NAME2 ~Klaus~
+  WRITE_ASCII 0X34 ~~ #8   //small portrait
+REMOVE_CRE_ITEM ~dagg03~
+REMOVE_CRE_ITEM ~COMPB08~
+REMOVE_CRE_ITEM ~AROW01~
+REMOVE_CRE_ITEM ~BOW08~
+REMOVE_CRE_ITEM ~BOW08~
+ADD_CRE_ITEM ~dagg16~ #40 #0 #0 ~NONE~ ~weapon1~
+ADD_CRE_ITEM ~brac03~ #40 #0 #0 ~NONE~ ~gloves~
+ADD_CRE_ITEM ~ring06~ #40 #0 #0 ~NONE~ ~lring~
+ADD_CRE_ITEM ~c0dring~ #40 #0 #0 ~NONE~ ~rring~
+
+// JOURNAL
+
+ADD_JOURNAL TITLE (@0) @1 @2 USING ~Drake/translations/english/drake.tra~
+
+// Items
+
+COPY ~Drake/items/c0dsw1h.itm~ ~override~
+SAY NAME1 ~Long Sword~
+SAY NAME2 ~Venomous Edge +2~
+SAY DESC ~Aiden Vail was as much a skilled fencer as he was a master thief, but the secret to his success within the ranks of the Shadow Thieves can be attributed to this magical sword. Runes inlaid across the grip heighten the wielder's senses, making them aware of hidden assaults. Additionally, the blade is coated with a slow-acting yet potent venom, no doubt to give Vail a greater edge in combat.
+
+STATISTICS:
+
+Equipped abilities:
+ - Dexterity: +1
+ - Immunity to backstab
+ - 1 extra attack per round (Thieves only)
+
+Combat abilities:
+ - Hit target suffers 1 point of poison damage per round for 5 rounds (Save vs. Poison at -2 negates)
+
+THAC0: +2
+Damage: 1d8+2, +2 poison damage
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+
+COPY ~Drake/items/c0dring.itm~ ~override~
+SAY NAME1 ~Ring~
+SAY NAME2 ~Night's Ring~
+SAY DESC ~A treasured item for rogues and plunderers, this magical ring is capable of bestowing even the most inept thief with the skills of a master, as well as surrounding them with a shroud which protects them from means of magical detection.
+
+STATISTICS:
+
+Equipped abilities:
+ - Open Locks: +25%
+ - Pick Pockets: +25%
+ - Find Traps: +25%
+ - Non-detection
+ 
+Weight: 0~
+ 
+COPY ~Drake/items/c0dlock.itm~ ~override~
+SAY NAME1 ~Locket~
+SAY NAME2 ~Caulfield Locket~
+SAY DESC ~This brass metal locket has been a treasured family heirloom within the Caulfield family for several generations. Although its monetary value seems negligible at best, it seems to have picked up some enchantments over the decades that it has been carried.
+
+A hand-drawn portrait of a younger Drake, enchanted to never fade, sits in the center of the locket when opened.
+
+STATISTICS:
+
+Equipped abilities:
+ - Luck: +1
+ - THAC0: +1 (melee only)
+ - Missile Damage Resistance: +25%
+ 
+Weight: 1~
+
+// SPELLS
+
+COPY_EXISTING ~ohtyr1.spl~ ~override~
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 141
+	  target = 2
+	  timing = 1
+	  parameter2 = 12
+END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 141
+	  target = 2
+	  timing = 1
+	  parameter2 = 14
+END
+
+COPY_EXISTING ~ohtyr2.spl~ ~override~
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 215
+	  target = 2
+	  timing = 0
+	  duration = 1
+	  parameter2 = 1
+	STR_VAR
+	  resource = ICPRAYI
+END
+
+// Aura-Glam
+ACTION_IF MOD_IS_INSTALLED ~SETUP-GLAMNPCPACK.TP2~ ~0~
+THEN BEGIN
+  PRINT ~Adding crossmod banters between Drake and Glam's NPC Pack~
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/dialogue/crossmod/glamvrock.d~
+END
+
+// Drake-Sirene
+ACTION_IF FILE_EXISTS_IN_GAME ~bc0siren.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod banters between Drake and Sirene~
+COMPILE ~Drake/dialogue/crossmod/sirene.d~
+END
+
+// Drake-White
+ACTION_IF FILE_EXISTS_IN_GAME ~V#1WHIB.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod banters between Drake and White~
+COMPILE ~Drake/dialogue/crossmod/white.d~
+END
+
+// Drake-Verr
+ACTION_IF FILE_EXISTS_IN_GAME ~L#1VerrB.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod banters between Drake and Verr'Sza~
+COMPILE ~Drake/dialogue/crossmod/verrsza.d~
+END
+
+// Drake-Aura
+ACTION_IF FILE_EXISTS_IN_GAME ~bc0aura.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod banters between Drake and Aura~
+COMPILE ~Drake/dialogue/crossmod/Aura.d~
+END
+
+// Drake-SotSC
+ACTION_IF MOD_IS_INSTALLED ~Setup-SotSC.tp2~ ~0~
+THEN BEGIN
+  PRINT ~Adding crossmod content between Drake and Shades of the Sword Coast~
+COMPILE ~Drake/dialogue/crossmod/sotsc.d~
+END

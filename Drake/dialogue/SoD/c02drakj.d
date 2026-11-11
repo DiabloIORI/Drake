@@ -3,741 +3,741 @@ BEGIN C02DRAKJ
 // Dialogue
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",2)~ THEN C02DRAKJ t1
-~Things have really escalated. A city of leaders depending on a single person to solve their troubles. What do you think of that, <CHARNAME>?~
+~事情真是升级得厉害。一城的长官都指望一个人解决他们的麻烦。你怎么看，<CHARNAME>？~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-++ ~Not good. It's a rather heavy burden to bear.~ + t1.1
-++ ~I think that the reward I get had better be worth it.~ + t1.2
-++ ~*shrug* At this point I'm used to carrying others' burdens. It's nothing.~ + t1.3
-++ ~I think you should be quiet and follow. I'm not interested in small talk.~ + t1.0
+++ ~不太好。这担子挺沉。~ + t1.1
+++ ~我觉得我拿的报酬最好对得起这份苦。~ + t1.2
+++ ~*耸肩* 到这份上，我习惯扛别人的担子了。不算什么。~ + t1.3
+++ ~我看你该安静点，跟着走。我对闲聊没兴趣。~ + t1.0
 
 CHAIN C02DRAKJ t1.0
-~Yes, I'm sure you need the time to think about your current situation. Have it your way.~
+~是，我确信你需要时间想想眼下的处境。随你。~
 EXIT
 
 CHAIN C02DRAKJ t1.1
-~I'd imagine. Just make sure it doesn't topple you and pull you under.~
+~我想也是。只是确保它别把你压翻、拖下去。~
 EXTERN C02DRAKJ t1.4
 
 CHAIN C02DRAKJ t1.2
-~I'm sure that burden you carry with you right now will pay off its weight in gold eventually. But will that really satisfy you?~
+~我确信你现在扛的这份担子，早晚会以金子般的分量回报你。可那样真能满足你吗？~
 EXTERN C02DRAKJ t1.4
 
 CHAIN C02DRAKJ t1.3
-~If you really mean what you say, then I'm impressed. And pity you. Don't take it badly though. Not many would be able to shoulder so much for so many.~
+~你要真是这么想的，那我佩服你。也同情你。不过别往坏处想。没多少人能替这么多人扛这么多。~
 EXTERN C02DRAKJ t1.4
 
 CHAIN C02DRAKJ t1.4
-~Call me insensitive, but I mostly feel relieved that it's not me.~
+~说我没心没肺也行，可我主要是庆幸那不是我。~
 END
-++ ~I'm not offended. I'd feel the same way.~ + t1.5
-++ ~What if it were? Would you be up for the task?~ + t1.6
-++ ~Just shut up. You have no idea the sort of things I have to bear with.~ + t1.0
+++ ~我没生气。换我也一样。~ + t1.5
+++ ~要是换成你呢？你担得起这差事？~ + t1.6
+++ ~闭嘴吧。你根本不知道我得忍受些什么。~ + t1.0
 
 CHAIN C02DRAKJ t1.5
-~Life's unfair sometimes, isn't it? Then again, somebody must live with the chains of commanding. If not you, then another, perhaps one less worthy. And what a disaster that'd be.~
+~生活有时不公道，是吧？可话说回来，总得有人背上统率的锁链。不是你，就是别人，也许还是不如你的那个。那将是多大的灾难。~
 = ~...~
-= ~*laugh* Perhaps that was going a bit far, but I did mean it when I said you were worthy. It may be a hard life you lead, but I think you might be the only one capable of it.~
+= ~*笑* 也许我说得过火了，可我说你配得上，是认真的。你这日子也许难熬，可我看你也许是唯一担得起的人。~
 END
-++ ~Why? What is so special about me?~ + t1.7
-++ ~I don't care what you think. I just expect your skills to be of use to me.~ + t1.8
+++ ~为什么？我有什么特别的？~ + t1.7
+++ ~我不管你怎想。我只指望你的本事对我有用。~ + t1.8
 
 CHAIN C02DRAKJ t1.6
-~I wouldn't know. Probably not. I'm not what you'd call a hero like my father, or my brother Gabriel, or even yourself... I've always been more comfortable with following orders than giving them.~
+~我不知道。大概不能。我不是你所谓的那种英雄，不像我父亲，不像我哥哥加布里尔，也不像你自己……我一向更习惯听命，不是下令。~
 EXTERN C02DRAKJ t1.5
 
 CHAIN C02DRAKJ t1.7
-~There's the most obvious case of your heritage, but I'm not talking about that for a change. It's your ability to bring the most unlikely of men - and women - to your cause. Your ability to lead is uncanny, much like my late brother.~
-= ~It's impressive. You've even gained my trust and respect as a companion, a soldier, and a knight-to-be. That's what so special about you.~
+~最明显的是你的血脉，可这回我不谈那个。是你把最不可能的人——男人也好女人也好——拉到你这边来的本事。你的统率才能非同寻常，很像我已故的哥哥。~
+= ~了不起。你甚至赢得了我作为同伴、作为士兵、作为准骑士的信任与敬重。这就是你特别的地方。~
 END
-+ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~You paint a pretty picture. What else do you think of me, I wonder...?~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t1.rom
-++ ~I don't see that as anything special. Anyone could do the same if they tried.~ + t1.9
-++ ~You're perceptive. I didn't expect it from your rough exterior.~ + t1.10
-++ ~Thank you for your words, Drake, but I think we should get moving.~ + t1.11
++ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~你说得真好听。我在想你还怎么看我的……？~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t1.rom
+++ ~我不觉得那有什么特别。谁肯下功夫都能做到。~ + t1.9
+++ ~你眼力不错。我没料到你那粗犷外表底下有这个。~ + t1.10
+++ ~谢你这番话，德雷克，可我看我们该走了。~ + t1.11
 
 CHAIN C02DRAKJ t1.8
-~Oh, make no mistake that I'll serve you as loyally as any self-respecting soldier would. But it seems you're less interesting than I thought. So be it.~
+~哦，别误会，我会像任何自重士兵那样忠心为你效力。只是你好像比我以为的没意思。那就这样吧。~
 DO ~SetGlobal("C0DrakeTalkStopped","GLOBAL",1)~ EXIT
 
 CHAIN C02DRAKJ t1.rom
-~*laugh* I think a lot of things. If its purely the complimentary words you're after, though, then I'll have to think harder...~
+~*笑* 我想的多了。不过你要纯粹想听好话，那我就得再费点脑子……~
 EXTERN C02DRAKJ t1.11
 
 CHAIN C02DRAKJ t1.9
-~Perhaps, but it's not so easy. It's a gift, one that I wasn't fortunate enough to have developed.~
+~也许吧，可没那么容易。那是天赋，我没那运气练出来。~
 EXTERN C02DRAKJ t1.11
 
 CHAIN C02DRAKJ t1.10
-~Heh. I'm really not. It's more than likely I'm just talking out of my posterior, in truth. But then again, maybe some of those lessons from my father had an effect after all.~
+~嘿。我真不是。说实话，多半是我在拿屁股说话。不过话说回来，也许我父亲那些教诲终究起了点作用。~
 EXTERN C02DRAKJ t1.11
 
 CHAIN C02DRAKJ t1.11
-~I think we've talked enough at this point anyhow. We've got a lot to do after all. Lead on, and I will follow.~
+~我看我们这会儿说够了。毕竟还有很多事要做。带路，我跟着。~
 EXIT
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",4)~ THEN C02DRAKJ t2
-~Fancy a meal before bedtime, <CHARNAME>? Come, take a seat. Supper's on me tonight.~
+~睡前想吃点东西吗，<CHARNAME>？来，坐下。今晚饭我请。~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-	++ ~You're cooking? Should I be excited or concerned?~ + t2.1
-	++ ~Don't mind if I do.~ + t2.2
-	++ ~I'd rather not. I'm not hungry.~ + t2.3
-	++ ~Thanks, but I'd rather go to bed.~ + t2.0
+	++ ~你下厨？我该兴奋还是担心？~ + t2.1
+	++ ~那我就不客气了。~ + t2.2
+	++ ~算了。我不饿。~ + t2.3
+	++ ~谢了，可我更想去睡。~ + t2.0
 
 CHAIN C02DRAKJ t2.0
-~Suit yourself. Enjoy your rest, <CHARNAME>. Maybe there'll be some left for you in the morning.~
+~随你。好好歇着，<CHARNAME>。也许早晨还能给你剩点。~
 DO ~RestParty()~ EXIT
 	
 CHAIN C02DRAKJ t2.1
-~Ha! I'll have you know that the chef's work is a secret talent of mine. Of course, given our current locale my ingredients are... less than optimal, but now's as good a time as any to experiment, wouldn't you say?~
+~哈！我得让你知道，厨子的活是我一门秘密本事。当然，看我们眼下这地方，我的材料……不算理想，可现在正是试验的好时候，你不觉得？~
 EXTERN C02DRAKJ t2.4
 
 CHAIN C02DRAKJ t2.2
-~Smart <MANWOMAN>. Well, admittedly it's been a while since I've tried my hand at this, and my ingredients are somewhat limited, but now's as good a time as any to experiment, wouldn't you say?~
+~聪明的<MANWOMAN>。嗯，我承认有些日子没动过手了，材料也有限，可现在正是试验的好时候，你不觉得？~
 EXTERN C02DRAKJ t2.4
 
 CHAIN C02DRAKJ t2.3
-~Well, take a seat anyways and keep me company. Cooking's less than exciting work when done on one's own. Especially with our limited ingredients, but now's as good a time as any to experiment, wouldn't you say?~
+~嗯，不管怎样先坐下陪陪我。一个人做饭没那么有意思。尤其材料有限，可现在正是试验的好时候，你不觉得？~
 EXTERN C02DRAKJ t2.4
 
 CHAIN C02DRAKJ t2.4
-~Nothing too special. Bagged a bear with a Command while we set up camp. Cut up a few turnips, added some salt, started a fire then threw it all in the pot.~
-= ~It's nothing better than you'd get from a quality tavern, but it's better than nothing. We may be doing soldiers' work right now, but there's time for taking a few liberties.~
+~没什么特别。扎营时我用一个命令术放倒了一头熊。切了几个萝卜，加了点盐，生起火，全扔锅里。~
+= ~不比好酒馆里弄的强，可总比没有好。我们现在也许干的是士兵的活，可总有工夫偷点自在。~
 END
-	++ ~Smells good. We haven't had a proper meal in days.~ + t2.5
-	++ ~Uh, turnips? Do turnips and bear meat usually go well together?~ + t2.6
-	++ ~I didn't think you had such talents, Drake. Where did you learn how to cook?~ + t2.7
-	++ ~I like a man who knows how to cook.~ + t2.8
-	++ ~You know, I don't think I'm that hungry. Good night, Drake.~ + t2.0
+	++ ~闻着不错。我们几天没正经吃过饭了。~ + t2.5
+	++ ~呃，萝卜？萝卜跟熊肉通常配吗？~ + t2.6
+	++ ~我没料到你有这本事，德雷克。你哪儿学的做饭？~ + t2.7
+	++ ~我喜欢会做饭的男人。~ + t2.8
+	++ ~你知道，我看我没那么饿。晚安，德雷克。~ + t2.0
 	
 CHAIN C02DRAKJ t2.5
-~My thoughts exactly. Trail rations are well and good, but nothing beats some hot savory stew during a cold evening, you know? Good for morale.~
+~我也这么想。行军口粮是好，可冷夜里没什么比一锅热腾腾的咸炖菜更实在，你知道吧？对士气有好处。~
 EXTERN C02DRAKJ t2.7
 
 CHAIN C02DRAKJ t2.6
-~*shrug* Who knows? Never tried it before. But if those crazy Jansens can be taken at their word, then turnips should go well with anything you can throw on top of a fire and then some.~
+~*耸肩* 谁知道？以前没试过。可要那些疯疯癫癫的詹森家的话能信，萝卜跟任何能扔到火上煮的东西都配，还配得更多。~
 EXTERN C02DRAKJ t2.7
 
 CHAIN C02DRAKJ t2.7
-~This is just one of the skills I picked up from my mother. When you have a family of five to take care of, it means a lot of work for her. I had to learn a few things to make sure her life even the slightest bit easier, like a dutiful son.~
+~这是我从我母亲那儿学来的一样本事。一家五口要照料，对她意味着一大堆活。我得像个体贴儿子那样学点东西，好让她日子哪怕轻松一丁点。~
 EXTERN C02DRAKJ t2.9
 
 CHAIN C02DRAKJ t2.8
-~Is that so? I'm glad my skills meet your approval. No, really, means a lot. Heh.~
+~是吗？我很高兴我的手艺得你认可。不，真的，这挺要紧。嘿。~
 EXTERN C02DRAKJ t2.9
 
 CHAIN C02DRAKJ t2.9
-~*sniff* Oh, would you look at that. Looks like the stew's all but ready. Would you care for a sample?~
+~*吸气* 哦，你瞧瞧。炖菜好像快好了。想尝一口吗？~
 END
-++ ~Hmm... could use some salt.~ + t2.10
-++ ~Not bad for a first attempt at bear-and-turnip stew.~ + t2.11
-++ ~Uh... I'll pass. I'd rather not go to bed with indigestion.~ + t2.12
+++ ~嗯……可以再放点盐。~ + t2.10
+++ ~头一回做熊肉萝卜炖菜，不算坏。~ + t2.11
+++ ~呃……算了。我可不想带着消化不良上床。~ + t2.12
 
 CHAIN C02DRAKJ t2.10
-~I'll keep that in mind for next time. Assuming, of course, there is a next time. No doubt we'll be living on dried fruit and biscuits again soon enough.~
+~我下次记着。当然，前提是有下次。无疑我们很快又要靠干果和饼子过活。~
 EXTERN C02DRAKJ t2.13
 
 CHAIN C02DRAKJ t2.11
-~My thoughts exactly. After all that time we spent living on tasteless matter, it's nice to have some flavor on my tongue again.~
+~我也这么想。过了那么久净吃没味道的东西，舌头上再有点滋味真好。~
 EXTERN C02DRAKJ t2.13
 
 CHAIN C02DRAKJ t2.12
-~Ha! You break my heart, <CHARNAME>. I'm sure it's not that bad. Surely it's no worse than dried fruits and leathery jerky.~
+~哈！你伤我心了，<CHARNAME>。我确信没那么糟。肯定不比干果和硬肉干差。~
 EXTERN C02DRAKJ t2.13
 
 CHAIN C02DRAKJ t2.13
-~Well, all things considered, this has been a better evening than most. Not only because of the food, of course. Present company is agreeable as well.~
-= ~Reminds me of the good old times in the Amnian military. This was when my brother Gabriel was still alive, of course. Soldiering... well, lost its appeal after he was gone.~
+~嗯，总的来说，今晚比大多数晚上都好。当然不全因为饭。眼前这位作伴的也挺顺眼。~
+= ~让我想起安姆军里的好日子。当然，那时我哥哥加布里尔还活着。当兵……他走了以后就没那么吸引人了。~
 END
-+ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~What about now, hmm? Hasn't my charming leadership captivated you yet?~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t2.rom
-++ ~Are you comparing me to your brother?~ + t2.14
-++ ~What about now, though? Still feel that way?~ + t2.15
-++ ~This has been a nice evening, but I think I'll go and get some rest now.~ + t2.16
++ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~那现在呢，嗯？我这迷人的统率还没把你迷住？~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t2.rom
+++ ~你是在拿我跟你哥哥比？~ + t2.14
+++ ~那现在呢？还是那么想？~ + t2.15
+++ ~今晚挺好，可我看我该去歇歇了。~ + t2.16
 
 CHAIN C02DRAKJ t2.rom
-~*laugh* Well, I wonder. You've got a ways to go yet, but... with the way you're going, I'll be falling head over heels for you soon enough.~
+~*笑* 嗯，我在想。你还差得远，可……照你这么下去，我很快就会为你神魂颠倒。~
 EXTERN C02DRAKJ t2.17
 
 CHAIN C02DRAKJ t2.14
-~Did my words come across that way to you? It was meant as a compliment, mind you. Gabe was one of a kind, or so I used to believe. A hero among heroes.~
+~我的话在你听来是那个意思？别误会，那是称赞。加布是独一无二的，至少我以前这么信。英雄中的英雄。~
 EXTERN C02DRAKJ t2.17
 
 CHAIN C02DRAKJ t2.15
-~Well... heh, hard to answer that one, to tell the truth. I suppose your leadership has helped recover some of that thrill.~
+~嗯……嘿，这个真难答。我看你的统率帮着找回了一些那种激动。~
 EXTERN C02DRAKJ t2.17
 
 CHAIN C02DRAKJ t2.16
-~Yes, you're probably right.~
+~是，你大概说得对。~
 EXTERN C02DRAKJ t2.17
 
 CHAIN C02DRAKJ t2.17
-~In any case, it's been a long day, and I think I shan't keep us from the rest we rightfully deserve. No one benefits from a fatigued leader, nor an equally-fatigued healer, after all. Good night.~
+~总之，今天漫长，我看我不该再拦着我们该得的休息。毕竟疲劳的领袖没好处，同样疲劳的医者也没好处。晚安。~
 DO ~RestParty()~ EXIT
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",6)~ THEN C02DRAKJ t3
-~A dragon. A *dragon*, <CHARNAME>. If nothing else, that alone has made this entire journey worth it.~
+~一条龙。一条*龙*，<CHARNAME>。别的不说，单这个就让这整趟路值了。~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-+ ~Dead("bdmorent")~ + ~It's a dead dragon now.~ + t3.4
-++ ~You like dragons, Drake?~ + t3.1
-++ ~It was quite a surprise, finding a creature like that here.~ + t3.2
-++ ~Whatever. We've got work to do.~ + t3.0
++ ~Dead("bdmorent")~ + ~现在是条死龙了。~ + t3.4
+++ ~德雷克，你喜欢龙？~ + t3.1
+++ ~在这儿撞见那么个东西，真是好大一个意外。~ + t3.2
+++ ~随便吧。我们有活要干。~ + t3.0
 
 CHAIN C02DRAKJ t3.0
-~A *dragon*, <CHARNAME>. How could you not be thrilled?~
+~一条*龙*，<CHARNAME>。你怎么能不激动？~
 EXIT
 
 CHAIN C02DRAKJ t3.1
-~Doesn't everyone? Majestic creatures, dragons. Legends given scales and flesh.~
+~谁不激动？龙是庄严的生灵。传说长出了鳞片和血肉。~
 END
 IF ~!Dead("bdmorent")~ THEN EXTERN C02DRAKJ t3.3
 IF ~Dead("bdmorent")~ THEN EXTERN C02DRAKJ t3.4
 
 CHAIN C02DRAKJ t3.2
-~I never would have imagined it myself before I walked into these caverns. But by Tyr, I certainly don't regret it.~
+~走进这些洞窟之前，我自己也想不到。可提尔在上，我一点不后悔。~
 END
 IF ~!Dead("bdmorent")~ THEN EXTERN C02DRAKJ t3.3
 IF ~Dead("bdmorent")~ THEN EXTERN C02DRAKJ t3.4
 
 CHAIN C02DRAKJ t3.3
-~I've been awed by the beasts ever since I was a little child. Perhaps my name is all to fitting, as well... heh. That may indeed have something to do with it.~
-= ~My father - Prelate Durand - once fought a band of dark elves with my brother as well as several other skilled knights. They pursued them into the Underdark, but the devious drow led them into the lair of not one, but a pair of deep dragons.~
-= ~The battle was fierce - or so they liked to tell. Scales and claws against steel, a clash worthy of song. My father's hammer and my brother's spear against some of the greatest beasts to walk Faerun. They were victorious in the end, or the few survivors of the encounter, at least. They carved the beasts' scales and forged them into mighty armor that my father has worn ever since.~
-= ~One of my favorite tales, that one. 'Twas the only one that had ever truly impressed me.~
+~我从小就被这种巨兽震住。也许我这名字也太贴切了……嘿。这大概也真有点关系。~
+= ~我父亲——杜兰德教长——曾跟我哥哥和几位老练骑士一起打过一伙黑暗精灵。他们追进幽暗地域，可狡诈的卓尔把他们引进的不是一条，而是一对深龙的巢穴。~
+= ~那仗打得凶——至少他们爱这么讲。鳞爪对钢铁，一场够写进歌里的厮杀。我父亲的锤子和我哥哥的矛，对上费伦最了不得的巨兽。最后他们赢了，至少那场遭遇里少数活下来的赢了。他们把巨兽的鳞剥下来，锻成我父亲从此一直穿着的威武铠甲。~
+= ~这是我最爱的故事之一。真正打动过我的，就只有那一个。~
 EXIT
 
 CHAIN C02DRAKJ t3.4
-~It's a great pity we had to slay it, though I suppose that is an achievement in itself. An evil beast it may have been, but still magnificent.~
+~可惜我们不得不杀了它，不过我看这本身也算一桩成就。它也许是邪恶的巨兽，可依然壮美。~
 EXTERN C02DRAKJ t3.3
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",8)~ THEN C02DRAKJ t4
-~Have you got any ink, <CHARNAME>?~
+~你有墨水吗，<CHARNAME>？~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-++ ~What for?~ + t4.1
-++ ~I do, in fact. Here you go.~ + t4.2
-++ ~Not the time, Drake.~ + t4.0
+++ ~干什么用？~ + t4.1
+++ ~我还真有。给你。~ + t4.2
+++ ~现在不是时候，德雷克。~ + t4.0
 
 CHAIN C02DRAKJ t4.0
-~That's too bad. I'll have to find some elsewhere.~
+~那真可惜。我只好另找。~
 EXIT
 
 CHAIN C02DRAKJ t4.1
-~I've been meaning to write home for a while now. Now that I look back, it really has been a long time. I made the journey here from Amn several months ago, and I haven't had the chance to hear from my family since all that time.~
+~我早就想往家里写信了。现在回头看，真的很久了。几个月前我从安姆一路到这儿，从那以后一直没机会听家里的消息。~
 END
-++ ~It must be nice to have people that think about you.~ + t4.3
-++ ~Writing home sounds like a good idea. What are you going to say?~ + t4.4
-++ ~Do it in your own time. I'm not interested in hearing about it.~ + t4.5
+++ ~有人惦记你，一定很好。~ + t4.3
+++ ~往家里写信听着是个好主意。你打算说什么？~ + t4.4
+++ ~你自己安排时间。我没兴趣听。~ + t4.5
 
 CHAIN C02DRAKJ t4.2
-~Thank you.~
+~谢谢你。~
 EXTERN C02DRAKJ t4.1
 
 CHAIN C02DRAKJ t4.3
-~I suppose so. I'll admit I do miss having my kid brother and little sister around. With my father's duties at the Order keeping him busy, it was always up to me and my mother to take care of them.~
+~我想是。我承认我确实想念我弟弟和妹妹在身边。父亲在骑士团的差事让他忙，照看他们一向是我和我母亲的事。~
 EXTERN C02DRAKJ t4.4
 
 CHAIN C02DRAKJ t4.4
-~I don't know what I'll write yet. There's a lot to catch up on... though I suspect one way or another, I'll have to write about the slave driver I'm working for...~
+~我还不知道写什么。要补的事很多……不过我估计不管怎样，我都得写写我伺候的这位奴隶监工……~
 END
-++ ~Slave driver?!~ + t4.6
-++ ~Ha ha. Very funny.~ + t4.6
-++ ~Am I really that demanding?~ + t4.6
-++ ~Write whatever you want. I don't care.~ + t4.5
+++ ~奴隶监工？！~ + t4.6
+++ ~哈哈。真逗。~ + t4.6
+++ ~我真那么苛刻？~ + t4.6
+++ ~你想写什么写什么。我不在乎。~ + t4.5
 
 CHAIN C02DRAKJ t4.5
-~Fair enough. Thanks for the ink regardless.~
+~也好。不管怎样，谢你的墨水。~
 EXIT
 
 CHAIN C02DRAKJ t4.6
-~I'm joking. You're not that bad, <CHARNAME>, don't worry. Though I will write about you. One way or another, you've become rather important, after all.~
+~我开玩笑。你没那么糟，<CHARNAME>，别担心。不过我会写你。毕竟不管怎样，你已经挺要紧了。~
 END
-+ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~Important as a whole, or to you personally, hmm?~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t4.7
-++ ~That's right. Make sure you get all my glory down on paper.~ + t4.8
-++ ~I don't think I'm all that special.~ + t4.9
-++ ~Whatever. Do whatever you like.~ + t4.5
++ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~是对大局要紧，还是对你个人要紧，嗯？~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t4.7
+++ ~对。务必把我的荣耀全记在纸上。~ + t4.8
+++ ~我不觉得自己有多特别。~ + t4.9
+++ ~随便。你爱怎样就怎样。~ + t4.5
 
 CHAIN C02DRAKJ t4.7
-~Well, let's not go that far just yet. Though you're not entirely wrong on either thought, let me just put it that way.~
+~嗯，先别扯那么远。虽说你这两个想法都不全错，我就这么说法吧。~
 EXTERN C02DRAKJ t4.10
 
 CHAIN C02DRAKJ t4.8
-~*laugh* I think you've got scores of bards and storytellers doing that for you already. I'm sure your tales have already spread all the way to Amn as we speak.~
+~*笑* 我看已经有一大群吟游诗人和说书人在替你干这个了。我确信你的故事这会儿已经传到安姆了。~
 EXTERN C02DRAKJ t4.10
 
 CHAIN C02DRAKJ t4.9
-~Don't think of your importance that way. People that depend on you want to see you as their hero and savior. The best you can do is at least act the part.~
+~别那样看自己的要紧。依赖你的人想把你当英雄、当救星。你顶多能做的就是至少演出那个样子。~
 EXTERN C02DRAKJ t4.10
 
 CHAIN C02DRAKJ t4.10
-~Ah, but we've spent so long talking about me here... I wonder, <CHARNAME>, what about you? Do you think about anything from Candlekeep? Do you still consider it home?~
+~啊，可我们在这儿说了这么久我的事……我在想，<CHARNAME>，你呢？你想烛堡的什么吗？你还把它当家吗？~
 END
-++ ~Without Gorion or Imoen, or a family to return to... why would I?~ + t4.11
-++ ~Sometimes. I'm not quite as attached to it as you are to your home though.~ + t4.11
-++ ~I think of Candlekeep every day. Even without a family, I still see it as the only home I've known.~ + t4.11
-++ ~None of your business, Drake.~ + t4.11
+++ ~没了戈里昂，没了伊莫恩，也没家可回……我为什么要想？~ + t4.11
+++ ~有时候。可我没你对你家那么眷恋。~ + t4.11
+++ ~我每天都想烛堡。就算没了家，我还是把它当我唯一知道的家。~ + t4.11
+++ ~不关你的事，德雷克。~ + t4.11
 
 CHAIN C02DRAKJ t4.11
-~Fair enough. Wherever you dream of returning to, if there is such a place... I think it's good to think of it now and again. Let's put this crusade to an end, then, and perhaps then we can both return home.~
+~也好。不管你梦想回哪儿，要真有那么个地方……我看时不时想一想是好事。那我们就把这场圣战了结，也许到时候我们都能回家。~
 EXIT
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",10)~ THEN C02DRAKJ t5
-~The crusaders... they call Caelar Argent a hero. More importantly, they believe in it. What do you think of that, <CHARNAME>?~
+~那些圣战军……他们管卡伊拉·阿金特叫英雄。更要紧的是，他们真信。你怎么看，<CHARNAME>？~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-++ ~They're morons.~ + t5.1
-++ ~I don't think anything. They're just people in my way.~ + t5.2
-++ ~Caelar inspires genuine loyalty in her troops. I don't think the crusaders are genuinely evil.~ + t5.3
-++ ~I think that now's not the time to be discussing our enemies' philosophies with each other. Let's move.~ + t5.0
+++ ~他们是一群蠢货。~ + t5.1
+++ ~我什么都不想。他们只是挡我路的人。~ + t5.2
+++ ~卡伊拉真能叫手下忠心。我不觉得圣战军天生就是恶的。~ + t5.3
+++ ~我看现在不是彼此讨论敌人哲学的时候。走吧。~ + t5.0
 
 CHAIN C02DRAKJ t5.0
-~You really are boring sometimes, <CHARNAME>.~
+~你有时候真没意思，<CHARNAME>。~
 EXIT
 
 CHAIN C02DRAKJ t5.1
-~Harsh, but probably true. Though I'd say 'woefully misguided' is more accurate.~
+~刻薄，可大概是真的。不过我得说“可悲地误入歧途”更准确。~
 EXTERN C02DRAKJ t5.4
 
 CHAIN C02DRAKJ t5.2
-~You're cold. But I might as well ask anyways, considering I was thinking...~
+~你真冷。可我还是想问一句，因为我在想……~
 EXTERN C02DRAKJ t5.4
 
 CHAIN C02DRAKJ t5.3
-~Perhaps. *sigh* That makes this all the more difficult.~
+~也许。*叹息* 那这就更难办了。~
 EXTERN C02DRAKJ t5.4
 
 CHAIN C02DRAKJ t5.4
-~Do you regret having to kill them?~
+~你后悔不得不杀他们吗？~
 END
-++ ~I always regret having to kill. This is no exception.~ + t5.5
-++ ~Some of them. There are always those that deserve to die, though.~ + t5.6
-++ ~Not at all. If they want to oppose us, then it's their fault that they die.~ + t5.7
-++ ~I'd rather not think about it. It makes things that much more difficult.~ + t5.8
+++ ~我每次不得不杀人，都后悔。这回也不例外。~ + t5.5
+++ ~有些人吧。不过总有些人该死。~ + t5.6
+++ ~一点都不。他们要跟我们作对，那他们死了就是他们的错。~ + t5.7
+++ ~我倒宁愿不去想。那会让事情更难办。~ + t5.8
 
 CHAIN C02DRAKJ t5.5
-~It must be hard. For someone born from the Lord of Murder, in particular. But it is very admirable.~
+~那一定很难受。尤其对一个生自谋杀之神的人。可这非常可敬。~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.6
-~Everyone does something that someone will think they deserve to die for sooner or later. Who's to judge if they're right or wrong? You, or me? Can anyone?~
+~每个人早晚都会干点让别人觉得他该死的事。谁来判断他们对不对？你，还是我？谁有这资格？~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.7
-~Hmph. Well said from a scion of Murder. I suppose in some perverse way, you do have that right.~
+~哼。谋杀之神的子孙说得好。我看某种扭曲意义上，你确实有那资格。~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.8
-~Heh. I realized the same thing while I was a soldier. It's much easier on you when you forget all about your personal morals and become an unthinking pawn, acting exactly are ordered.~
-= ~I can't say it was the proudest time of my life.~
+~嘿。我当兵时就明白这点了。你把个人道德全忘了、变成个不想事的棋子、完全照命行事，那对你轻松得多。~
+= ~我不能说那是我这辈子最自豪的时候。~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.9
-~You have your opinion, I have mine. I don't regret my part in causing the deaths of the crusaders, no more than killing anyone. They chose to hold to their own beliefs, which clashed with mine.~
-= ~That's not to say that I don't have any regrets at all. I don't believe anyone truly has the right to take another's life. It's a privilege granted to those with power.~
-= ~I don't like it, but many issues in life can be solved simply by killing anyone who disagrees with you. Even for a good cause, like the Order.~
+~你有你的看法，我有我的。我不后悔我在害死那些圣战军里的一份，跟杀别人没什么两样。他们选择坚守自己的信念，与我的相冲。~
+= ~倒不是说我没有半点悔意。我不信谁真有权利夺走别人的命。那是给有力量者的特权。~
+= ~我不喜欢这样，可生活里许多问题，只要把不同意你的人杀掉就解决了。哪怕为了好目的，比如骑士团。~
 END
-++ ~If you believe killing is such a terrible thing, why are you still here?~ + t5.10
-++ ~You're wrong. I believe there's always a better alternative to having to kill everyone in your way.~ + t5.11
-++ ~I don't know anything about that. I just find it to be entertaining.~ + t5.12
-++ ~This really isn't a thrilling subject for conversation, Drake. Let's stop.~ + t5.0
+++ ~你要真觉得杀人是这么可怕的事，那你还留在这儿干什么？~ + t5.10
+++ ~你错了。我相信总有比把挡路的人全杀了好些的替代办法。~ + t5.11
+++ ~这我一点不懂。我只是觉得这事挺好玩。~ + t5.12
+++ ~这真不是个适合聊的刺激话题，德雷克。我们打住。~ + t5.0
 
 CHAIN C02DRAKJ t5.10
-~*shrug* Good question. Sometimes I wonder why I don't just drop my weapon and go home. I suppose it's because it's still better than standing by and doing nothing. Don't you agree?~
+~*耸肩* 好问题。有时我也在想，我怎么不干脆扔了兵器回家。我看是因为这仍比站在一边什么都不做强。你不同意？~
 EXTERN C02DRAKJ t5.13
 
 CHAIN C02DRAKJ t5.11
-~*snort* I would love nothing more than to be wrong, but can you truly say that? What would you have done instead, if you did not kill men like Davaeorn, Angelo or Sarevok?~
+~*哼* 我最想的就是我错了，可你真能这么说？你要是不杀达瓦翁、安杰洛或萨雷沃克那样的人，你还能怎么办？~
 EXTERN C02DRAKJ t5.13
 
 CHAIN C02DRAKJ t5.12
-~Ha! Do you know what I consider killing without a cause? Murder. Quite apt for you, wouldn't you say?~
+~哈！你知道我把无缘无故的杀人叫什么？谋杀。这词配你倒挺合适，你不觉得？~
 EXTERN C02DRAKJ t5.13
 
 CHAIN C02DRAKJ t5.13
-~You don't have to answer that. Even if you could, having an answer to these sort of questions takes the fun out in life.~
-= ~Heh. I wonder if you'll lose any sleep thinking about this. I certainly will.~
+~你不必回答。就算你能答，给这种问题找答案，生活就没趣味了。~
+= ~嘿。我在想你会不会为这个失眠。我肯定会。~
 EXIT
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",12)~ THEN C02DRAKJ t6
-~Come share a drink, <CHARNAME>! The day has passed, and the night is long. What better time than now to relax over a warm fire and a pint of ale?~
+~来喝一杯，<CHARNAME>！白天过去了，夜还长。还有什么比这时候在暖火边、就一品脱麦酒松快松快更好？~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-+ ~Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~I don't drink. I thought you knew that.~ + t6.1
-+ ~!Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~I don't drink.~ + t6.2
-++ ~I'm not fond of drink, but I'll keep you company.~ + t6.3
-++ ~Why not. What are we drinking?~ + t6.4
-++ ~I intend to. I hope you can keep up with me.~ + t6.4
-++ ~I'd rather not. I'm tired and would rather go to bed.~ + t6.0
++ ~Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~我不喝酒。我以为你知道。~ + t6.1
++ ~!Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~我不喝酒。~ + t6.2
+++ ~我不爱酒，可我陪你。~ + t6.3
+++ ~干嘛不。我们喝什么？~ + t6.4
+++ ~我打算喝。希望你跟得上我。~ + t6.4
+++ ~算了。我累了，更想去睡。~ + t6.0
 
 CHAIN C02DRAKJ t6.0
-~You're no fun at all. Have it your way. I intend to indulge myself until the dawn.~
+~你真没趣。随你吧。我打算放纵到天亮。~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",2)~ EXIT
 
 CHAIN C02DRAKJ t6.1
-~Still so resolute? Are you certain that I cannot tempt you?~
+~还这么坚决？你确定我勾不动你？~
 EXTERN C02DRAKJ t6.4
 
 CHAIN C02DRAKJ t6.2
-~Unfortunate. But there's no better time to start, wouldn't you agree?~
+~真可惜。可再没有比现在更好的开始时候，你不觉得？~
 EXTERN C02DRAKJ t6.4
 
 CHAIN C02DRAKJ t6.3
-~I'll take what I can get. Besides, I'm sure I'll convince you soon enough.~
+~有多少算多少。再说，我确信很快就能说服你。~
 EXTERN C02DRAKJ t6.4
 
 CHAIN C02DRAKJ t6.4
-~I don't intend to treat you to any cheap brew, my friend. This here is a personal treasure. A bottle of the finest Arabellan Dry wine, never to be opened until now. Best shared between close comrades in times like these.~
-= ~Here, bask in its scent while you may, for I intend to empty the bottle before the sun rises.~
-= ~Good, isn't it? Shall we partake?~
+~我不打算拿廉价酒招待你，我的朋友。这是私人珍藏。一瓶最上等的阿拉贝尔干葡萄酒，一直没开，留到如今。这种时候，就该跟亲近的同袍分享。~
+= ~来，趁还能，好好闻闻它的香气，因为我打算在日出前把瓶喝空。~
+= ~不错，是吧？我们分了吧？~
 END
-++ ~Break out the cups. Let's get completely wasted.~ + t6.5
-++ ~You go ahead. I'm just here to keep you company.~ + t6.6
-++ ~I'd rather just go to bed. Have fun.~ + t6.0
+++ ~拿杯子来。我们喝个烂醉。~ + t6.5
+++ ~你先来。我就在这儿陪你。~ + t6.6
+++ ~我更想去睡。你玩得开心。~ + t6.0
 
 CHAIN C02DRAKJ t6.5
-~*gulp* Ah, that's the stuff. A shame we don't have a nice roast on the fire to accompany this fine wine. Though I'm not particularly hungry anyways.~
-= ~Heh. You know, I used to drink like this all the time with my old friends, back when I was in the army. My father and brother as well. We'd sing bawdy songs, reminisce about loved ones, brag about past victories...~
-= ~Well, that's what my friends liked to do, anyway. Me, I'm more of a listener. (raises his glass) This is what I'm around for.~
+~*咽* 啊，就是这个味儿。可惜火上没烤着一块好肉配这美酒。不过我本来也不太饿。~
+= ~嘿。你知道，我在军队那会儿，跟老朋友们常这么喝。跟我父亲和哥哥也是。我们唱些粗俗的歌，回忆心上人，吹嘘过去的胜仗……~
+= ~嗯，反正我朋友们喜欢那么干。我嘛，更爱听。（举起杯子）我在场就是为了这个。~
 END
-++ ~Is this all you really live for, Drake?~ + t6.7
-++ ~Don't you have any stories to tell at all?~ + t6.7
-++ ~Fine. Let's just drink together then.~ + t6.8
-++ ~In that case, I don't see a reason to stick around. Good night.~ + t6.0
+++ ~德雷克，你就为这个活着？~ + t6.7
+++ ~你就没点故事可讲？~ + t6.7
+++ ~好。那我们就一起喝。~ + t6.8
+++ ~那样的话，我看没理由耗着。晚安。~ + t6.0
 
 CHAIN C02DRAKJ t6.6
-~Suit yourself. Your cup's right there in front of you if you change your mind.~
+~随你。杯子就在你跟前，你改主意就喝。~
 EXTERN C02DRAKJ t6.5
 
 CHAIN C02DRAKJ t6.7
-~I'm a simple man with simple pleasures, and about as uninteresting as they come. If you want stories, I'm afraid I'm not much good.~
-= ~Not to say I couldn't make something up... like most of the squires' tales I've heard. But that's not really my thing. Boasting about nonsense like slaying dragons and giants by the dozens singlehandedly... ha!~
+~我是个简单人，图简单的乐子，也差不多是世上最没意思的那类。你要听故事，怕是我帮不上忙。~
+= ~倒不是我不能编……像我听过的大多数侍从故事那样。可那不是我的路子。吹什么单枪匹马宰了几十条龙和巨人之类的胡话……哈！~
 EXTERN C02DRAKJ t6.8
 
 CHAIN C02DRAKJ t6.8
-~I see your cup's empty. Shall I fill it for you?~
+~你杯子空了。要我替你倒上？~
 END
-++ ~By all means.~ + t6.9
-++ ~I said I don't drink.~ + t6.10
-++ ~No, thanks. I'm going to bed.~ + t6.0
+++ ~尽管来。~ + t6.9
+++ ~我说过我不喝酒。~ + t6.10
+++ ~不了，谢了。我要去睡。~ + t6.0
 
 CHAIN C02DRAKJ t6.9
-~*gulp*~
-= ~You know, I like you, <CHARNAME>. You've got a good head on you, and you keep things interesting. With you, I think I can say anything I want, while drinking as much as I want.~
-= ~Not like my dear old father. He wasn't fond of my habits when I was young, so my brother and I used to sneak out to the local taverns during the night. Got caught a few times, of course, but that didn't ever stop us from trying.~
-= ~Come to think of it, he never drank much outside of social gatherings to begin with. Liked the halfling pipeweed though. The estate used to smell of smoke all the time, mother hated it. Funnily enough, I kind of missed it for a while. Even when I was home, my father was usually busy with his duties as prelate of the Order.~
-= ~Although... after Gabriel died, he smoked all day and night for three days while at home mourning. After that, I ended up hating it too. Like a bad memory, I still want to gag every time I smell the damn stuff.~
+~*咕咚*~
+= ~你知道，我喜欢你，<CHARNAME>。你脑子清楚，还让事情有意思。跟你在一起，我看我想说什么都行，想喝多少也行。~
+= ~不像我亲爱的老爹。我年轻时他不喜欢我的习惯，所以我跟哥哥夜里常溜去本地酒馆。当然被抓过几回，可那从没拦住我们。~
+= ~说起来，他本来除了社交场合也不怎么喝。可他爱抽半身人烟斗草。家里老飘着烟味，母亲恨透了。说来好笑，我有一阵还真有点想念。哪怕我在家时，父亲通常也忙着当骑士团教长。~
+= ~不过……加布里尔死后，他在家哀悼，三天三夜抽个不停。那以后，我也恨上那东西了。像段坏记忆，我一闻到那鬼东西就想吐。~
 END
-++ ~Funny, you said you weren't good at telling stories. Now I see you were wrong.~ + t6.11
-++ ~Tell me more about your family. I'd like to hear more.~ + t6.12
-++ ~Eh, I think I'm done for the day. I'm going to bed.~ + t6.0
+++ ~奇怪，你刚说你不擅长讲故事。看来你错了。~ + t6.11
+++ ~多讲讲你家的事。我想多听些。~ + t6.12
+++ ~呃，我看我今天够了。我去睡了。~ + t6.0
 
 CHAIN C02DRAKJ t6.10
-~Suit yourself.~
+~随你。~
 EXTERN C02DRAKJ t6.9
 
 CHAIN C02DRAKJ t6.11
-~*snort* You must not have heard many good stories if you found my tale of my father's smoking interesting.~
+~*哼* 我讲我父亲抽烟这故事你都能觉得有意思，那你准没听过多少好故事。~
 EXTERN C02DRAKJ t6.13
 
 CHAIN C02DRAKJ t6.12
-~Sure, sure, let me think...~
+~当然，当然，让我想想……~
 EXTERN C02DRAKJ t6.13
 
 CHAIN C02DRAKJ t6.13
-~Damn, this bottle's empty. Good thing I have two more in here...~
-= ~*gulp*~
-= ~To tell you the truth, I prefer ale. But Arabellan red was Gabriel's favorite. Once a month, I'll empty a bottle or two in his memory.~
-= ~Personally, I've always found the aftertaste a bit much for my tongue. Good with cheese, though. A pity we don't have any.~
-= ~The last time we drank together was just before the incident at Murann. He was talking about going home to marry his beloved after we won the war. If only he knew...~
+~该死，这瓶空了。好在我这儿还有两瓶……~
+= ~*咕咚*~
+= ~说实话，我更爱麦酒。可阿拉贝尔红酒是加布里尔的最爱。我每个月喝空一两瓶，纪念他。~
+= ~我个人一直觉得那回味对我舌头来说有点过。配奶酪倒好。可惜我们没奶酪。~
+= ~我们最后一次一起喝酒，就在穆兰那事之前。他说等我们打赢仗，就要回家娶他心上人。他要是知道……~
 END
-++ ~Your brother had a betrothed?~ + t6.14
-++ ~What about you? Did you have anyone at the time?~ + t6.15
-++ ~You keep talking. I'm going to keep drinking.~ + t6.16
-++ ~Forget this. I'm going to bed.~ + t6.0
+++ ~你哥哥有未婚妻？~ + t6.14
+++ ~那你呢？那时候你有谁吗？~ + t6.15
+++ ~你接着说。我接着喝。~ + t6.16
+++ ~算了。我去睡了。~ + t6.0
 
 CHAIN C02DRAKJ t6.14
-~That he did. Ah... but I shouldn't tell. The last time I spoke of her while inebriated, I... well, it's best that you don't know right now.~
+~他确实有。啊……可我不该讲。上回我喝醉了说起她，我……嗯，你现在最好别知道。~
 EXTERN C02DRAKJ t6.16
 
 CHAIN C02DRAKJ t6.15
-~Me? You must be joking. Gabriel had the hearts of all the ladies at court, and more than a few of the men. I could hardly compare.~
+~我？你一定在开玩笑。加布里尔得了宫里所有女士的心，还有不少男人的。我哪能比。~
 EXTERN C02DRAKJ t6.16
 
 CHAIN C02DRAKJ t6.16
-~Oh, my dear brother... he was too heroic until the end, and died like an honorable fool, but... I miss him. I really do.~
-= ~When I drink this wine, I think of all the times talked and laughed at each others' jokes... and it's like he's with me all over again. Then I down another cup to enjoy the feeling again, then another, until...~
-= ~Bah, why am I talking about this when we could be getting drunk instead? I'm pouring another. What about you, <CHARNAME>?~
+~哦，我亲爱的哥哥……他一直英雄到最后一刻，像个可敬的傻瓜那样死了，可……我想他。我真的想。~
+= ~我喝这酒的时候，就想起我们互相讲笑话、一起笑的所有时候……就像他又在我身边。然后我再灌一杯，再尝一次那种感觉，再一杯，直到……~
+= ~唉，我们都能喝醉，我干嘛还说这些？我再倒一杯。你呢，<CHARNAME>？~
 END
-++ ~Okay.~ + t6.17
-++ ~No, thank you.~ + t6.17
+++ ~好吧。~ + t6.17
+++ ~不了，谢谢。~ + t6.17
 
 CHAIN C02DRAKJ t6.17
-~This has been a fun evening, <CHARNAME>. I've had fun. Let's make sure it lasts!~
+~今晚挺好玩，<CHARNAME>。我玩得开心。让我们把这份开心留住！~
 DO ~RestParty()~ EXIT
 
 CHAIN IF ~Global("C02DrakeTalk","GLOBAL",14)~ THEN C02DRAKJ t7
-~Ugh, my head... I may have overindulged last night. I hope you're faring at least a little better.~
+~呃，我脑袋……昨晚我怕是喝多了。希望你好歹比我强些。~
 DO ~IncrementGlobal("C02DrakeTalk","GLOBAL",1)~
 END
-++ ~Urrrghh... huh? Wha... whatimeizit?~ + t7.1
-++ ~I hope you've learned your lesson.~ + t7.2
-++ ~This is the reason why I don't drink.~ + t7.3
-++ ~Actually, I slept fine. That was nothing.~ + t7.4
-++ ~We've got to move, Drake. Get sober quickly and pack up.~ + t7.0
+++ ~呃呃呃……嗯？什……现在什么时辰？~ + t7.1
+++ ~希望你长了教训。~ + t7.2
+++ ~这就是我不喝酒的原因。~ + t7.3
+++ ~其实我睡得挺好。那不算什么。~ + t7.4
+++ ~我们得走了，德雷克。快点醒酒，收拾东西。~ + t7.0
 
 CHAIN C02DRAKJ t7.0
-~*grumble* Fine, fine...~
+~*嘟囔* 好，好……~
 EXIT
 
 CHAIN C02DRAKJ t7.1
-~*groan* Hells if I know. I can't tell if that's the sun or a fireball over our heads. Did I even get any sleep...?~
+~*呻吟* 我哪知道。我分不清头顶上是太阳还是火球。我到底睡过没有……？~
 EXTERN C02DRAKJ t7.5
 
 CHAIN C02DRAKJ t7.2
-~You sound like my father. Unfortunately, I'm stubborn. Too stubborn for my own health, it seems.~
+~你听着像我爸。可惜，我倔。看来倔得对自己身体都不好。~
 EXTERN C02DRAKJ t7.5
 
 CHAIN C02DRAKJ t7.3
-~Maybe that's for the best. If only it were so easy for me.~
+~也许那样最好。可惜对我来说没那么容易。~
 EXTERN C02DRAKJ t7.5
 
 CHAIN C02DRAKJ t7.4
-~Ugh, you are unbelievable. I'm never drinking with you again.~
+~唉，你真叫人不敢信。我再也不跟你喝酒了。~
 EXTERN C02DRAKJ t7.5
 
 CHAIN C02DRAKJ t7.5
-~Mmmph... my memory's a blur since we started getting into the spiced wine... in case you remember anything more clearly than I do, I... didn't do or say anything out of line, did I?~
+~唔……我们从喝那香料酒开始，我记忆就一片模糊……万一你记得比我清楚，我……没做什么、说什么出格的话吧？~
 END
-+ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~I vaguely remember us getting rather close and touchy with each other before you passed out...~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t7.6
-++ ~Beats me. I'm almost certain I keeled over long before you did.~ + t7.7
-++ ~You fell asleep while singing something about donkeys and massive stones. I don't remember anything other than that.~ + t7.8
-++ ~I put a blanket over you after you lost consciousness then went to bed. Nothing happened.~ + t7.9
-++ ~Don't ask me. We've got a long way to go anyway, so I suggest you sober up quickly.~ + t7.0
++ ~Global("C0DrakeMatch","GLOBAL",1)~ + ~我隐约记得你昏过去之前，我们俩贴得挺近，还动手动脚……~ DO ~IncrementGlobal("C02DrakeFlirt","GLOBAL",1)~ + t7.6
+++ ~别问我。我几乎肯定在你前头就倒了。~ + t7.7
+++ ~你唱着关于驴和大石头的什么东西睡着了。别的我都不记得。~ + t7.8
+++ ~你昏过去后我给你盖了条毯子，然后去睡了。什么都没发生。~ + t7.9
+++ ~别问我。反正我们还有很长的路，我建议你快点醒酒。~ + t7.0
 
 CHAIN C02DRAKJ t7.6
-~Wha- oh no. I'm not falling for that one, <CHARNAME>. I know myself better than that.~
+~什——哦不。我不上这个当，<CHARNAME>。我比这更了解我自己。~
 EXTERN C02DRAKJ t7.10
 
 CHAIN C02DRAKJ t7.7
-~That's too bad.~
+~那真可惜。~
 EXTERN C02DRAKJ t7.10
 
 CHAIN C02DRAKJ t7.8
-~*groan* I can't believe I still remember that song. The squires used to poke fun of me for making it up. Excuse me while I try to drill it out of my head entirely.~
+~*呻吟* 我真不敢信我还记得那首歌。侍从们当年老拿我编这歌取笑。失陪一下，我试着把它从脑子里彻底钻出去。~
 EXTERN C02DRAKJ t7.10
 
 CHAIN C02DRAKJ t7.9
-~Good, good... I suppose I should consider myself lucky I didn't damage my pride any, I suppose.~
+~好，好……我看我该庆幸自己没伤了自尊，大概。~
 EXTERN C02DRAKJ t7.10
 
 CHAIN C02DRAKJ t7.10
-~I can't say I didn't have fun, though. It's been a long time since I've had a drinking partner I could genuinely speak my mind to. I hope I didn't bore you.~
+~不过我不能说我没玩得开心。我好久没有能真正说心里话的酒伴了。希望我没让你觉得闷。~
 END
-++ ~Not at all. I rather enjoyed listening.~ + t7.11
-++ ~The drinks were good, at least.~ + t7.12
-++ ~I don't want to hear about your personal issues again.~ + t7.13
+++ ~一点没有。我倒挺爱听。~ + t7.11
+++ ~至少酒不错。~ + t7.12
+++ ~我不想再听你的私事了。~ + t7.13
 
 CHAIN C02DRAKJ t7.11
-~Well, I'm glad. I didn't think you would, to be honest.~
+~嗯，我很高兴。说实话，我没以为你会。~
 EXTERN C02DRAKJ t7.14
 
 CHAIN C02DRAKJ t7.12
-~Good to see that something kept your attention.~
+~挺好，总算有样东西抓住了你的注意力。~
 EXTERN C02DRAKJ t7.14
 
 CHAIN C02DRAKJ t7.13
-~Is that so? I don't blame you. I won't bother you with them again.~
+~是吗？我不怪你。我不会再拿这些烦你。~
 EXIT
 
 CHAIN C02DRAKJ t7.14
-~Shall we share a few drinks again some other time? You can share all your troubles with me next time. I'll promise to listen no matter how bored I get.~
+~改日再一起喝几杯？下回你可以把你的烦心事全说给我。我保证不管多闷都听。~
 END
-++ ~Sure, why not.~ + t7.15
-++ ~I don't think so.~ + t7.16
+++ ~当然，干嘛不。~ + t7.15
+++ ~我看不必。~ + t7.16
 
 CHAIN C02DRAKJ t7.15
-~That's a good <PRO_MANWOMAN>. I'll find a few bottles of something stronger. Then we can both wake up with massive headaches next time.~
+~这才是好<PRO_MANWOMAN>。我去找几瓶更烈的。下回我们俩都能顶着一脑袋剧痛醒来。~
 EXIT
 
 CHAIN C02DRAKJ t7.16
-~Have it your way. It was fun while it lasted.~
+~随你。开心过就好。~
 EXIT
 
 CHAIN IF ~Global("C02DrakeHellTalk","GLOBAL",2)~ THEN C02DRAKJ t8
-~Avernus, the First of the Nine Hells... and I thought the holy books were exaggerating. What a place.~
+~阿弗纳斯，九层地狱的第一层……我还以为圣书是夸张。真是个好地方。~
 DO ~IncrementGlobal("C02DrakeHellTalk","GLOBAL",1)~
 END
-++ ~You seem remarkably unfazed.~ + t8.1
-++ ~It's pretty warm here, isn't it?~ + t8.2
-++ ~What a place indeed. I never thought I'd actually end up here.~ + t8.3
-++ ~This is absolutely not the place to talk, Drake. We've got to find Caelar Argent and end this.~ + t8.0
+++ ~你好像格外镇定。~ + t8.1
+++ ~这儿挺热的，是吧？~ + t8.2
+++ ~真是个好地方。我从没想到自己真会到这儿。~ + t8.3
+++ ~这绝对不是说话的地方，德雷克。我们得找到卡伊拉·阿金特，了结这事。~ + t8.0
 
 CHAIN C02DRAKJ t8.0
-~True... assuming this place hasn't already claimed her. Let's find out for ourselves.~
+~确实……前提是这地方还没把她收了。我们自己去看看。~
 EXIT
 
 CHAIN C02DRAKJ t8.1
-~Were it with anyone else, I might be feeling differently... but to be honest, after all the time I've spent travelling with you, I've come to expect the worst, whatever it might be.~
+~要换了别人，我也许不这么想……可说实话，跟你走了这么久，我已经习惯往最坏处想了，不管那是什么。~
 EXTERN C02DRAKJ t8.4
 
 CHAIN C02DRAKJ t8.2
-~Oh, certainly. A perfect place for a nice, long vacation... heh, I wish that were the case.~
+~哦，当然。一个适合好好度个长假的好地方……嘿，我倒希望是。~
 EXTERN C02DRAKJ t8.4
 
 CHAIN C02DRAKJ t8.3
-~Bet you regret all those terrible things you did as a child now, hmm? I certainly do.~
+~我打赌你现在后悔小时候干的那些坏事了，嗯？我肯定后悔。~
 EXTERN C02DRAKJ t8.4
 
 CHAIN C02DRAKJ t8.4
-~Heh. I know my humor might seem out of place in this place we're in, but I thought perhaps it might lighten the atmosphere a little. All joking aside, though... I can't deny that this place unnerves me.~
-= ~But I don't blame you from bringing us here. If anything, I'd have chosen to follow you here even if I had another choice. Not only because I'm duty-bound to, but because, well...~
-= ~I think you deserve that much loyalty from me, at least. You really are one of a kind, <CHARNAME>.~
+~嘿。我知道我这幽默在这地方看着不合时宜，可我想也许能缓和点气氛。不过说正经的……我不能否认这地方让我不安。~
+= ~可我不怪你把我们带到这儿。真要说，就算我有别的选择，我也会选择跟你来。不只是因为我职责所在，还因为，嗯……~
+= ~我看你至少配得上我这份忠心。你真是独一无二，<CHARNAME>。~
 END
-+ ~Global("C02DrakeRomanceActive","GLOBAL",2)~ + ~Why, Drake... are you falling in love with me?~ + t8.5
-++ ~Thank you, Drake. Not just for your words, but also for everything else.~ + t8.6
-++ ~You're one of a kind as well, Drake. Just in a different way.~ + t8.7
-++ ~Then let's find Caelar together and put an end to this madness.~ + t8.0
++ ~Global("C02DrakeRomanceActive","GLOBAL",2)~ + ~哎呀，德雷克……你是不是爱上我了？~ + t8.5
+++ ~谢谢你，德雷克。不只为你这些话，也为了别的所有。~ + t8.6
+++ ~你也独一无二，德雷克。只是方式不同。~ + t8.7
+++ ~那我们就一起找到卡伊拉，了结这场疯事。~ + t8.0
 
 CHAIN C02DRAKJ t8.5
-~Hmm... in any other situation, I'd laugh that off. Now, though... heh. Maybe it's the heat, but I almost feel a warm blush crawling up my cheeks. You might not be entirely wrong.~
+~嗯……换任何别的情形，我都会一笑置之。可现在……嘿。也许是这热度，可我几乎觉得脸上有道热流爬上来。你也许没说错。~
 EXTERN C02DRAKJ t8.8
 
 CHAIN C02DRAKJ t8.6
-~Thank you, <CHARNAME>. I'm touched. Genuinely so.~
+~谢谢你，<CHARNAME>。我被打动了。真的。~
 EXTERN C02DRAKJ t8.8
 
 CHAIN C02DRAKJ t8.7
-~In a much less respectable way, I'm sure. That is what you were thinking, isn't it?~
+~用一种远没那么体面的方式，我确定。你就是这么想的，对吧？~
 END
-++ ~You got that right.~ + t8.7a
-++ ~Not at all. I respect you, Drake.~ + t8.7b
+++ ~你说对了。~ + t8.7a
+++ ~一点没有。我敬重你，德雷克。~ + t8.7b
 
 CHAIN C02DRAKJ t8.7a
-~That hurts, <CHARNAME>, more so because you're probably right... heh.~
+~这话伤人，<CHARNAME>，更因为你说的大概没错……嘿。~
 EXTERN C02DRAKJ t8.8
 
 CHAIN C02DRAKJ t8.7b
-~Those aren't words to be used lightly, my friend. But if you mean them, then... well, thank you, that's all I can say.~
+~这话不能随口说，我的朋友。可你要真是这个意思，那……嗯，谢谢，我只能这么说。~
 EXTERN C02DRAKJ t8.8
 
 CHAIN C02DRAKJ t8.8
-~I've never thought of myself as a particularly respectable or heroic man. Those were always the words I'd rather use to describe my brother. I didn't think I'd use them for anyone else, but now... I'd use them for you. When I see how far you've brought yourself, and everyone who's followed you, including myself... it does make me think of him.~
-= ~Assuming we both survive this hell, I'll be going home. It might be the case that we never see each other again, and if so... I think I'll remember you. And think of you sometimes.~
+~我从没觉得自己是个特别可敬或英雄的人。那些词我一向宁愿用来形容我哥哥。我以为我不会再用在别人身上，可现在……我会用在你身上。看你自己走到多远，看所有跟着你的人，包括我……这真让我想起他。~
+= ~假设我们俩都能活着离开这地狱，我就要回家了。也许我们再也见不着，要真如此……我看我会记着你。偶尔想起你。~
 END
-++ ~That's very touching. Unnaturally so, coming from you.~ + t8.9
-++ ~I'm sure we'll meet again someday. Until then, we've still got this moment together, and the next few as well.~ + t8.10
-++ ~You're being overly sentimental. You've been a loyal ally, but I don't see you as more than that.~ + t8.11
-++ ~We can talk after we've found and dealt with Caelar. Let's go.~ + t8.0
+++ ~这话很动人。从你嘴里说出来，动人得不自然。~ + t8.9
+++ ~我确信我们哪天还会再见。在那之前，我们还有这一刻，还有接下来几刻。~ + t8.10
+++ ~你太多愁善感了。你是个忠心的盟友，可我不把你当更多。~ + t8.11
+++ ~等我们找到卡伊拉、处理完再谈。走吧。~ + t8.0
 
 CHAIN C02DRAKJ t8.9
-~It is, isn't it? I'm not sure what's come over me.~
+~是吧？我也不知道自己怎么了。~
 EXTERN C02DRAKJ t8.12
 
 CHAIN C02DRAKJ t8.10
-~You're right. But just in case I fall over and die for good... I'd rather say these words while you can still hear me.~
+~你说得对。可万一我倒下、真死了……我宁愿趁你还听得见，把这些话说出来。~
 EXTERN C02DRAKJ t8.12
 
 CHAIN C02DRAKJ t8.11
-~If that's so, I won't bother you for much longer, but I still stand by my words. We don't have to be friends for me to feel respect for you.~
+~要真如此，我就不再烦你太久，可我还是坚持我的话。我们不必是朋友，我也能敬重你。~
 EXTERN C02DRAKJ t8.12
 
 CHAIN C02DRAKJ t8.12
-~Now that we've got the sentimental nonsense out of the way, what say you to putting an end to this once and for all? Let's hunt down whatever enemies remain ahead of us togther. How's that sound to you?~
+~现在这些多愁善感的胡话都说完了，你看我们一劳永逸了结这事怎么样？我们一起把前头剩下的敌人全猎了。听着如何？~
 END
-++ ~Sounds good. Let's get to it.~ + t8.13
+++ ~听着不错。动手吧。~ + t8.13
 
 CHAIN C02DRAKJ t8.13
-~Let's indeed. If I have one breath remaining in me I'll spend it fighting at your sake here. I swear it.~
+~那就动手。我要是还剩一口气，我也会为你把它用在战斗上。我发誓。~
 EXIT
 
 CHAIN IF ~Global("C02DrakeLastTalk","GLOBAL",2)~ THEN C02DRAKJ t9
-~We're alive. How about that. You've done a fine job here, <CHARNAME>.~
+~我们活着。真没想到。你干得漂亮，<CHARNAME>。~
 DO ~IncrementGlobal("C02DrakeLastTalk","GLOBAL",1)~
 END
-++ ~We all did a fine job. Not just me.~ + t9.1
-++ ~I did as I needed to.~ + t9.1
-++ ~You're right. I hope I'll finally get some peace now.~ + t9.1
+++ ~我们大家都干得漂亮。不只我。~ + t9.1
+++ ~我只是做了该做的。~ + t9.1
+++ ~你说得对。希望我总算能得点安宁。~ + t9.1
 
 CHAIN C02DRAKJ t9.0
-~Is that really what you'd prefer? Very well, then.~
+~你真宁愿那样？那好吧。~
 EXIT
 
 CHAIN C02DRAKJ t9.1
-~Yes, you're right.~
-= ~Let me salute you, <CHARNAME>. When they all began cheering for you, I... heh, I almost thought I was looking at Gabriel again. I never thought I'd see anything like that again.~
-= ~I would shake hands with you now, <CHARNAME>, as once the celebrations are over, I'll be travelling back to Amn. It may be a long time before we meet again.~
+~是，你说得对。~
+= ~让我向你致敬，<CHARNAME>。他们全为你欢呼时，我……嘿，我几乎以为我又看见了加布里尔。我从没想到还能再见到那样的景象。~
+= ~我现在想跟你握个手，<CHARNAME>，因为庆祝一完，我就要回安姆了。也许很久以后我们才会再见。~
 END
-++ ~I'll miss you, my friend.~ + t9.2
-++ ~Of course.~ + t9.3
-++ ~You've been a good friend, Drake.~ + t9.4
-++ ~We can talk at length later. Right now, I'm not in the mood.~ + t9.0
+++ ~我会想你的，我的朋友。~ + t9.2
+++ ~当然。~ + t9.3
+++ ~你一直是个好朋友，德雷克。~ + t9.4
+++ ~我们以后可以慢慢谈。眼下我没那个心情。~ + t9.0
 
 CHAIN C02DRAKJ t9.2
-~Yes, yes, I'll miss you too. You've been a good friend, and a damn fine leader. I'll be sorry to leave.~
+~是，是，我也会想你。你是个好朋友，也是个了不起的领袖。我会舍不得走。~
 EXTERN C02DRAKJ t9.3
 
 CHAIN C02DRAKJ t9.3
-~I'm sure our paths will cross again, though. And hopefully, by that time, I'll be able to raise my shield for you once again. Until then...~
-= ~What say you to breaking open a few kegs together and drowning ourselves in golden showers of ale? I think we deserve that much for our deeds.~
+~不过我确信我们还会再碰上。但愿到那时候，我能再为你举起盾。在那之前……~
+= ~你看我们砸开几桶酒、把自己淹在金黄的麦酒雨里怎么样？我看我们的作为该得这些。~
 END
-+ ~Global("C02DrakeRomanceActive","GLOBAL",2)~ + ~What about the night? Do you have any plans for then?~ + t9.rom
-++ ~Sounds good to me.~ + t9.5
-++ ~You go ahead. I'd rather have some peace and quiet for now.~ + t9.6
-++ ~How about a nice, organized dinner instead?~ + t9.7
-++ ~I don't think so.~ + t9.0
++ ~Global("C02DrakeRomanceActive","GLOBAL",2)~ + ~那晚上呢？你晚上有什么打算？~ + t9.rom
+++ ~我听着不错。~ + t9.5
+++ ~你先去。我眼下更想要点清静。~ + t9.6
+++ ~不如来一顿正经、有模有样的晚餐？~ + t9.7
+++ ~我看不必。~ + t9.0
 
 CHAIN C02DRAKJ t9.rom
-~Heh. That's a bit much for right now, I'm afraid. Not to mention you won't like me in your bedchamber when I'm drunk off my arse. But I am tempted... (laugh)~
+~嘿。怕是对眼下来说有点过了。再说你也不会喜欢一个醉得站不住的我在你卧房里。可我确实动心……（笑）~
 EXIT
 
 CHAIN C02DRAKJ t9.4
-~As have you... my leader and my friend.~
+~你也是……我的领袖，我的朋友。~
 EXTERN C02DRAKJ t9.3
 
 CHAIN C02DRAKJ t9.5
-~That's what I like to hear.~
+~这才是我爱听的。~
 EXIT
 
 CHAIN C02DRAKJ t9.6
-~Suit yourself. If you change your mind, though, I'll save a barrel for you. You're welcome to join in any time.~
+~随你。不过你要改主意，我给你留一桶。你随时来都欢迎。~
 EXIT
 
 CHAIN C02DRAKJ t9.7
-~Ha! You still don't know me well enough, then. But if that's what you'd prefer, then I'll oblige this time.~
+~哈！那你还不够了解我。可你要真这么想，这回我就依你。~
 EXIT
 
 // Romantic dialogue
 
 CHAIN IF ~Global("C02DrakeRomanticTalk","GLOBAL",1)~ THEN C02DRAKJ r1
-~Look, <CHARNAME>, I think we should have a little talk. About the way we've been behaving to each other.~ [C0BLANK]
+~听着，<CHARNAME>，我看我们该谈谈。谈谈我们彼此一直以来的相处方式。~ [C0BLANK]
 DO ~IncrementGlobal("C02DrakeRomanticTalk","GLOBAL",1)~
 END
-++ ~I think that's probably a good idea.~ + r1.1
-++ ~Why, aren't you appreciating my attention?~ + r1.2
-++ ~Not right now, Drake.~ + r1.0
+++ ~我看这大概是个好主意。~ + r1.1
+++ ~怎么，你不领我的情？~ + r1.2
+++ ~现在不行，德雷克。~ + r1.0
 
 CHAIN C02DRAKJ r1.0
-~It's now or never, <CHARNAME>. Are you sure you don't feel like listening?~
+~现在不说就永远不说了，<CHARNAME>。你确定不想听？~
 END
-++ ~Fair enough. I'm listening.~ + r1.1
-++ ~I'm not interested.~ + r1.6
+++ ~也好。我听着。~ + r1.1
+++ ~我没兴趣。~ + r1.6
 
 CHAIN C02DRAKJ r1.1
-~We've talked a lot throughout this journey, and I'll admit I've said things to you that I'd never say to anyone else, and you have done the same. I haven't said anything about it up to now, but I'm afraid I have to make some things clear.~
-= ~I don't mind that you're showing some interest in me, in fact, I find it flattering. I admire you, in more ways than one. But whether it be as friends, confidants, sworn brothers or even lovers... I would prefer to understand where we stand in regards to each other. And I want you to understand the same thing.~
-= ~To be honest, were I even a few years younger I probably wouldn't care. But I've been along this path more than once. It'd spare us a lot of pain and misunderstanding if we're honest with each other.~
+~这一路我们谈了很多，我承认我跟你说过些我绝不会对别人说的话，你也一样。到现在我一直没提，可我怕有些事得说清楚。~
+= ~你对我显出些兴趣，我不介意，事实上我觉得受用。我佩服你，不止一方面。可不管是当朋友、知心、结义兄弟还是情人……我更希望弄明白我们彼此算什么。我也希望你能明白。~
+= ~说实话，我要年轻几岁，大概压根不在乎。可这条路我走过不止一回。彼此坦白，能省掉很多痛苦和误会。~
 END
-++ ~If that's the case, then I'll tell the truth. You've become more than a friend, and I want us to become closer.~ + r1.3
-++ ~To be honest, I didn't think that far ahead. Everything that I said was all in good fun.~ + r1.4
-++ ~Perhaps in another time, our relationship could've been more... but in truth, I'm in love with someone else.~ + r1.5
-++ ~You've made a good point. I don't feel comfortable continuing this knowing your thoughts.~ + r1.6
+++ ~既如此，那我就说实话。你已不只是朋友，我想我们更亲近。~ + r1.3
+++ ~说实话，我没想那么远。我说的那些全是闹着玩。~ + r1.4
+++ ~也许换个时候，我们的关系能更进一步……可说实话，我爱着别人。~ + r1.5
+++ ~你说得有理。知道你的想法后，我不觉得继续这样自在。~ + r1.6
 
 CHAIN C02DRAKJ r1.2
-~No, if it's about what I feel, then it's quite the opposite. I just think that some things need to be said.~
+~不，要说是我的感受，那正相反。我只是觉得有些话得说。~
 EXTERN C02DRAKJ r1.1
 
 CHAIN C02DRAKJ r1.3
-~A part of me... more than I expected, actually... hoped you might say that...~
+~我的一部分……其实比我预料的多……盼着你会那么说……~
 END
 IF ~Gender(Player1,MALE)~ + r1.7
 IF ~!Gender(Player1,MALE)~ + r1.8
@@ -754,7 +754,7 @@ IF ~OR(10)
 	Global("C02AuraRomanceActive","global",2)~ + r1.x
 
 CHAIN C02DRAKJ r1.4
-~Yes, I know. Still, if you felt anything for me, then...~
+~是，我知道。可你要对我有过什么感觉，那……~
 END
 IF ~Gender(Player1,MALE)~ + r1.7
 IF ~!Gender(Player1,MALE)~ + r1.8
@@ -771,113 +771,113 @@ IF ~OR(10)
 	Global("C02AuraRomanceActive","global",2)~ + r1.x
 
 CHAIN C02DRAKJ r1.5
-~I suspected. Let's just forget I said anything.~
+~我猜到了。就当我什么都没说。~
 DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ EXIT
 
 CHAIN C02DRAKJ r1.6
-~I understand. I won't hold it against you.~
+~我明白。我不会为这个怪你。~
 DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ EXIT
 
 CHAIN C02DRAKJ r1.7
-~Damn it all. I wish that one day, I could take you home with me, but given the nature of our relationship, with my status, and what is demanded of me, I know it's probably impossible.~
-= ~As much as I wish it were otherwise, I know anything between us will likely not last. Is this what you really want, <CHARNAME>?~
+~真该死。我希望有一天能带你回我家，可看我们关系的性质、我的身份，还有对我的要求，我知道那大概不可能。~
+= ~尽管我希望不是这样，可我知道我们之间的事多半不会长久。你真想要这样吗，<CHARNAME>？~
 END
-++ ~I don't care. I want to be with you.~ + r1.9
-++ ~Who can say what'll happen in the future? We can just enjoy the moment, and we should.~ + r1.9
-++ ~Maybe you're right. Maybe this isn't what I want after all.~ + r1.6
+++ ~我不在乎。我想跟你在一起。~ + r1.9
+++ ~谁说得准将来会怎样？我们只管享受这一刻，我们也该享受。~ + r1.9
+++ ~也许你说得对。也许这终究不是我想要的。~ + r1.6
 
 CHAIN C02DRAKJ r1.8
-~You're a proper lady, <CHARNAME>, and I can hardly compare, but if this is what you really want, then I'll act the best that I can for you.~
+~你是一位真正的淑女，<CHARNAME>，我哪能比，可你要真想要这样，我就尽力为你做到最好。~
 EXTERN C02DRAKJ r1.10
 
 CHAIN C02DRAKJ r1.9
-~(grin) You're a stubborn fool when it comes to what you want. That's the sort of man I like.~
+~（咧嘴笑）你想要什么的时候，就是个死倔的傻瓜。我就喜欢这种男人。~
 EXTERN C02DRAKJ r1.10
 
 CHAIN C02DRAKJ r1.10
-~I'll say no more, then. Let's just continue on as we were, and whatever may come of us, we'll face it regardless.~
+~那我就不再多说了。我们就照原样继续，不管我们会怎样，都一起面对。~
 EXIT
 
 CHAIN C02DRAKJ r1.x
-~No, forget it. I know you're already committed to another. I should've never brought this up.~
+~不，算了。我知道你已心有所属。我压根不该提这个。~
 DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ EXIT
 
 CHAIN IF ~Global("C02DrakeRomanticTalk","GLOBAL",4)~ THEN C02DRAKJ r2
-~It's getting close to the end. You do know that, right?~ [C0BLANK]
+~快到头了。你知道的，对吧？~ [C0BLANK]
 DO ~IncrementGlobal("C02DrakeRomanticTalk","GLOBAL",1)~
 END
-++ ~I know.~ + r2.1
-++ ~Feeling nervous?~ + r2.2
-++ ~Then let's get to it.~ + r2.1
+++ ~我知道。~ + r2.1
+++ ~紧张吗？~ + r2.2
+++ ~那就动手吧。~ + r2.1
 
 CHAIN C02DRAKJ r2.1
-~It might be a bit too early to say this, but... it's been fun. Especially with you around. I know it probably won't last forever, with my duties as a knight-to-be and all, but...~
-= ~I wondered if you were serious. About me, I mean. It felt like fun and games at first, and you'd get bored of it once you found someone else, but... you really did mean all that you said, didn't you?~
-= ~I may as well say the truth, <CHARNAME>. I've come to see you as a friend, as a <PRO_BROTHERSISTER>, perhaps even closer than that, but it's not my place to decide if we go any further. That's up to you.~
-= ~Assuming, of course, that really is what you want. Is it?~
+~现在说这个也许早了点，可……这一路挺有趣。尤其有你在一起。我知道这大概不会长久，毕竟我还要当骑士什么的，可……~
+= ~我一直在想你是不是认真的。我是说，关于我。起初像是玩笑，等你找到别人就腻了，可……你说的那些真是认真的，对吧？~
+= ~我也索性说实话，<CHARNAME>。我已把你当朋友，当<PRO_BROTHERSISTER>，也许还更近，可要不要再往前走，不由我定。那取决于你。~
+= ~当然，前提那真是你想要的。是吗？~
 END
-++ ~It is. I really do care about you, Drake.~ + r2.3
-++ ~I'm not sure anymore. Regardless, I've had fun as well.~ + r2.3
-++ ~No. I don't want it anymore. I'm not sure I ever did.~ + r2.4
+++ ~是。我真在乎你，德雷克。~ + r2.3
+++ ~我不确定了。不管怎样，我也玩得开心。~ + r2.3
+++ ~不。我不想要了。我都不确定自己真想要过。~ + r2.4
 
 CHAIN C02DRAKJ r2.2
-~No. Well, yes... perhaps a little. Something doesn't feel right about this, but... it could be nothing.~
+~不。嗯，是……也许有一点。这事有点不对劲，可……也许没什么。~
 EXTERN C02DRAKJ r2.1
 
 CHAIN C02DRAKJ r2.3
-~That's good enough for me. It... makes me happy, for a change. Knowing I'm not alone out here.~
-= ~Thank you, <CHARNAME>.~
+~这对我来说够了。这让……我难得地高兴。知道自己在这外头不是孤身一人。~
+= ~谢谢你，<CHARNAME>。~
 DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",2)~ EXIT
 
 CHAIN C02DRAKJ r2.4
-~I suppose you know best. I thought perhaps you were after more... but it looks like I was wrong.~
+~我看你最清楚。我还以为你想要更多……看来我错了。~
 DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ EXIT
 
 CHAIN IF ~Global("C02DrakeLastRomanticTalk","GLOBAL",1)~ THEN C02DRAKJ r3
-~I want you to have this, <CHARNAME>.~ [C0BLANK]
+~我想把这个给你，<CHARNAME>。~ [C0BLANK]
 DO ~GiveItem("c0dlock",Player1) IncrementGlobal("C02DrakeLastRomanticTalk","GLOBAL",1)~
 END
-+ ~Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~This locket... isn't it your family heirloom? I can't take this!~ + r3.1
-+ ~!Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~This is a locket, isn't it? Why are you giving this to me?~ + r3.2
-++ ~Is this a parting gift?~ + r3.3
-++ ~I don't want it.~ + r3.1
++ ~Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~这吊坠……不是你家的传家宝吗？我不能收！~ + r3.1
++ ~!Global("C02DrakeKnowsBG1","GLOBAL",1)~ + ~这是个吊坠，对吧？你为什么给我？~ + r3.2
+++ ~这是临别礼物？~ + r3.3
+++ ~我不要。~ + r3.1
 
 CHAIN C02DRAKJ r3.1
-~Take it. I want you to. We'll be parting ways soon.. hopefully it'll make sure you won't miss my face. Or forget it.~
+~拿着。我要你收下。我们很快就要分开……但愿它能让你别想我这张脸。或者别忘了它。~
 EXTERN C02DRAKJ r3.4
 
 CHAIN C02DRAKJ r3.2
-~It's an old family heirloom. But I'm not that attached to it. Actually, the reason I'm giving it to you is...~
+~这是一件老传家宝。可我并没多舍不得。其实，我把它给你，是因为……~
 EXTERN C02DRAKJ r3.4
 
 CHAIN C02DRAKJ r3.3
-~Only for now. I'm sure we'll meet again one day. Amn isn't too far from the Sword Coast, after all.~
+~只是暂时。我确信我们哪天还会再见。毕竟安姆离剑湾不远。~
 EXTERN C02DRAKJ r3.4
 
 CHAIN C02DRAKJ r3.4
-~(Drake snaps open the locket, revealing a hand-drawn portrait of him, protected from behind glass. Drake scratches his head awkwardly.)~
-= ~Eh... I was younger then. Stubble wasn't as dark, hair was a bit shorter, nose hadn't been broken several times yet. But I'm still recognizable at least.~
+~（德雷克啪地打开吊坠，露出一幅手绘的他自己的肖像，隔着玻璃护着。德雷克尴尬地挠挠头。）~
+= ~呃……我那时年轻。胡茬没这么黑，头发短一点，鼻子还没被打断好几回。可至少还认得出。~
 END
-++ ~Why are you giving this to me?~ + r3.5
-++ ~You still looked as smug then as you do now.~ + r3.6
-++ ~It's a good gift. Thank you, Drake.~ + r3.7
-++ ~I said I don't want it.~ + r3.8
+++ ~你为什么把这个给我？~ + r3.5
+++ ~你那时看着就跟现在一样得意。~ + r3.6
+++ ~这是份好礼。谢了，德雷克。~ + r3.7
+++ ~我说了我不要。~ + r3.8
 
 CHAIN C02DRAKJ r3.5
-~I don't know. I suppose I want you to have something to remember me by.~
+~我不知道。我看我是想让你有样东西记得我。~
 EXTERN C02DRAKJ r3.7
 
 CHAIN C02DRAKJ r3.6
-~Heh. I suppose some things will never change. Though I doubt I'd be smiling so broadly if I everything then that I do now.~
+~嘿。我看有些东西永远不变。不过要我当时就像现在知道这么多，我怀疑我笑不了这么开。~
 EXTERN C02DRAKJ r3.7
 
 CHAIN C02DRAKJ r3.7
-~The last person I gave it to didn't exactly part with me on good terms. I'd never admit it to his face, but I regret that. I didn't want it to be the same this time.~
-= ~Keep it safe. I hope you'll look at it some time and remember all the good times we've had so far. I'll sleep better for it.~
+~我上一个把它送出去的人，跟我分得不算和气。我绝不会当面认，可我后悔。我不想这回也那样。~
+= ~好好收着。我希望你哪天看着它，想起我们至今有过的所有好时光。这样我睡得安稳些。~
 EXIT
 
 CHAIN C02DRAKJ r3.8
-~Well, I certainly don't want it either. Just looking at what I used to look like makes me cringe. Do me a favor and take it off of my hands.~
+~嗯，我也真不想要。光是看看我以前那副样子就让我难受。帮我个忙，从我手上拿走吧。~
 EXTERN C02DRAKJ r3.7
 
 // interjections
@@ -885,292 +885,292 @@ EXTERN C02DRAKJ r3.7
 // Al-Alai
 
 I_C_T BDALALAI 0 C0DrakeBDALALAI0
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Bringing a flame elemental to a tavern. Built from wood. This can't possibly go wrong in any way.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~把火元素带进酒馆。还是木头盖的。这绝不会出任何岔子。~
 END
 
 // Alyth
 
 INTERJECT BDALYTH 32 C0DrakeBDALYTH32
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Ha! Is that the sort of reputation the Elfsong's willing to bear, my lady? Putting their own profit above all else, even the requirements of the needy? I can already see where your business will lead to such a thing became known to the common folk, can't you?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~哈！精灵之歌愿意背这种名声吗，女士？把自己的利润摆在其他一切之上，连穷人的需求都不顾？我已经能看出，这事一旦传到寻常百姓耳朵里，你这生意会走到哪儿去，你看不出来？~
 EXTERN BDALYTH 33
 
 // Barrel
 
 I_C_T BDBARREL 0 C0DrakeBDBARREL0
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*sniff* Smells about right. Anyone got a clean ladle on hand? It's never a good idea to taint good wine with one's touch.~
-== BDBARREL ~Take the barrel?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*嗅* 闻着差不多。谁手上有干净的杓子？拿手去碰好酒从来不是好主意。~
+== BDBARREL ~把那桶拿走？~
 END
 
 // Bence
 
 I_C_T BDBENCE 41 C0DrakeBDBENCE41
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*sigh*~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*叹气*~
 END
 
 // Bridgefort
 
 I_C_T BDBF1 1 C0DrakeBDBF11
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Agh... any priest worth their salt recognizes an assault of negative energy when they feel it. But from where, I wonder?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~啊……任何有点本事的祭司，一感到负能量的冲击就认得出。可它是从哪儿来的，我在想？~
 END
 
 // Corwin
 
 I_C_T BDSCHAEL 39 C0DrakeBDSCHAEL39
-== BDSCHAEL ~There's also an Amnian priest of Tyr from Amn called Drake Caulfield that's staying at the Three Old Kegs. Strangely, actually volunteered to help the Flaming Fist in the expedition against the crusade, despite the... less than amiable relations between Amn and Baldur's Gate.~
-== BDSCHAEL ~From what I've heard, he's supposedly a member of the Order of the Radiant Heart, but after my first impression of him, I find that claim a little suspect. Still, if you know of him then he might trust you.~
+== BDSCHAEL ~还有一位从安姆来的提尔祭司，叫德雷克·考尔菲尔德，住在三只老酒桶。怪的是，他竟自愿帮燃焰铁拳参加讨伐圣战军的远征，尽管安姆和博德之门之间关系……不算和睦。~
+== BDSCHAEL ~听说他据说是光辉之心骑士团的成员，可我头一回见他的印象，让我对这说法有点怀疑。不过你要认识他，他也许会信你。~
 DO ~SetGlobal("C0DrakeBDSCHAEL39","GLOBAL",0)~
 END
 
 I_C_T BDSCHAEL 154 C0DrakeBDSCHAEL154
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~What's this indeed? Is this not the fair captain of the Flaming Fist I see following your lead, <CHARNAME>?~
-== BDSCHAEL ~That's right. Schael Corwin. I believe we met briefly.~
-== C02DRAKJ ~That we have, captain. I wonder if your reception will be half as warm as that which I've gotten from your colleagues.~
-== BDSCHAEL ~I think you'll find that not all of us hold quite as much prejudice against Amnians as you might think, sir. And I'd thank you not to assume otherwise.~
-== C02DRAKJ ~Duly noted. We are to work together soon enough, after all. Care to share a friendly drink, captain?~
-== BDSCHAEL ~As you can see, I'm rather busy right now. Are you ready to leave, <CHARNAME>?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~这是什么？我看这不是跟着你走的燃焰铁拳那位漂亮队长吗，<CHARNAME>？~
+== BDSCHAEL ~没错。沙尔·科温。我想我们简短见过。~
+== C02DRAKJ ~确实见过，队长。我在想，你接待我会不会有你同僚对我的一半热络。~
+== BDSCHAEL ~我看你会发现，我们并非人人都像你以为的那样对安姆人有那么多偏见，先生。也请你别作别的假设。~
+== C02DRAKJ ~记下了。毕竟我们很快就要并肩做事。可愿一起喝杯友好的酒，队长？~
+== BDSCHAEL ~如你所见，我眼下挺忙。你准备好走了吗，<CHARNAME>？~
 END
 
 I_C_T BDSCHAEL 251 C0DrakeBDSCHAEL324
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Worded most tactfully, captain.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~说得真有分寸，队长。~
 END
 
 I_C_T BDCORWIJ 324 C0DrakeBDCORWIJ324
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Ha! Only with you, <CHARNAME>, only with you would such miracles happen... well, I say why not? It might offer an interesting perspective.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~哈！只有跟你，<CHARNAME>，只有跟你才会有这种奇迹……嗯，我说干嘛不？也许能提供个有趣的视角。~
 END
 
 I_C_T BDCORWIJ 106 C0DrakeBDCORWIJ106
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~He's a selfish, cowardly sleaze. Don't be sorry he's gone. It's probably the best thing he's done for your kid.~
-== BDCORWIJ ~Easy for you to say, Drake. I don't suppose you've had the experience of raising a child alone.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~他是个自私、怯懦的烂人。他走了别难过。那大概是他为你孩子做过的最好一件事。~
+== BDCORWIJ ~你说得轻巧，德雷克。我看你没独自养过孩子。~
 END
 
 I_C_T2 BDCORWIJ 123 C0DrakeBDCORWIJ123
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~It would set a bad example of the crusade's supposed righteousness were they to stab us in the back while we were vulnerable, wouldn't you think, captain? Come, we should not waste this opportunity.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~趁我们虚弱时从背后捅刀，那会给圣战军所谓的正义立个坏样子，你不觉得吗，队长？来，我们不该浪费这机会。~
 END
 
 // Dauston
 
 I_C_T BDDAUSTO 2 C0DrakeBDDAUSTO2
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*snort* Yet for some of us, it is clearly far too late.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~*哼* 可对我们有些人来说，显然已经太迟了。~
 END
 
 // de Lancie
 
 I_C_T2 BDDELANC 16 C0DrakeBDDELANC16
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~You know, I never thought I'd miss the feeling of being ordered around again like some common soldier.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~你知道，我从没想到我会想念又像普通士兵那样被人使唤的感觉。~
 END
 
 I_C_T BDDELANC 23 C0DrakeBDDELANC23
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Not to imply that I'm advocating for anything, but weakening the enemy would also make them easier to spare... though I can't promise the soldiers will see it that way.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~倒不是我在主张什么，可削弱敌人也会让他们更容易被饶过……不过我不能保证士兵们会那么看。~
 END
 
 I_C_T2 BDDELANC 26 C0DrakeBDDELANC26
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~It's probably for the best in any case, <CHARNAME>. If word gets out that we're resorting to poisoning our enemies, I can't imagine the men will fight with full confidence. Let's forget this was ever suggested to us.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~不管怎样那大概是最妥当的，<CHARNAME>。要传出去说我们下毒害敌人，我想不出士兵们还能有多少信心打仗。就当我们从没提过这事。~
 END
 
 // Earth Elemental
 
 I_C_T2 BDEARTHE 1 C0DrakeBDEARTHE1
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~You just had to pick the big one, didn't you?~
-== BDEARTHE ~RRRUMMMMBLE!~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~你偏挑了大的那个，是吧？~
+== BDEARTHE ~咕噜噜隆隆！~
 END
 
 // Endless
 
 INTERJECT BDENDLES 2 C0DrakeBDENDLES2
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") Dead("BDZHADRO")~ THEN ~Hold, spirit! I speak as a priest and follower of Tyr the Even-Handed, and by my word, I tell you that the lich is no more. Your vigil is done.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") Dead("BDZHADRO")~ THEN ~站住，幽魂！我以平衡者提尔的祭司与信徒身份说话，我告诉你们，巫妖已不存在了。你的守夜结束了。~
 EXTERN BDENDLES 4
 
 // Flaming Fist
 
 I_C_T2 BDFFXXII 5 C0DrakeBDFFXXII5
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Well, that was... something. I do believe I have been outdone, <CHARNAME>.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~嗯，那真是……有点意思。我看我是被比下去了，<CHARNAME>。~
 END
 
 // Halatathlaer
 
 I_C_T BDHALATA 4 C0DrakeBDHALATA4
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Hmm... curious. My training has given me some insight into spirits, but this one... well, let's just say I've never met one that sounds so... regretful.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~嗯……奇怪。我的训练让我对幽魂有些见识，可这一个……嗯，这么说吧，我从没遇到过语气这么……懊悔的。~
 END
 
 // Hephernaan
 
 I_C_T BDHEPHER 10 C0DrakeBDHEPHER10
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Come for it yourself if you dare, you cowardly wretch!~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~有种就自己来拿，你这怯懦的贱种！~
 END
 
 // Hester
 
 EXTEND_TOP BDHESTER 6 #3
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Drake, you look as though you were about to say something.~ EXTERN C02DRAKJ bdhester
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克，你看着像有话要说。~ EXTERN C02DRAKJ bdhester
 END
 
 EXTEND_TOP BDHESTER 7 #3
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Drake, you look as though you were about to say something.~ EXTERN C02DRAKJ bdhester
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克，你看着像有话要说。~ EXTERN C02DRAKJ bdhester
 END
 
 CHAIN C02DRAKJ bdhester
-~You remind me of myself during my first campaign with the Amnian army. I know, I know... it's always frightening to face pain or potential death for the first time, aye, but without working past that, that'll never change. No one grows by always taking the easy path.~
+~你让我想起我在安姆军头一回上战场时的自己。我知道，我知道……头一回面对痛苦或可能的死亡总是可怕，是，可不熬过去，就永远不变。没人靠总走容易的路长本事。~
 DO ~IncrementGlobal("BD_FIGHTERS_SKILL","BD3000",2)
 SetGlobal("bd_sdd301_hester_skill","global",2)~
-== BDHESTER ~So by trying to avoid battle and all that comes with it, I'm missing out on my life now...?~
-== C02DRAKJ ~See? You get it now. Sure, it'll be terrifying on the spot, but I guarantee you in a month from now you'll be laughing with your fellow soldiers over a mug of ale and a hot roast. Assuming you've the guts to make it through, of course.~
+== BDHESTER ~所以我想躲开战斗和它带来的一切，就是错过我眼下的生活……？~
+== C02DRAKJ ~瞧？你明白了。当然，当场会很吓人，可我保证一个月后你会跟同袍们就着一杯麦酒和一块热烤肉大笑。当然，前提你有胆子熬过去。~
 EXTERN BDHESTER 10
 
 // Hyreth
 
 INTERJECT BDHYRETH 2 C02DrakeHYRETH2
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Ahh... so this one follows the teachings of Ilmater, the god of martyrdom. Suddenly his stubbornness all makes sense.~
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") IsValidForPartyDialogue("C0Sirene")~ THEN ~If that is the case, perhaps our lady Mercy should speak with him instead? No doubt her position as the Crying God's champion will give her voice more authority than either of ours.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~啊……原来这位信奉殉道之神伊尔玛塔。怪不得他这么固执。~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") IsValidForPartyDialogue("C0Sirene")~ THEN ~既如此，也许该让我们的慈悲女士去跟他谈？无疑她作为泣神勇士的身份，会让她的声音比我们俩都更有分量。~
 DO ~SetGlobal("BD_WOUNDED_ZEALOT_DOSIA","BD3000",1)~ EXTERN BDHYRETH 3
 
 EXTEND_TOP BDHYRETH 4 #3
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Drake? Do you have any ideas?~ EXTERN C02DRAKJ bdhyreth4
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克？你有什么主意？~ EXTERN C02DRAKJ bdhyreth4
 END
 
 CHAIN C02DRAKJ bdhyreth4
-~Mmm... I can't say I'm all too familiar with the Ilmatari dogma, but I've spoken with priests of the Crying God in the local Athkatlan chapels in the past, so I've learned a thing or two about the way they work. As I recall, the faithful are allowed to relieve their own pain... so long as another is willing to take it in their place.~
-== C02DRAKJ ~In other words, <CHARNAME>... you want him to let go of his pain, you'll have to bleed a little in his place. Sure you're still interested?~
+~嗯……我不能说我多熟伊尔玛塔教义，可我以前在阿斯卡特拉本地的礼拜堂跟泣神的祭司谈过，所以我对他们行事的路数懂个一两分。我记得，信徒可以卸下自己的痛苦……只要有别人愿意替他们承受。~
+== C02DRAKJ ~换句话说，<CHARNAME>……你要他放下痛苦，你就得替他流点血。你还确定你有兴趣？~
 EXTERN BDHYRETH 8
 
 // Imoen
 
 EXTEND_BOTTOM BDIMOEN 104
 + ~Global("bd_player_exiled","global",1)
-Global("C0Drake_party_epilogue","global",1)~ + ~Where's Drake? Surely he'd have wanted to help me.~ EXTERN BDIMOEN bdimoen1
+Global("C0Drake_party_epilogue","global",1)~ + ~德雷克在哪？他肯定想帮我。~ EXTERN BDIMOEN bdimoen1
 + ~Global("bd_player_exiled","global",0)
-Global("C0Drake_party_epilogue","global",1)~ + ~Where's Drake? Surely he'd have wanted to help me.~ EXTERN BDIMOEN bdimoen2
+Global("C0Drake_party_epilogue","global",1)~ + ~德雷克在哪？他肯定想帮我。~ EXTERN BDIMOEN bdimoen2
 END
 
 EXTEND_BOTTOM BDIMOEN 109
 + ~Global("bd_player_exiled","global",1)
-Global("C0Drake_party_epilogue","global",1)~ + ~Where's Drake? Surely he'd have wanted to help me.~ EXTERN BDIMOEN bdimoen1
+Global("C0Drake_party_epilogue","global",1)~ + ~德雷克在哪？他肯定想帮我。~ EXTERN BDIMOEN bdimoen1
 + ~Global("bd_player_exiled","global",0)
-Global("C0Drake_party_epilogue","global",1)~ + ~Where's Drake? Surely he'd have wanted to help me.~ EXTERN BDIMOEN bdimoen2
+Global("C0Drake_party_epilogue","global",1)~ + ~德雷克在哪？他肯定想帮我。~ EXTERN BDIMOEN bdimoen2
 END
 
 CHAIN BDIMOEN bdimoen1
-~I tried finding him, but he left the city. From what I heard, he was outraged at hearing about your trial, and said he'd bring the entire Order from Amn to here if he has to. I suppose he didn't expect me to save you first.~
+~我试着找过他，可他出城了。听说他一听到你受审的事就大怒，说必要时他会把整个骑士团从安姆带过来。我看他没料到我会先把你救出来。~
 EXTERN BDIMOEN 119
 
 CHAIN BDIMOEN bdimoen2
-~I dunno. I never found him. My guess is that he's gone back to Amn. Looks like he didn't trust you in the end after all.~
+~我不知道。我一直没找到他。我猜他回安姆了。看来他终究没信你。~
 EXTERN BDIMOEN 119
 
 // Litila
 
 EXTEND_BOTTOM BDLITILA 0
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Drake, can your priestly skills come into use here?~ EXTERN C02DRAKJ bdlitila
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克，你的祭司本事在这儿用得上吗？~ EXTERN C02DRAKJ bdlitila
 END
 
 CHAIN C02DRAKJ bdlitila
-~That they might. Hear me, spirits! We mean you no harm. Hear the truth of my words, as I speak for Tyr, the Maimed God.~
-== BDSOTUK ~I hear your voice... you come into view.~
+~也许用得上。听我说，幽魂！我们无意害你们。听我话中的真实，我以伤残之神提尔之名说话。~
+== BDSOTUK ~我听见你的声音……你显形了。~
 END
-++ ~Thank you, Drake. Spirit, can you understand me now? Tell me who you were in life.~ DO ~AddXPObject("C0Drake",500)~ EXTERN BDLITILA 1
-++ ~Finally, you speak sense. More or less. Who were you?~ EXTERN BDLITILA 1
-++ ~What do you want from us, spirits?~ EXTERN BDLITILA 1
+++ ~谢了，德雷克。幽魂，你现在能听懂我了吗？告诉我你生前是谁。~ DO ~AddXPObject("C0Drake",500)~ EXTERN BDLITILA 1
+++ ~总算，你说得有点道理了。多多少少吧。你生前是谁？~ EXTERN BDLITILA 1
+++ ~你们想从我们这儿得到什么，幽魂？~ EXTERN BDLITILA 1
 
 // Lluis
 
 I_C_T BDLLUIS 5 C0DrakeBDLLUIS5
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~How about you tie yourselves up and we can leave your heads intact?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~不如你们把自己捆起来，我们就能留你们脑袋完整？~
 END
 
 // Mizhena
 
 I_C_T BDMIZHEN 22 C0DrakeBDMIZHEN22
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Hnh. You know, my father and I used to play games of strategy all the time. It could be interesting to challenge a follower of the Lady of Strategy.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~哼。你知道，我父亲跟我常下策略棋。跟策略女士的信徒较量一下，也许会有意思。~
 END
 
 // Nantrin
 
 I_C_T BDNANTRI 7 C0DrakeBDNANTRI7
-== BDNANTRI IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Looks like you've got Drake with you now. Well, that's good. He's a decent sort, even if he likes to mouth off whenever he sees a chance. I've no doubt he'll be a worthwhile companion for you.~
-== BDNANTRI ~What can I do for you?~
+== BDNANTRI IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~看来德雷克现在跟着你了。那好。他人不坏，虽说一见机会就爱贫嘴。我毫不怀疑他会是个值得的同伴。~
+== BDNANTRI ~我能为你做什么？~
 END
 
 // Ophyllis
 
 I_C_T2 BDOPHYLL 40 C0DrakeBDOPHYLL40
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Well, that's some dedication for sure. I'm not sure whether to admire or pity him.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~嗯，那真是份不折不扣的执着。我都不知道该佩服他还是同情他。~
 END
 
 // Pedro
 
 I_C_T BDPEDRO 0 C0DrakeBDPEDRO0
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Save your effort soldier. There's no waking a man who's clearly been drowned in his drink.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~省点力气吧，士兵。一个显然淹死在自己酒里的人，是叫不醒的。~
 END
 
 // Rhayla
 
 I_C_T BDRHAYLA 0 C0DrakeBDRHAYLA0
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~It's a new experience for me to be branded a villain by anyone not trying to be ironic.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~被人当成恶棍，而对方又不是在反讽，这对我来说倒是新鲜。~
 END
 
 // Rayphus
 
 I_C_T BDRAYPHU 23 C0DrakeBDRAYPHU23
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~An uncommon stance for a paladin - particularly one who follows Tyr. Not that I disagree, of course. Else, I wouldn't be here myself.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~对一个圣武士来说，这立场少见——尤其是信奉提尔的。当然我不是不同意。不然我也不会在这儿。~
 END
 
 // Tristian
 
 EXTEND_BOTTOM BDTRISTI 14
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Drake.~ DO ~SetGlobal("C02DrakePlaysCoroniir","GLOBAL",1)~ EXTERN C02DRAKJ bdtristi
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克。~ DO ~SetGlobal("C02DrakePlaysCoroniir","GLOBAL",1)~ EXTERN C02DRAKJ bdtristi
 END
 
 CHAIN C02DRAKJ bdtristi
-~Been a while since I've sat down for a game of strategy. I'm sure I'll learn the rules quickly enough.~
+~好久没坐下来下策略棋了。我确信我很快就能学会规则。~
 EXTERN BDTRISTI 15
 
 INTERJECT BDTRISTI 1 C02DrakeBDTRISTI1
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") Global("C02DrakePlaysCoroniir","GLOBAL",1)~ THEN ~Well, that was... enlightening. The followers of the Red Knight are something else entirely, both on the board and in the real battlefield.~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake") Global("C02DrakePlaysCoroniir","GLOBAL",1)~ THEN ~嗯，那真是……长见识。红骑士的信徒完全另是一回事，棋盘上和真战场上都是。~
 END
-++ ~And you won regardless. I'm impressed.~ EXTERN C02DRAKJ tristian1
-++ ~You mentioned learning with your father. Which one of you was the better player?~ EXTERN C02DRAKJ tristian2
-++ ~Well done. Let's go.~ EXIT
+++ ~可你还是赢了。我佩服。~ EXTERN C02DRAKJ tristian1
+++ ~你提过跟你父亲学棋。你们俩谁更强？~ EXTERN C02DRAKJ tristian2
+++ ~干得好。走吧。~ EXIT
 
 CHAIN C02DRAKJ tristian1
-~Well, I had good tutors. This isn't the first time I've had to match wits with a follower of the Red Knight. Never expected those lessons to pay off this way, of course.~
+~嗯，我有好老师。跟红骑士的信徒斗智，我不是头一回。当然，我从没料到那些课会这么派上用场。~
 EXIT
 
 CHAIN C02DRAKJ tristian2
-~Him, of course. By a mile, as well. I could even beat Gabriel when I put my mind to it. My father, though? Not even once.~
+~当然是他。还差一大截。我认真起来甚至能赢加布里尔。可我父亲？一次都没赢过。~
 EXIT
 
 // Uncommon Cold
 
 EXTEND_BOTTOM BDXERRA 1
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Remain calm, soldier. Drake will have a look at you.~ EXTERN C02DRAKJ bdxerra1
++ ~IsValidForPartyDialogue("C0Drake")~ + ~保持镇定，士兵。德雷克会来看看你。~ EXTERN C02DRAKJ bdxerra1
 END
 
 CHAIN C02DRAKJ bdxerra1
-~*snort* Hardly need me to tell you that he's burning up. We'll need a way to deal with that fever, and quickly. I'm no herbalist, but I'm familiar enough with field medicine to save a life or two. Leave it to me.~ DO ~SetGlobal("bd_patient_xerra","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ 
+~*哼* 不用我说你也看得出他烧得厉害。我们得想办法对付那热病，而且要快。我不是草药师，可我对战地医术还算熟，救得了一两条命。交给我。~ DO ~SetGlobal("bd_patient_xerra","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ 
 EXTERN BDXERRA 2
 
 EXTEND_BOTTOM BDZIDRAN 1
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Would you mind giving your input, Drake?~ DO ~SetGlobal("bd_patient_zidrand","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ EXTERN C02DRAKJ bdzidran1
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克，你愿不愿意出个主意？~ DO ~SetGlobal("bd_patient_zidrand","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ EXTERN C02DRAKJ bdzidran1
 END
 
 CHAIN C02DRAKJ bdzidran1
-~She looks worse off than the rest, and no surprise. It's never a good idea to put the sick in the middle of a dogpile with the other sick. Best move her somewhere private. Preferably somewhere with clean air.~
+~她看着比其他人糟，也不奇怪。把病人塞在一堆病人中间从来不是好主意。最好把她挪到私密些的地方。最好是空气干净的地方。~
 EXTERN BDZIDRAN 2
 
 EXTEND_BOTTOM BDYESTIM 1
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~Uh, Drake? Got any advice?~ DO ~SetGlobal("bd_patient_yestimell","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ EXTERN C02DRAKJ bdyestim1
++ ~IsValidForPartyDialogue("C0Drake")~ + ~呃，德雷克？有什么建议？~ DO ~SetGlobal("bd_patient_yestimell","global",2) IncrementGlobal("bd_sdd302_death_count","global",-1)~ EXTERN C02DRAKJ bdyestim1
 END
 
 CHAIN C02DRAKJ bdyestim1
 ~...~
-= ~My advice? Draw your weapon. And prepare a shovel while you're at it.~
+= ~我的建议？拔兵器。顺手再备把铲子。~
 EXTERN BDYESTIM 5
 
 EXTEND_TOP BDDOSIA 11 #3
-+ ~IsValidForPartyDialogue("C0Drake")~ + ~I don't suppose you have any ideas, Drake?~ EXTERN C02DRAKJ bddosia11
++ ~IsValidForPartyDialogue("C0Drake")~ + ~德雷克，我看你也没什么主意？~ EXTERN C02DRAKJ bddosia11
 END
 
 CHAIN C02DRAKJ bddosia11
-~*shrug* Medicine's not really my strong suit. Most curatives for sicknesses this extreme are costly and would need the skills of a city-trained healer. Out here, I'd say our best alternative is blackthorn bark. It's as good of a remedy as any.~
+~*耸肩* 医术真不是我的强项。这么重的病，多数治法都贵，还得要城里训练出来的医者。在这外头，我看我们最好的替代是黑刺李树皮。那跟任何药一样顶用。~
 DO ~SetGlobal("bd_sdd302_uncommon_cold","global",2)
 SetGlobal("bd_sdd302_blackthorn","global",1)
 AddJournalEntry(61438,QUEST)~ EXTERN BDDOSIA 14
@@ -1178,7 +1178,7 @@ AddJournalEntry(61438,QUEST)~ EXTERN BDDOSIA 14
 // Zelma
 
 I_C_T2 BDZELMA 7 C0DrakeBDZELMA7
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~Sharp only gets you so far, pickpocket. Time to educate you in the ways of blunt, hard justice!~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~利刃只能带你到这儿，扒手。该教你什么叫钝而硬的正义了！~
 END
 
 // Thrix the Profane
@@ -1524,19 +1524,19 @@ IsValidForPartyDialogue("C0Drake")~ EXTERN BDTHRIX ThrixWager1
 END
 
 CHAIN BDTHRIX ThrixWager1
-~The Tyrran priest, yes... the stench of good and holiness is apparent beneath his earthly demeanor. No doubt his soul would make a fine prize indeed.~
+~那个提尔祭司，对……他那俗世皮囊底下，善与神圣的臭味明明白白。无疑他的灵魂会是个好彩头。~
 END
-++ ~Perhaps. I'll wager Drake's soul, though I wonder if Tyr would be willing to relinquish it.~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",1) SetGlobal("bd_thrix_sacrifice_companion","global",1)~ EXTERN BDTHRIX 116
-++ ~Drake deserves better than to become a piece in your games, fiend. I think not.~ DO ~SetGlobal("C02_Saved_Drake","bd4500",1) IncrementGlobal("BD_NumInParty","bd4500",1)~ EXTERN C02DRAKJ ThrixWager2
-++ ~I don't think so. Leave my allies out of this, and we'll wager my soul, and mine alone, understand?~ EXTERN BDTHRIX 113
-++ ~I'll not play your twisted game, devil. Stand aside, or pay the price.~ EXTERN BDTHRIX 12
+++ ~也许。不过我赌德雷克的灵魂，只是不知道提尔肯不肯放手。~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",1) SetGlobal("bd_thrix_sacrifice_companion","global",1)~ EXTERN BDTHRIX 116
+++ ~德雷克不该沦为你游戏里的棋子，魔鬼。我看不行。~ DO ~SetGlobal("C02_Saved_Drake","bd4500",1) IncrementGlobal("BD_NumInParty","bd4500",1)~ EXTERN C02DRAKJ ThrixWager2
+++ ~我看不必。把我的盟友排除在外，我们就赌我的灵魂，只赌我的，明白？~ EXTERN BDTHRIX 113
+++ ~我不玩你这扭曲的把戏，魔鬼。让开，不然就付代价。~ EXTERN BDTHRIX 12
 
 CHAIN C02DRAKJ ThrixWager2
-~Why, thank you, <CHARNAME>. I can't readily admit I've had enough with my mortal coils just yet.~
+~哎呀，谢谢你，<CHARNAME>。我可不能说自己这就舍得撇下这副肉身。~
 EXTERN BDTHRIX ThrixWager3
 
 CHAIN BDTHRIX ThrixWager3
-~Hmph, Thrix had expected as much. Very well then.~
+~哼，特里克丝早料到了。那好吧。~
 END
 IF ~RandomNum(4,1)~ EXTERN BDTHRIX 78
 IF ~RandomNum(4,2)~ EXTERN BDTHRIX 79
@@ -1569,68 +1569,68 @@ IsValidForPartyDialogue("C0Drake")~ EXTERN BDTHRIX ThrixWager4
 END
 
 CHAIN BDTHRIX ThrixWager4
-~Good... this one with ties to the gods shall give Thrix influence over them, no doubt. If you would hand him over, as we agreed, Bhaalspawn?~
+~好……这个跟神有牵连的，无疑能让特里克丝对他们有影响。你按我们说好的，把他交出来吗，巴尔之子？~
 END
-++ ~A deal is a deal, I suppose.~ DO ~SetGlobal("C02_thrix_mark_Sirene","global",1)~ EXTERN C02DRAKJ ThrixWager5
-++ ~The hells I will. A dead devil takes no souls.~ EXTERN BDTHRIX 10
+++ ~交易就是交易，我看。~ DO ~SetGlobal("C02_thrix_mark_Sirene","global",1)~ EXTERN C02DRAKJ ThrixWager5
+++ ~休想。死掉的魔鬼收不了灵魂。~ EXTERN BDTHRIX 10
 
 CHAIN C02DRAKJ ThrixWager5
-~Oh, I wouldn't be so sure about that. If you want my soul, fine... just don't expect me to make it easy for you.~
+~哦，那我可不那么确定。你想要我的灵魂，行……只是别指望我让你轻易得手。~
 DO ~SetGlobal("bd_thrix_plot","global",11)~ EXTERN BDTHRIX 140
 
 // Burnt Inn
 
 CHAIN IF ~Global("C02DrakeInnTalk","GLOBAL",1)~ THEN C02DRAKJ inntalk
-~Well, this looks pleasant. The crusade's handiwork, no doubt.~
+~嗯，这地方看着挺惬意。无疑是圣战军的手笔。~
 DO ~SetGlobal("C02DrakeInnTalk","GLOBAL",2)~
-= ~You know, I passed by one of the villages the crusade which had the... questionable honor of providing hospitality to the crusade. They ended up giving a lot more than they ever intended.~
+= ~你知道，我路过圣战军经过的一个村子，那村子有那份……可疑的荣幸招待过圣战军。最后他们付出的远多于他们原打算的。~
 END
-++ ~What was the name of the village?~ + inntalk.1
-++ ~I'm not sure what exactly you mean.~ + inntalk.2
-++ ~Now's not the time for small talk, Drake.~ + inntalk.0
+++ ~那村子叫什么？~ + inntalk.1
+++ ~我不太明白你具体指什么。~ + inntalk.2
+++ ~现在不是闲聊的时候，德雷克。~ + inntalk.0
 
 CHAIN C02DRAKJ inntalk.0
-~Have it your way.~
+~随你。~
 EXIT
 
 CHAIN C02DRAKJ inntalk.1
-~I don't know. The writing on the gate was completely illegible after what the crusaders... or rather, the bastards did to the place.~
+~我不知道。圣战军……或者说那些混蛋对这地方干的事之后，门上的字完全认不出了。~
 EXTERN C02DRAKJ inntalk.2
 
 CHAIN C02DRAKJ inntalk.2
-~From what I heard from the poor survivors who weren't conscripted or sent packing, they offered bread and shelter... and the crusade took everything. Then they torched the village for good measure so that nothing would be left behind for their enemies.~
-= ~It's commonly called the 'scorched earth' strategy among military folk. Not unheard of during wartimes, but this wasn't a wealthy, productive land we're talking about here. It was just a tiny village whose people showed too much kindness to people they had no quarrel with.~
-= ~I'm not sure why they thought it was necessary. It looked just like the many raids led by bandit groups and mercenaries I had seen in the past. Pointless brutality, that's all that I saw when I looked at the blackened remains of houses and crop fields.~
+~我从那些没被征走、也没被赶走的可怜幸存者那儿听说，他们给了面包和住处……圣战军却拿走了一切。然后为了保险，他们把村子烧了，好给敌人什么也不留。~
+= ~军中俗称“焦土”策略。战时不算罕见，可我们说的不是富裕丰产的地方。那只是个小村子，村里人对跟自己无冤无仇的人太厚道了。~
+= ~我不明白他们为什么觉得有必要。那看着就跟我过去见过的许多匪帮和佣兵扫荡一样。无谓的暴行，我看着那些烧黑的屋子和田地的残骸，只看到这个。~
 END
-++ ~You've seen such things many times before?~ + inntalk.3
-++ ~I feel a story coming up. Are you about to tell me one?~ + inntalk.4
-++ ~I'd rather not listen to this.~ + inntalk.0
+++ ~你以前见过很多这种事？~ + inntalk.3
+++ ~我感觉有个故事要来了。你打算讲给我听？~ + inntalk.4
+++ ~我倒不想听这个。~ + inntalk.0
 
 CHAIN C02DRAKJ inntalk.4
-~I am, yes. Are you willing to listen?~
+~是，我要讲。你愿意听吗？~
 END
-++ ~I suppose. Have you seen many destroyed homes like this one?~ + inntalk.3
-++ ~No, not really.~ + inntalk.0
+++ ~我看行。你见过很多像这样被毁的家？~ + inntalk.3
+++ ~不，不算多。~ + inntalk.0
 
 CHAIN C02DRAKJ inntalk.3
-~I wouldn't go as far as to say many. Not to the extent of what I'm describing to you right now. But that village, or what's left of it, reminded me of a similar incident years ago, in a village not so different on the borders of Amn by the name of Oakshire.~
-= ~It was simple farming village built in the middle of a valley. I lived there with my uncle Derek when I was still only fourteen years of age. Why I was there... well, that doesn't concern you, let's just say that my parents weren't able to take care of me at that time. It's about as close to a peaceful life as I ever had. Until the incident, that is.~
-= ~During that day, men in purple - I still don't know who they were - invaded the village, slaughtering anyone who was too slow to hide or get out of their way, burning everything to the ground... we didn't have any trained warriors save for my uncle, who hadn't lifted his sword in years. We didn't stand a chance, so the most any of us could do was stay low until it was all over. And even that wasn't enough to save everyone.~
-= ~Me, I was lucky to come out of it without any lasting harm. Not so much for my uncle, who was crippled. He lost an eye and his sword hand while fighting, and hasn't been able to swing a weapon since then. And I'd say he got lucky, considering the state of some of the other men... or bodies of men... that I saw afterwards.~
+~我不会说很多。没到我眼下跟你讲的这地步。可那个村子，或者说它剩下那点，让我想起多年前一桩类似的事，在安姆边境一个差不多的村子，叫橡郡。~
+= ~那是个建在山谷中间的小农庄。我那时才十四岁，跟我叔叔德里克住在那儿。我为什么在那儿……嗯，跟你无关，就说我父母那时照顾不了我。那差不多是我有过的最接近平静日子的一段。直到那桩事为止。~
+= ~那天，一伙穿紫衣的人——我至今不知道他们是谁——冲进村子，杀掉所有躲得慢、让得慢的人，把一切烧成灰……我们除了我叔叔，没有受过训练的战士，而他多年没举过剑。我们毫无胜算，所以我们能做的顶多是趴低，等一切过去。就连那也不够救下所有人。~
+= ~我算走运，出来没留下什么永久的伤。我叔叔就没那么走运，他残了。他打架时丢了一只眼和用剑的手，从那以后再没能挥过兵器。可我得说他算走运，想想我后来看到的其他一些男人……或者说男人的尸体的样子。~
 END
-++ ~That's horrible!~ + inntalk.5
-++ ~What about you? Didn't you fight that day?~ + inntalk.6
-++ ~I think I've listened to this horrid story long enough, Drake. Let's move on.~ + inntalk.0
+++ ~太可怕了！~ + inntalk.5
+++ ~那你呢？那天你没打？~ + inntalk.6
+++ ~这可怕的故事我听够了，德雷克。我们走吧。~ + inntalk.0
 
 CHAIN C02DRAKJ inntalk.6
-~Me? Ha! You bet yourself that I wanted to. But my good uncle's stubbornness puts me and my father to shame. Like a mule, he is. He wouldn't have any of it, considering I was his ward.~
+~我？哈！你打赌我想打。可我那位好叔叔的固执，把我跟我父亲都羞死了。他像头骡子。他一点不肯，毕竟我是他监护的。~
 EXTERN C02DRAKJ inntalk.5
 
 CHAIN C02DRAKJ inntalk.5
-~Even after all the battles I've been through since, and the awful things I've seen... the massascre at Oakshire is still a clear memory in my mind.~
-= ~The Order was forced to take action, and I hear the village has been rebuilt, its survivors recovered, but... I've never been back.~
-= ~But I hope you can understand why I staunchly oppose the crusade and everything it is doing. The things I saw then, compared to what I'm seeing now... they're too similar. Painfully so.~
-= ~If I want to prevent more tragedies like what happened years ago, where I was powerless... then I'll add my strength to yours. Things like this can't be allowed to continue.~
+~哪怕经过后来那么多仗、见过那么多可怕的事……橡郡那场屠杀在我脑子里还是清清楚楚。~
+= ~骑士团被迫出手，我听说村子重建了，幸存者也缓过来了，可……我再没回去过。~
+= ~可我希望你能明白我为什么坚决反对圣战军和它干的一切。我那时看到的，跟我现在看到的……太像了。像得让人难受。~
+= ~如果我想防止再发生多年前那种我无能为力的惨事……那我就把我的力量加到你的力量上。这种事不能让它继续。~
 EXIT
 
 // Thrix reaction - non-romanced
@@ -1639,132 +1639,132 @@ APPEND C02DRAKJ
 
 IF ~Global("C02DrakeSacrifice","bd4500",1)~ ThrixTalk0
 SAY ~...~
-= ~Well, that was... something. Let's move on.~
-+ ~Global("C02_thrix_mark_Drake","global",1)~ + ~You don't have anything to say?~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk1
-+ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~You don't have anything to say?~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk2
-+ ~Global("C02_thrix_mark_Drake","global",1)~ + ~I'm sorry.~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk3
-+ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~I'm sorry.~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk4
-+ ~Global("C02_thrix_mark_Drake","global",1)~ + ~Yes. Let's.~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk5
-+ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~Yes. Let's.~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk6
+= ~嗯，那真是……有点意思。我们走吧。~
++ ~Global("C02_thrix_mark_Drake","global",1)~ + ~你就没什么要说的？~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk1
++ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~你就没什么要说的？~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk2
++ ~Global("C02_thrix_mark_Drake","global",1)~ + ~对不起。~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk3
++ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~对不起。~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk4
++ ~Global("C02_thrix_mark_Drake","global",1)~ + ~是。走吧。~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk5
++ ~!Global("C02_thrix_mark_Drake","global",1)~ + ~是。走吧。~ DO ~SetGlobal("C02DrakeSacrifice","bd4500",2)~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk1
-SAY ~Why bother? I think the situation is clear enough to the both of us.~
-= ~I'm not afraid for myself. Truth be told, I fear more for anyone else who gets caught in your games. Let that thought flow through your wicked mind a while.~
+SAY ~何必呢？我看这情形我们俩都够清楚了。~
+= ~我不是为自己怕。说实话，我更怕别的被你游戏卷进来的人。让这念头在你那邪心里转一会儿。~
 IF ~Global("C02DrakeRomanceActive","GLOBAL",2)~ DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ + ThrixTalk6
 IF ~!Global("C02DrakeRomanceActive","GLOBAL",2)~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk2
-SAY ~What is there to say, <CHARNAME>? Either you had full faith in your wits, or you cared little enough for what your gamble would cost you. Which would you rather I believe?~
+SAY ~有什么可说的，<CHARNAME>？要么你对自己的机敏有十足把握，要么你对自己赌注的代价在乎得不够。你宁愿我怎么想？~
 IF ~~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk3
-SAY ~No, you're not. Let's not bother with the white lies, shall we?~
+SAY ~不，你不是。我们就别来这套善意谎言了，行吗？~
 IF ~Global("C02DrakeRomanceActive","GLOBAL",2)~ DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ + ThrixTalk6
 IF ~!Global("C02DrakeRomanceActive","GLOBAL",2)~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk4
-SAY ~What for? Better that we both believe you had full confidence in your own mind all along. And, well... ultimately, no harm done, I suppose.~
+SAY ~为什么道歉？不如让我们俩都相信，你从头到尾都对自己的头脑有十足信心。再说……我看终究也没造成什么害。~
 IF ~~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk5
-SAY ~Perhaps you expected me to be heartbroken over what just happened? Get used to disappointment.~
+SAY ~也许你指望我会为刚发生的事心碎？学着习惯失望吧。~
 IF ~Global("C02DrakeRomanceActive","GLOBAL",2)~ DO ~SetGlobal("C02DrakeRomanceActive","GLOBAL",3)~ + ThrixTalk6
 IF ~!Global("C02DrakeRomanceActive","GLOBAL",2)~ + ThrixTalk6
 END
 
 IF ~~ ThrixTalk6
-SAY ~If you've kindness left in you, we'll never speak of this again.~
+SAY ~你要还剩点善心，我们就再也不提这事。~
 IF ~~ EXIT
 END
 
 // Tender of the Dead
 
 IF ~Global("C02DrakeVelsharoon","GLOBAL",1)~ velsharoon
-SAY ~Well, that was unpleasant. Though given the clues given to us beforehand, I cannot say this was entirely unexpected.~
-++ ~What do you mean?~ + velsharoon1
-+ ~CheckStatGT(Player1,14,INT)~ + ~The 'priestess' has some explaining to do.~ + velsharoon1
-++ ~Did you know this was going to happen?~ + velsharoon1
+SAY ~嗯，那真不愉快。不过看先前给我们的那些线索，我不能说这完全出乎意料。~
+++ ~你什么意思？~ + velsharoon1
++ ~CheckStatGT(Player1,14,INT)~ + ~那位“女祭司”有些事要解释。~ + velsharoon1
+++ ~你早知道会这样？~ + velsharoon1
 END
 
 IF ~~ velsharoon1
-SAY ~I suspected that something was off, but, well... there was no use in saying anything before anything was proven.~
-= ~This was clearly the work of a priest, <CHARNAME>. A follower of Velsharoon, if I'm not mistaken. Quite a popular deity in the distant lands of Thay, as I recall. Necromancy is the art of those faithful to him.~
-= ~I suggest interrogating our 'noble' priestess of Lathander. And with weapons at hand... no doubt she has more secrets that she has kept hidden from us.~
+SAY ~我怀疑过有点不对，可，嗯……在证实之前说什么也没用。~
+= ~这显然是祭司的手笔，<CHARNAME>。要我没弄错，是维尔沙伦的信徒。我记得那是遥远的塞尔地方挺流行的神。死灵术正是他信徒的本行。~
+= ~我建议审审我们那位“高贵”的洛山达女祭司。而且兵器在手……无疑她还藏着更多瞒着我们的事。~
 IF ~~ DO ~SetGlobal("C02DrakeVelsharoon","GLOBAL",2) SetGlobal("KNOW_VELSHAROON","GLOBAL",1)~ EXIT
 END
 
 END
 
 INTERJECT BDJUNIA 16 C0DrakeBDJUNIA16
-== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~"Morningstar"? Ha! That's a new one. Even us followers of the Triad know Lathander as the Morninglord. Do you truly know your own faith, my lady?~
+== C02DRAKJ IF ~IsValidForPartyDialogue("C0Drake")~ THEN ~“晨星”？哈！这倒是头回听说。连我们这些三神教会的信徒都知道洛山达是“晨之主”。你真懂你自己的信仰吗，女士？~
 EXTERN BDJUNIA 18
 
 // Drake-Voghiln
 
 CHAIN IF ~Global("C02DrakeVoghilnRestTalk","GLOBAL",1)
 IsValidForPartyDialogue(Myself) IsValidForPartyDialogue("Voghiln")~ THEN BDVOGHIJ voghresttalk
-~Your sword-arm is strong, Drake, but Voghiln has never been one to back away from a contest of strength!~
+~你剑臂有力，德雷克，可沃吉尔恩从不在比力气上退让！~
 DO ~IncrementGlobal("C02DrakeVoghilnRestTalk","GLOBAL",1)~
-== C02DRAKJ ~Big talk, Luskan, but the bottle's not even half empty. I'll taste the wine of victory yet. Raise your arm, skald!~
-== BDVOGHIJ ~Ho ho, now this is a language Voghiln understands! Again!~
+== C02DRAKJ ~大话，路斯坎人，可瓶子还没空一半。我总会尝到胜利的酒。举臂，吟游诗人！~
+== BDVOGHIJ ~嚯嚯，这才是沃吉尔恩懂的话！再来！~
 END
-++ ~What's going on here?~ EXTERN C02DRAKJ voghresttalk1
+++ ~这儿怎么了？~ EXTERN C02DRAKJ voghresttalk1
 
 CHAIN C02DRAKJ voghresttalk1
-~Just a little friendly... arm-wrestling competition... ah, and there goes my focus. You won again. Drink!~
-== BDVOGHIJ ~Indeed I shall! *glug glug glug*... ah!~
-== C02DRAKJ ~Indulge yourself while you can, friend, for I'm not finished yet. We'll use our left arms this time. Come on!~
-== BDVOGHIJ ~As you wish!~
-== C02DRAKJ ~Nnngghh...~
-== BDVOGHIJ ~Haahhh...~
-== C02DRAKJ ~...ha! Victory is mine!~
-== BDVOGHIJ ~Ach, well played, my friend. I see mine other arm still needs practice.~
-== C02DRAKJ ~Carrying a shield all day and night has its benefits.~
-== BDVOGHIJ ~You speak the truth. Ah, but spare some of the wine for old Voghiln! We are playing until the night is done, yes?~
-== C02DRAKJ ~Of course we are. You weren't planning on backing out, were you?~
-== BDVOGHIJ ~Never!~
+~只是场小小的友好……掰手腕……啊，我的专注没了。你又赢了。喝！~
+== BDVOGHIJ ~我这就喝！*咕咚咕咚*……啊！~
+== C02DRAKJ ~趁还能就放纵吧，朋友，我还没完。这回用左臂。来！~
+== BDVOGHIJ ~如你所愿！~
+== C02DRAKJ ~嗯嗯呃……~
+== BDVOGHIJ ~啊啊……~
+== C02DRAKJ ~……哈！胜利归我！~
+== BDVOGHIJ ~唉，打得好，我的朋友。看来我另一只臂还得练。~
+== C02DRAKJ ~日夜扛盾有它的好处。~
+== BDVOGHIJ ~你说的是实话。啊，可给老沃吉尔恩留点酒！我们要玩到夜里完，对吧？~
+== C02DRAKJ ~当然。你不是打算退出吧？~
+== BDVOGHIJ ~绝不！~
 DO ~RestParty()~ EXIT
 
 // Personal Quest
 
 CHAIN IF ~Global("C02DrakeQuest","GLOBAL",2)~ THEN C02DRAKJ quest
-~<CHARNAME>. A moment of your time, if you please, for there is a... personal matter that has been bothering me for a while now.~
+~<CHARNAME>。借你一点时间，有件事……私人的，烦我一阵了。~
 DO ~IncrementGlobal("C02DrakeQuest","GLOBAL",1)~
 END
-++ ~I'm listening. What's wrong?~ + quest.1
-++ ~Fine, but you'd best make it quick.~ + quest.1
+++ ~我听着。怎么了？~ + quest.1
+++ ~行，可你最好快点。~ + quest.1
 
 CHAIN C02DRAKJ quest.1
-~A while before we made passed Boareskyr Bridge, I sent a missive back to Amn containing details on our progress towards the march to Dragonspear Castle.~
-= ~I requested aid from my superiors in the Order, and in response, they approved a small force to bring some useful resources for the Fist once we had set up the coaliton camp.~
+~我们过博尔斯基尔桥之前一阵，我往安姆送了一封文书，详述我们朝龙矛城堡进军的进展。~
+= ~我向骑士团的上司请求援助，他们回准了一支小队，等我们在联军营地扎好，就给铁拳送来些有用的物资。~
 END
-++ ~What kind of resources are we talking about here?~ + quest.2
-++ ~Get to the point.~ + quest.3
+++ ~你说的物资是什么？~ + quest.2
+++ ~说重点。~ + quest.3
 
 CHAIN C02DRAKJ quest.2
-~My request was for 'any resource the we may find useful'. Medical supplies, food, weaponry and the like. Those may not interest you in particular, but there were a few items of power that are more to our caliber thrown in there.~
+~我请求的是“任何我们用得上的东西”。医药、食物、兵器之类。那些也许不特别对你胃口，可里面也塞了几件更合我们这层次的强力物品。~
 EXTERN C02DRAKJ quest.3
 
 CHAIN C02DRAKJ quest.3
-~I've been counting the days, and assuming nothing has gone wrong, those supplies should have arrived at the camp by now. But I've had no message to affirm that, and the scouts I've talked to have seen nobody meeting the description of who I've been waiting for.~
-= ~Of course, sometimes people get delayed, but I can't help but have a gut feeling that something may have gone wrong. If they have run afoul of crusaders en route, then their lives will be in danger, and in the worst case scenario, those supplies will end up in the hands of the crusade.~
-= ~Besides the fact that 'those supplies' include a handful of magical artifacts that the Order would not be happy to lose, I worry for what might have happened to those men. While this may not be relevant to our current objective, I would rather we look into what has happened... if it pleases you.~
+~我一直在数日子，假设没出岔子，那些物资该已经到营地了。可我一直没收到确认消息，我谈过的斥候也没见到符合我等的人。~
+= ~当然，人有时会耽搁，可我总有种不好的预感，觉得可能出了事。他们要是在路上撞上了圣战军，那性命就有危险；最糟的情况，那些物资会落到圣战军手里。~
+= ~不说“那些物资”里有几件骑士团丢了会不高兴的魔法器物，我也担心那些人出了什么事。这虽许跟我们眼下目标无关，我更愿意查查究竟怎么了……要是你不介意。~
 END
-++ ~You seem genuinely worried. Alright, we'll see if we can find them.~ + quest.4
-++ ~If it really matters to you, then we'll keep an eye out. But there's no guarantee we'll find anybody.~ + quest.4
-++ ~We have no time for distractions right now. Our main goal should be Dragonspear Castle.~ + quest.5
+++ ~你看着真担心。好，我们看看能不能找到他们。~ + quest.4
+++ ~要真对你这么要紧，我们就留意着。可不保证能找到人。~ + quest.4
+++ ~我们眼下没工夫分心。我们的主要目标是龙矛城堡。~ + quest.5
 
 CHAIN C02DRAKJ quest.4
-~Thank you, <CHARNAME>. It could be nothing... for all I know, they're simply held back by some small complications, but in case they're not... well, better to be safe than sorry.~
+~谢谢你，<CHARNAME>。也许没事……据我所知，他们只是被些小麻烦拖住了，可万一不是……嗯，有备无患。~
 DO ~AddJournalEntry(%Drake_SoD_Quest_1%,QUEST)~ EXIT
 
 CHAIN C02DRAKJ quest.5
-~*sigh* Well, I'll not rest easy not knowing if anything has happened to my fellows, but I suppose we've bigger concerns on our hands. All right, I'll try and convince some of the commanders of the camp to deal with it in our stead. But I hope we might keep watch for any clues regardless... just in case.~
+~*叹息* 嗯，不知道我的同袍出了什么事，我没法安心，可我看我们手头有更大的事。好吧，我试着说服营地里几位指挥官替我们处理。可我还是希望我们不管怎样留意线索……以防万一。~
 DO ~AddJournalEntry(%Drake_SoD_Quest_1%,QUEST)~ EXIT
 
 // ---------------------------------------------
@@ -1774,137 +1774,137 @@ DO ~AddJournalEntry(%Drake_SoD_Quest_1%,QUEST)~ EXIT
 APPEND C02DRAKJ
 
 IF ~IsGabber(Player1) CombatCounter(0) !Detect([ENEMY])~ THEN BEGIN pid
- SAY ~Need something, <CHARNAME>?~ [C0DRA023]
-	+ ~HPPercentGT(Myself,74) RandomNum(4,1)~ + ~How are you?~ + a1
-	+ ~HPPercentGT(Myself,74) RandomNum(4,2)~ + ~How are you?~ + a2
-	+ ~HPPercentGT(Myself,74) RandomNum(4,3)~ + ~How are you?~ + a3
-	+ ~HPPercentGT(Myself,74) RandomNum(4,4)~ + ~How are you?~ + a4
-	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,1)~ + ~How are you?~ + b1
-	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,2)~ + ~How are you?~ + b2
-	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,3)~ + ~How are you?~ + b3
-	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,4)~ + ~How are you?~ + b4
-	+ ~HPPercentLT(Myself,50) RandomNum(2,1)~ + ~How are you?~ + c1
-	+ ~HPPercentLT(Myself,50) RandomNum(2,2)~ + ~How are you?~ + c2
-	+ ~RandomNum(4,1)~ + ~Fancy a drink?~ + drink1
-	+ ~RandomNum(4,2)~ + ~Fancy a drink?~ + drink2
-	+ ~RandomNum(4,3)~ + ~Fancy a drink?~ + drink3
-	+ ~RandomNum(4,4)~ + ~Fancy a drink?~ + drink4
-	+ ~Class("C0Drake",FIGHTER_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~How does it feel now that you've become a warrior?~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass
-	+ ~Class("C0Drake",THIEF_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~How does it feel now that you've become a rogue?~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass2
-	+ ~Class("C0Drake",RANGER_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~How does it feel now that you've become a ranger?~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass3
-	+ ~Class("C0Drake",MAGE_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~How does it feel now that you've become a mage?~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass4
-	+ ~!Global("C0DrakeTalkStopped","GLOBAL",1)~ + ~I'd like you to talk less while on the road.~ + pausedialog
-	+ ~Global("C0DrakeTalkStopped","GLOBAL",1)~ + ~I don't mind if you want to talk to me again.~ + startdialog
-	++ ~Is there a problem with your voice?~ + stringfix	
-	++ ~Not at the moment.~ EXIT
+ SAY ~有事吗，<CHARNAME>？~ [C0DRA023]
+	+ ~HPPercentGT(Myself,74) RandomNum(4,1)~ + ~你怎么样？~ + a1
+	+ ~HPPercentGT(Myself,74) RandomNum(4,2)~ + ~你怎么样？~ + a2
+	+ ~HPPercentGT(Myself,74) RandomNum(4,3)~ + ~你怎么样？~ + a3
+	+ ~HPPercentGT(Myself,74) RandomNum(4,4)~ + ~你怎么样？~ + a4
+	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,1)~ + ~你怎么样？~ + b1
+	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,2)~ + ~你怎么样？~ + b2
+	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,3)~ + ~你怎么样？~ + b3
+	+ ~HPPercentLT(Myself,75) HPPercentGT(Myself,49) RandomNum(4,4)~ + ~你怎么样？~ + b4
+	+ ~HPPercentLT(Myself,50) RandomNum(2,1)~ + ~你怎么样？~ + c1
+	+ ~HPPercentLT(Myself,50) RandomNum(2,2)~ + ~你怎么样？~ + c2
+	+ ~RandomNum(4,1)~ + ~想喝一杯吗？~ + drink1
+	+ ~RandomNum(4,2)~ + ~想喝一杯吗？~ + drink2
+	+ ~RandomNum(4,3)~ + ~想喝一杯吗？~ + drink3
+	+ ~RandomNum(4,4)~ + ~想喝一杯吗？~ + drink4
+	+ ~Class("C0Drake",FIGHTER_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~你现在成了战士，感觉如何？~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass
+	+ ~Class("C0Drake",THIEF_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~你现在成了盗贼，感觉如何？~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass2
+	+ ~Class("C0Drake",RANGER_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~你现在成了游侠，感觉如何？~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass3
+	+ ~Class("C0Drake",MAGE_ALL) Global("C0DrakeDualClass","GLOBAL",0)~ + ~你现在成了法师，感觉如何？~ DO ~SetGlobal("C0DrakeDualClass","GLOBAL",1)~ + dualclass4
+	+ ~!Global("C0DrakeTalkStopped","GLOBAL",1)~ + ~赶路时我希望你少说点话。~ + pausedialog
+	+ ~Global("C0DrakeTalkStopped","GLOBAL",1)~ + ~你要再跟我说话，我不介意。~ + startdialog
+	++ ~你嗓子有问题？~ + stringfix	
+	++ ~眼下没有。~ EXIT
 END
 
 IF ~~ a1
- SAY ~I may be a mite tipsy, but I'll manage.~
+ SAY ~我也许有点醉了，可我撑得住。~
 IF ~~ EXIT
 END
 
 IF ~~ a2
- SAY ~Spiffing, just spiffing. Have I given you cause to think otherwise?~
+ SAY ~好得很，就是好得很。我有什么让你觉得不是这样？~
 IF ~~ EXIT
 END
 
 IF ~~ a3
- SAY ~I'd be happier with a stomach full of wine, but we can't always get what we want.~
+ SAY ~肚子里装满酒我会更高兴，可我们不能总要什么有什么。~
 IF ~~ EXIT
 END
 
 IF ~~ a4
- SAY ~Are you trying to get me to respond in turn? I'm sorry to disappoint you.~
+ SAY ~你是想让我也回一句？抱歉让你失望了。~
 IF ~~ EXIT
 END
 
 IF ~~ b1
- SAY ~I've been better.~
+ SAY ~我比这好过。~
 IF ~~ EXIT
 END
 
 IF ~~ b2
- SAY ~Why... I'm flattered you care, <CHARNAME>. As it happens, perhaps you haven't noticed, but I am, in fact, wounded.~
+ SAY ~怎么……你关心我，我受宠若惊，<CHARNAME>。其实，也许你没注意，可我确实受伤了。~
 IF ~~ EXIT
 END
 
 IF ~~ b3
- SAY ~Oh, splendid. The bloodstains definitely bring out my inner beauty.~
+ SAY ~哦，太好了。这些血迹绝对衬出了我内在的美。~
 IF ~~ EXIT
 END
 
 IF ~~ b4
- SAY ~Have I run out of spells? Because I could swear that I am bleeding. Or piss-faced drunk. Either way, it really is a bother.~
+ SAY ~我是法术用光了？因为我发誓我在流血。要么就是醉得不成人样。不管哪样，都真够烦的。~
 IF ~~ EXIT
 END
 
 IF ~~ c1
- SAY ~Oh, just perfect. I am certainly not bleeding out of my guts as we speak. And I definitely do not require immediate assistance, thank you. Carry on, carry on.~
+ SAY ~哦，真是好极了。我现在绝对没有肚子流血流得要死。我也绝对不需要马上救治，谢谢。继续，继续。~
 IF ~~ EXIT
 END
 
 IF ~~ c2
- SAY ~This may come as quite a shock to you, but... I'm injured. Quite badly, in fact. Don't suppose either of us could do anything about it?~
+ SAY ~这也许会让你挺吃惊，可……我受伤了。其实伤得挺重。我看我们俩谁能想点办法？~
 IF ~~ EXIT
 END
 
 IF ~~ drink1
- SAY ~I always do, <CHARNAME>.~
+ SAY ~我向来如此，<CHARNAME>。~
 IF ~~ EXIT
 END
 
 IF ~~ drink2
- SAY ~Why stop at just one? Let's put away our worries and drink until up is down.~
+ SAY ~何必只喝一杯？把烦心事放下，喝到天旋地转。~
 IF ~~ EXIT
 END
 
 IF ~~ drink3
- SAY ~As much as I'm tempted to, my migraines from my last excursion into the pits of drunkenness haven't quite departed yet. I'll pass.~
+ SAY ~我虽然很想，可上回钻进醉坑留下的偏头痛还没走干净。算了。~
 IF ~~ EXIT
 END
 
 IF ~~ drink4
- SAY ~If you've got one. But make it a strong one, if you will.~
+ SAY ~你要有的话。不过务必来烈的。~
 IF ~~ EXIT
 END
 
 IF ~~ pausedialog
- SAY ~Why, I'm hurt, <CHARNAME>. But if you say so.~
+ SAY ~哎呀，你伤我心了，<CHARNAME>。不过你既这么说，那就这样。~
 IF ~~ DO ~SetGlobal("C0DrakeTalkStopped","GLOBAL",1)~ EXIT
 END
 
 IF ~~ startdialog
- SAY ~Wised up, have you? You're lucky I'm in a generous mood.~
+ SAY ~学乖了，是吧？算你走运我心情大方。~
 IF ~~ DO ~SetGlobal("C0DrakeTalkStopped","GLOBAL",0)~ EXIT
 END
 
 IF ~~ dualclass
- SAY ~Fine, very fine. Reminds me of the good old days in the army. Not that there were many good old days, mind you, no matter what the veterans might say. Lots of blood, broken skulls and even more crushed morale, though.~
- = ~Not that it feels bad to swing a hammer more effectively. I was never talented in the healing arts to begin with. This is much more appropriate for my skills.~
+ SAY ~好，很好。让我想起军中那些好日子。倒不是说有多少好日子，别管老兵们怎么说。血倒是流了不少，脑袋碎了不少，士气垮得更多。~
+ = ~倒不是说更有效地挥锤感觉不好。我本来就不擅长治疗之术。这远更合我的本事。~
 IF ~~ EXIT
 END
 
 IF ~~ dualclass2
- SAY ~You know, it's not a bad feeling. Knowing how rogues think and act, suddenly things make a lot more sense than they used to.~
- = ~The sods at the Order would throw a fit if they know what I've been doing, but I'm still doing my job, just more efficiently now than I used to.~
+ SAY ~你知道，这感觉不坏。懂了盗贼怎么想、怎么做，事情忽然比从前明白多了。~
+ = ~骑士团那些家伙要知道我在干什么准会炸锅，可我还在干我的活，只是比从前更有效率。~
 IF ~~ EXIT
 END
 
 IF ~~ dualclass3
- SAY ~If you hadn't put me through all those training manuals and drilled all of this into me, I doubt it would've happened.~
- = ~I hear a few distant relatives of the Caulfield family were rangers. My grandfather on my mother's side was once a scout in the Amnian military. I think he would've approved, if he were still alive.~
+ SAY ~要不是你拿那些训练手册磨我、把这一套全给我灌进去，我看这事不会发生。~
+ = ~听说考尔菲尔德家有几个远亲是游侠。我外祖父当年是安姆军里的斥候。我看他要还活着，会赞同的。~
 IF ~~ EXIT
 END
 
 IF ~~ dualclass4
- SAY ~Me, a mage? Me, heir to a legacy of knights, giving up the armor for a bag of tomes and scrolls like the Cowled Wizards back home. Ha! I have to admit, I was completely blindsided.~
- = ~No doubt the Order will have a few choice words in light of this unusual change. But I'm sure I'll make do somehow. In the meantime, we'll see if I don't set us all on fire before I make it home, eh?~
+ SAY ~我，法师？我，骑士世家传人，扔了铠甲，像老家那些斗篷巫师一样背一袋书卷和卷轴。哈！我承认，我完全没料到。~
+ = ~看这非同寻常的转变，骑士团无疑会有几句挑拣的话。可我确信我总能应付。这期间，我们就看看我会不会在回到家之前把大家全点着，嗯？~
 IF ~~ EXIT
 END
 
 IF ~~ stringfix
- SAY ~Hmm... you know, you may be right. Give me a second... *cough*~
+ SAY ~嗯……你知道，你也许说得对。给我一下……*咳*~
 IF ~~ THEN DO ~ClearAllActions() 
       StartCutSceneMode() 
       StartCutScene("C0DRESET")~ EXIT 

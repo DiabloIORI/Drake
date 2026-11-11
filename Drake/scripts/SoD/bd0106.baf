@@ -19,9 +19,9 @@ THEN
     ActionOverride("C0Drake",ChangeAIScript("",GENERAL))
     ActionOverride("C0Drake",ChangeAIScript("",DEFAULT))
     ActionOverride("C0Drake",SetDialog("C02Drake"))
-	ActionOverride("C0Drake",SetPlayerSound(Myself,~When asked about his past, DRAKE gives a sardonic laugh and responds that history would breathe easier if his past was left forgotten. A cleric of Tyr in his mid-thirties, second son of the Caulfield family, former ensign in the Amnian militia and, with a touch of irony when mentioning it, recruit of the Radiant Heart auxiliary, he considers himself 'that thing they can't get rid of' within the Order. He openly admits that his unorthodox views on the tenets of the Order as well as the distribution of justice makes him something of a social pariah with both his fellows of the Radiant Heart and his family, almost all of whom have a history of service within the Order. According to him, while him being stationed outside of Amn was officially a mission to root out evil that plagued the Sword Coast, he believes it was nothing more than a formal means of sending him away and allowing his superiors to forget about him. Such an assignment seems to be to his preference, however, as he believes justice is best served with the edge of a blade - or in his case, the head of a hammer.
+	ActionOverride("C0Drake",SetPlayerSound(Myself,~有人问起德雷克的过去时，他讥讽地笑一声，回答说要是他的过去被忘掉，历史会呼吸得更顺畅。他是提尔的祭司，三十五六岁，考尔菲尔德家次子，曾是安姆民兵的少尉，说起来还带着一丝自嘲地补充，是光辉之心辅助队的新募。他自认在骑士团里是“他们甩不掉的那号东西”。他坦承自己对骑士团教条和正义分配的非正统看法，让他成了光辉之心同袍和家里人眼里的社会弃儿，而他家人几乎个个都有在骑士团服役的履历。据他说，他驻在安姆之外，官方说法是去铲除祸害剑湾的邪恶，可他相信那不过是把他打发走、让上司忘掉他的正式手段。不过这样的差事似乎正合他意，因为他相信正义最好用刀刃来施行——或者，在他这儿，用锤头。
   
-  Though Drake was prepared to return to Amn after the resolution of the iron crisis, the threat of the Shining Lady's crusade has given him cause to remain at Baldur's Gate and take part in the march to Dragonspear. He seems eager to find out the reasons behind the crusade's existence.~,EXISTANCE5))
+  德雷克本打算在铁危机了结后回安姆，可光明女士的圣战军之威胁让他有理由留在博德之门，参加进军龙矛的行列。他似乎急着弄清圣战军存在的缘由。~,EXISTANCE5))
     SetGlobal("C02DrakeSpawns","BD0106",1)
     Continue()
 END

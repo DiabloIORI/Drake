@@ -22,5 +22,5 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("C02DrakeCryptComment","bd0120",2)
-	DisplayStringHead("C0Drake",~A job well done, if I do say so myself. What say we head to the nearest tavern and crack some of their finest kegs of ale once we are through with this sad place?~)
+	DisplayStringHead("C0Drake",~活儿干得不错，要我自己说的话。等我们离开这倒霉地方，去最近的酒馆砸开他们最好的几桶麦酒怎么样？~)
 END

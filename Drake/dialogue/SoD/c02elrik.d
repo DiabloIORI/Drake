@@ -1,135 +1,135 @@
 BEGIN C02ELRIK
 
 CHAIN IF WEIGHT #-1 ~Global("C02DrakeQuest","GLOBAL",3)~ THEN C02ELRIK a1
-~Foul creatures! To arms, my comrades! We shall litter this earth with their black blood to<DAYNIGHT>. With me, Squire Caulfield!~
-== C02DRAKJ IF ~IsValidForPartyDialog("C0Drake")~ THEN ~These are knights of the Order, <CHARNAME>! Likely the ones that were meant to arrive at the camp!~
-== C02ELRIK ~You there! If you be friends of anything good and right, then aid us against these beasts! We shall take them from both sides! For the Order!~
+~恶心的东西！拿起武器，同伴们！就在这<DAYNIGHT>，我们让这片土地洒满它们的黑血。跟我来，考尔菲尔德侍从！~
+== C02DRAKJ IF ~IsValidForPartyDialog("C0Drake")~ THEN ~这些是骑士团的骑士，<CHARNAME>！大概就是本该到营地来的那批！~
+== C02ELRIK ~你们那边！你们若是一切良善正道的朋友，就来帮我们对付这些畜生！我们两面夹击！为了骑士团！~
 DO ~SetGlobal("C02DrakeQuest","GLOBAL",4)~ EXIT
 
 CHAIN IF WEIGHT #-1 ~!Detect([ENEMY])
 Global("C02DrakeQuest","GLOBAL",4)~ THEN C02ELRIK a2
-~Well fought, everyone! The gods surely smile upon us for sending these beasts to the Abyss. Take your time to recover from your wounds while I speak with these strangers.~
+~打得好，诸位！把这些畜生送进深渊，诸神必定对我们微笑。你们慢慢处理伤口，我去跟这些陌生人说话。~
 DO ~SetGlobal("C02DrakeQuest","GLOBAL",5)~
 END
 IF ~IsValidForPartyDialog("C0Drake")~ EXTERN C02DRAKJ a1.1
 IF ~!IsValidForPartyDialog("C0Drake")~ EXTERN C02ELRIK a1.2
 
 CHAIN C02DRAKJ a1.1
-~Not all of us are strangers, Sir Elrik. Assuming you still recognize me, that is.~
-== C02ELRIK ~How could I not? It is good to see you again, young Drake.~
-== C02DRAKJ ~I'm glad to see you remember the brat who used to stand among his peers in the High Halls. I didn't think the Order would send someone as skilled as the 'Red Giant' on a task such as this, however?~
-== C02ELRIK ~The prelate has taken your information regarding the actions and growth of the crusade most seriously, Drake. He felt it was best to send the most experienced of the Order to aid in Baldur's Gate's defense and ensure that this threat does not extend any further than it already has.~
-== C02DRAKJ ~Most experienced, huh? I suppose that's a good thing. But then, what's he doing here, eh?~
-== C02TOMAS ~Hmph.~
-== C02DRAKJ ~It's been too long, Tomas. Is that how you're going to treat your older brother after all these months? I'm just messing with you, you know that?~
-== C02TOMAS ~I know. You haven't changed, Drake. Still as insufferable as always.~
-== C02DRAKJ ~And you're still my smart-mouthed brat of a brother. But that's how we like each other, isn't that right?~
-== C02TOMAS ~...heh. It's good to see you again.~
-== C02DRAKJ ~Same for me, lad. <CHARNAME>, this is my dearest little brother, Tomas Caulfield. Though he's grown a bit since I last saw him.~
+~我们并不全是陌生人，埃利克爵士。前提是你还认得我。~
+== C02ELRIK ~我怎么会不认得？再见到你真好，小德雷克。~
+== C02DRAKJ ~很高兴你还记得那个当年在高等殿堂里站在同伴中间的小子。不过我没想到骑士团会把像“红巨人”这样身手的人派来做这种事？~
+== C02ELRIK ~德雷克，教长非常重视你送来的关于十字军动向与壮大的情报。他认为最好派骑士团里最有经验的人来协助博德之门防守，确保这威胁不再向外蔓延。~
+== C02DRAKJ ~最有经验，嗯？我猜这是好事。那他来这儿做什么，嗯？~
+== C02TOMAS ~哼。~
+== C02DRAKJ ~太久不见了，托马斯。几个月没见，你就要这样对待你哥哥？我逗你玩的，你知道吧？~
+== C02TOMAS ~我知道。你没变，德雷克。还是那么叫人受不了。~
+== C02DRAKJ ~你还是我那张嘴不饶人的小子弟弟。不过我们就爱这样，对吧？~
+== C02TOMAS ~……呵。再见到你真好。~
+== C02DRAKJ ~我也一样，小子。<CHARNAME>，这是我最宝贝的小弟，托马斯·考尔菲尔德。虽说比我上回见他时又长了些。~
 END
-++ ~I see. It's nice to meet you, Tomas.~ EXTERN C02DRAKJ a2.1
-++ ~I would've thought your brother would resemble you a little more closely, Drake.~ EXTERN C02DRAKJ a2.2
-++ ~As touching as this reunion is, I'd rather we get to talking about what's more important here.~ EXTERN C02DRAKJ a2.3
+++ ~我明白了。很高兴认识你，托马斯。~ EXTERN C02DRAKJ a2.1
+++ ~我本以为你弟弟会跟你更像一些，德雷克。~ EXTERN C02DRAKJ a2.2
+++ ~这场重逢虽然感人，我还是宁愿我们谈谈这儿更要紧的事。~ EXTERN C02DRAKJ a2.3
 
 CHAIN C02DRAKJ a2.1
-~I'm sorry I haven't been home in a while. How's the family been doing?~
-== C02TOMAS ~You know how they are. Mother can't go a day without worrying if you're eating and sleeping well. Father doesn't visit much. As for our little sister, she's been improving, both in swordsmanship and painting.~
-== C02DRAKJ ~That's good. I'd love to hear more, but... right now, I think I should probably talk to your superior first.~
+~抱歉我这么久没回家。家里都怎么样？~
+== C02TOMAS ~你知道他们什么样子。母亲一天不担心你吃得好睡得香就过不去。父亲不大过来。至于我们的小妹妹，她进步不小，剑术和画画都是。~
+== C02DRAKJ ~那好。我很想多听些，不过……现在我想我该先去跟你的上司说话。~
 EXTERN C02DRAKJ a2.4
 
 CHAIN C02DRAKJ a2.2
-~He takes after our mother. All of my siblings do, actually. I'm the exception there.~
+~他像我们母亲。其实我几个弟妹都像。我是那个例外。~
 EXTERN C02DRAKJ a2.1
 
 CHAIN C02DRAKJ a2.3
-~You're right, <CHARNAME>. We'll have to catch up later, kid.~
+~你说得对，<CHARNAME>。我们得回头再聊，小子。~
 EXTERN C02DRAKJ a2.4
 
 CHAIN C02DRAKJ a2.4
-~Sir Elrik. This is <CHARNAME>, hero of Baldur's Gate. <PRO_HESHE> is leading this party to investigate the crusade before our forces enter battle against theirs.~
-== C02ELRIK ~Indeed. I read both your message and the report to the Order you sent in before. This is the child of...~
-== C02DRAKJ ~Sir Elrik.~
-== C02ELRIK ~Of course. My apologies. My <PRO_LADYLORD> <CHARNAME>, the Order of the Radiant Heart offers aid to defend against the Shining Lady's crusade.~
+~埃利克爵士。这位是<CHARNAME>，博德之门的英雄。<PRO_HESHE>正率领这支队伍，在我们的大军与十字军交战之前先探查他们。~
+== C02ELRIK ~确实。我读了你送来的信，也读了先前送到骑士团的报告。这就是那……的孩子。~
+== C02DRAKJ ~埃利克爵士。~
+== C02ELRIK ~当然。恕我失言。我的<PRO_LADYLORD><CHARNAME>，光辉之心骑士团愿助防卫，对抗光明女士的十字军。~
 END
-++ ~Your help is much appreciated.~ EXTERN C02DRAKJ a2.5
-++ ~Why did you mention my heritage to the Order, Drake?~ EXTERN C02DRAKJ a2.6
-++ ~I suppose you will have to do.~ EXTERN C02DRAKJ a2.5
+++ ~很感激你的帮助。~ EXTERN C02DRAKJ a2.5
+++ ~德雷克，你为什么把我的身世告诉骑士团？~ EXTERN C02DRAKJ a2.6
+++ ~我看也只能将就你了。~ EXTERN C02DRAKJ a2.5
 
 CHAIN C02DRAKJ a2.5
-~Are you and your men well enough to travel after this battle, Sir Elrik? The camp is not far from here. You will find the allied forces of Baldur's Gate, Daggerford and Waterdeep. I have told the commanding officers to expect you.~
-== C02ELRIK ~Then we shall make our way there forthwith. Thank you for your assistance, Drake, as well as <PRO_LADYLORD> <CHARNAME>. We shall meet again at camp.~
-== C02TOMAS ~See you around, brother.~
-== C02DRAKJ ~If all goes well. Take care, kid. I'll talk with you later.~
-== C02ELRIK ~We take our leave. Stay safe, Drake.~
+~埃利克爵士，这一仗之后，你和你的部下还走得动吗？营地离此不远。你会在那儿见到博德之门、达格福德与深水城的联军。我已通知各指挥官等你们到。~
+== C02ELRIK ~那我们即刻动身。多谢你的协助，德雷克，也多谢<PRO_LADYLORD><CHARNAME>。我们营中再见。~
+== C02TOMAS ~回头见，弟弟。~
+== C02DRAKJ ~若一切顺利。保重，小子。我回头再跟你聊。~
+== C02ELRIK ~我们告辞了。多加小心，德雷克。~
 DO ~AddJournalEntry(%Drake_SoD_Quest_2%,QUEST_DONE) EscapeArea()~ EXIT
 
 CHAIN C02DRAKJ a2.6
-~*shrug* You didn't ever say I couldn't. Besides, would you rather they hear it from someone who doesn't favor you?~
+~*耸肩* 你又没说过不许。再说，你宁愿他们从不向着你的人嘴里听说吗？~
 EXTERN C02DRAKJ a2.5
 
 CHAIN C02ELRIK a1.2
-~You have our thanks for your aid, stranger. Sir Elrik Redharbour, veteran knight of the Order of the Radiant Heart at your service. May I know the name of our new ally?~
+~多谢你的援助，陌生人。在下埃利克·红港爵士，光辉之心骑士团的宿将，听候差遣。可否告知我们这位新盟友的名号？~
 END
-++ ~I'm <CHARNAME>. You must be Drake's fellow knights from Amn.~ + a1.3
-++ ~My name is unimportant. Are you the knights that Drake called upon for aid?~ + a1.3
+++ ~我是<CHARNAME>。你们一定是德雷克从安姆来的同门骑士。~ + a1.3
+++ ~我的名字不重要。你们就是德雷克求援召来的骑士？~ + a1.3
 
 CHAIN C02ELRIK a1.3
-~Aye, that we are. If you know of us, then you must be part of the allied forces fighting the crusade. It is fortunate that we have found you.~
-== C02TOMAS ~Excuse me. I'm Drake's brother, Tomas Caulfield. Do you know where my brother is? Is he well?~
+~是，正是我们。你既知道我们，那你一定是与十字军作战的联军一员。能找到你们真是幸事。~
+== C02TOMAS ~打扰一下。我是德雷克的弟弟，托马斯·考尔菲尔德。你知道我哥哥在哪儿吗？他还好吗？~
 END
-+ ~Dead("c0drake")~ + ~Unfortunately, Drake has fallen.~ EXTERN C02TOMAS a1.4
-+ ~!Dead("c0drake")~ + ~He is at the coalition camp, waiting for your arrival. You should travel there immediately.~ + a1.5
++ ~Dead("c0drake")~ + ~很遗憾，德雷克已经阵亡了。~ EXTERN C02TOMAS a1.4
++ ~!Dead("c0drake")~ + ~他在联军营地，等着你们到。你们该立刻出发。~ + a1.5
 
 CHAIN C02TOMAS a1.4
-~Dead? No... no, not him too...~
-== C02ELRIK ~At ease, squire. There may still be hope if we can find his remains and bring them home to the Order. His fate is not the same as Sir Gabriel's.~
+~死了？不……不，不能连他也……~
+== C02ELRIK ~别慌，侍从。若能找回他的遗骸、带回骑士团，或许还有希望。他的结局跟加布里尔爵士不同。~
 EXTERN C02ELRIK a1.5
 
 CHAIN C02ELRIK a1.5
-~You have my thanks, my <PRO_LADYLORD>. We were meant to arrive many days ago, but faced much opposition on the way, from both the crusade and lawless raiders such as these orogs. We shall travel to the camp immediately and make arrangements with the leaders.~
-= ~Farewell.~
+~多谢你，我的<PRO_LADYLORD>。我们本该多天前就到，可路上阻力不断，既有十字军，也有这些奥罗格之类的无法无天的劫掠者。我们即刻前往营地，与首领们商定安排。~
+= ~告辞。~
 DO ~AddJournalEntry(%Drake_SoD_Quest_2%,QUEST_DONE) EscapeArea()~ EXIT
 
 CHAIN IF WEIGHT #-1 ~AreaCheck("bd3000")
 Global("bd_battle","global",0)
 NumTimesTalkedTo(0)~ THEN C02ELRIK b1
-~The knights of the Most Noble Order of the Radiant Heart have enlisted with the coalition forces. When the time comes, you can depend on our blades.~
+~最高贵的光辉之心骑士团的骑士们已加入联军。到时候，我们的刀剑由你调用。~
 EXTERN C02ELRIK b2
 
 CHAIN IF WEIGHT #-1 ~AreaCheck("bd3000")
 Global("bd_battle","global",0)
 !NumTimesTalkedTo(0)~ THEN C02ELRIK b2
-~Is there something you require, <CHARNAME>?~
+~你有什么需要吗，<CHARNAME>？~
 END
-++ ~How do your men fare, Sir Elrik?~ + b2.1
-++ ~I would like to see the equipment you have in stock.~ + b2.2
-++ ~Nothing for now.~ + b2.0
+++ ~你部下们还好吗，埃利克爵士？~ + b2.1
+++ ~我想看看你手头的装备。~ + b2.2
+++ ~暂时没有。~ + b2.0
 
 CHAIN C02ELRIK b2.0
-~As you will. May Torm's blessings be with you.~
+~如你所愿。愿托姆的祝福与你同在。~
 EXIT
 
 CHAIN C02ELRIK b2.1
-~We are prepared to fight to defend the land against the so-called Shining Lady and her crusade. Though it saddens me to see what has become of a scion of a name such as Argent, but we must be victorious here, or the safety of all that calls the Sword Coast home will be threatened.~
+~我们准备好为保卫这片土地而战，对抗那所谓的光明女士与她的十字军。虽说见到像阿金特这样的名门之后落到这般地步令我痛心，但我们必须在此取胜，否则以剑湾为家的所有人的安危都将受威胁。~
 EXTERN C02ELRIK b2
 
 CHAIN C02ELRIK b2.2
-~Of course. The best of the Order's armory is available to you, as commanded.~
+~当然。按令，骑士团武库里最好的东西都任你取用。~
 DO ~StartStore("c02dshop",Lasttalkedtoby(Myself))~ EXIT
 
 CHAIN IF WEIGHT #-1 ~GlobalGT("bd_battle","global",0)
 !GlobalGT("bd_battle","global",36)~ THEN C02ELRIK c1
-~The Order stands ready to fight against the false heretics of the crusade!~
+~骑士团随时准备与十字军那些伪信异端一战！~
 EXIT
 
 CHAIN IF WEIGHT #-1 ~GlobalLT("bd_plot","global",450)
 !Dead("bdashati")~ THEN C02ELRIK c1
-~By Torm's name, the crusaders will fall!~
+~以托姆之名，十字军必将倒下！~
 EXIT
 
 CHAIN IF WEIGHT #-1 ~GlobalLT("bd_plot","global",450)
 Dead("bdashati")~ THEN C02ELRIK c2
-~Well fought, <CHARNAME>! The righteous have prevailed over the false light, as was ordained. Is there anything you require?~
+~打得好，<CHARNAME>！正义之人胜过了那虚假之光，正如天命所定。你有什么需要吗？~
 END
-++ ~I would like to see the equipment you have in stock.~ + b2.2
-++ ~Nothing for now.~ + b2.0
+++ ~我想看看你手头的装备。~ + b2.2
+++ ~暂时没有。~ + b2.0

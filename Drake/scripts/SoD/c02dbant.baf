@@ -8,19 +8,19 @@ IF
 	Switch("C02DrakeBaeloth1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Baeloth",~Stand away from me, you perpetually pious, prickly porcupine-haired prat of a priest!~)
+	DisplayStringHead("Baeloth",~离我远点，你这永远虔诚、浑身带刺、头发像豪猪的祭司蠢货！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeBaeloth1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Porcupine-haired? That hurts, Baeloth. I'll have you know that I'm very sensitive about my hair.~)
+	DisplayStringHead("C0Drake",~头发像豪猪？这话伤人，贝洛斯。我得让你知道，我对我的头发很敏感。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeBaeloth1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Baeloth",~Your sensitivity is as stimulating to me as the other spiritual sufferances of the rest of you surfacers. Shockingly insignificant.~)
+	DisplayStringHead("Baeloth",~你的敏感对我而言，跟你们其余地表人那些精神上的苦恼一样刺激。惊人之无足轻重。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeBaeloth1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Ye gods, talking to you is more tedious than trying to trace the thought processes of a theologist. I'm going to spare myself the headache.~)
+	DisplayStringHead("C0Drake",~众神在上，跟你说话比追踪神学家的思路还乏味。我就省下这头痛了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeBaeloth1","MYAREA",-1)
 END
@@ -35,51 +35,51 @@ IF
 	Switch("C02DrakeCorwin1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~I'm under the impression that you're not particularly fond of me, captain.~)
+	DisplayStringHead("C0Drake",~我感觉你不怎么喜欢我，队长。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("CORWIN",~What makes you think that?~)
+	DisplayStringHead("CORWIN",~你怎么这么想？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~No evidence of such in particular, but it's not hard to tell when one's feeling unwelcome.~)
+	DisplayStringHead("C0Drake",~没什么具体证据，可人不受欢迎的时候，不难察觉。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("CORWIN",~Well, maybe you're right, if only a little. There is something about you that I don't like - and no, it's not because you're Amnian. I'm not prejudiced that way.~)
+	DisplayStringHead("CORWIN",~嗯，也许你说得对，就一点点。你身上有样东西我不喜欢——不，不是因为你是安姆人。我没那种偏见。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Then what is it? If you don't mind me asking.~)
+	DisplayStringHead("C0Drake",~那是什么？不介意我问吧。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("CORWIN",~Don't take it the wrong way, but you... from what I've heard, you have a place in one of the most honorable forces of good in the world and a noble family that cares for you. Am I wrong?~)
+	DisplayStringHead("CORWIN",~别往坏处想，可你……听说你在世上最可敬的善之势力里有一席之地，还有个疼你的贵族家庭。我说错了？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeCorwin1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~Both are true, yes. My family very much cares for each other mutually, and the Order is honorable, if overly so. I'm rather fond of both.~)
+	DisplayStringHead("C0Drake",~两样都对。我家人彼此很顾惜，骑士团也可敬，可敬得过头了些。我两样都挺喜欢。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("CORWIN",~Then why are you here?~)
+	DisplayStringHead("CORWIN",~那你为什么在这儿？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeCorwin1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~Why indeed? I doubt the answer to that.~)
+	DisplayStringHead("C0Drake",~确实为什么？这答案我自己都怀疑。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",90)
 RESPONSE #90
-	DisplayStringHead("CORWIN",~If you're here because you genuinely want to do some good, then I respect you. But if otherwise... you have responsibilities both to your family and Amn, yet somehow I feel as though you're only here for your amusement.~)
+	DisplayStringHead("CORWIN",~你要真因为想做点好事而来，那我敬重你。可要不是……你对家庭和安姆都有责任，可我总觉得你来这儿只为图个乐。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",8)
 	SetGlobal("C02DrakeCorwin1","MYAREA",100)
 RESPONSE #100
-	DisplayStringHead("C0Drake",~Perhaps there is some truth in your words, captain, but in the grand scheme of things, if I am here to aid, then does the reason truly matter?~)
+	DisplayStringHead("C0Drake",~你话里也许有些道理，队长，可从大局看，我既来帮忙，理由真那么要紧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",110)
 RESPONSE #110
-	DisplayStringHead("CORWIN",~No, I suppose not. But if it were me in your place... I likely wouldn't be here. That's all I have to say.~)
+	DisplayStringHead("CORWIN",~不，我看不要紧。可要我在你这位置……我大概不会来。我要说的就这些。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin1","MYAREA",-1)
 END
@@ -92,31 +92,31 @@ IF
 	Switch("C02DrakeCorwin2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Have you ever been in a war, captain?~)
+	DisplayStringHead("C0Drake",~你打过仗吗，队长？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("CORWIN",~We're in one right now. Or does that not count?~)
+	DisplayStringHead("CORWIN",~我们眼下就在打。这不算？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~No, I mean *in* a war. I don't suppose you've had a taste of what it's like, fighting in the frontlines with all your fellow soldiers.~)
+	DisplayStringHead("C0Drake",~不，我是说*身陷*一场战争。我看你没尝过跟同袍一起在前线厮杀的滋味。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("CORWIN",~No, I suppose not. What's your point?~)
+	DisplayStringHead("CORWIN",~不，我看没有。你想说什么？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~We're all afraid of losing something when we step into that battlefield, captain. Whether it be family, home or our very lives. It's something we soldiers have all accepted, more or less. Can you say the same for yourself?~)
+	DisplayStringHead("C0Drake",~我们踏进战场时都怕失去什么，队长。也许是家人、家，或者性命。这是我们当兵的多少都接受了的。你自己能这么说吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("CORWIN",~Do you think I'm a coward? Because I can't stop thinking about my family? My daughter, who could in any of these days lose a mother?~)
+	DisplayStringHead("CORWIN",~你觉得我是懦夫？因为我停不下想我家人？想我女儿，她这些天里哪天都可能没了母亲？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~I don't think that, no. I just thought you could use a reminder. You seem to need it.~)
+	DisplayStringHead("C0Drake",~我不这么想。我只是觉得你该有人提醒一句。你好像需要。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeCorwin2","MYAREA",-1)
 END
@@ -131,27 +131,27 @@ IF
 	Switch("C02DrakeDorn1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~You know, for someone who sold their soul, I'd have thought you'd be more impressive.~)
+	DisplayStringHead("C0Drake",~你知道，对一个卖了灵魂的人，我还以为你会更气派些。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Dorn",~What?~)
+	DisplayStringHead("Dorn",~什么？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeDorn1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Did I stutter? Oh, wait, I forgot. Demon voices in your head drowning my soft tones out, no doubt. No matter, I was simply musing.~)
+	DisplayStringHead("C0Drake",~我结巴了？哦，等等，我忘了。你脑子里的魔鬼声音无疑把我的轻柔语调盖住了。无妨，我只是在琢磨。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeDorn1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Dorn",~You tread a thin line, priest. I warn you, my patience is very, very scarce. Provoking me is anything but a wise move.~)
+	DisplayStringHead("Dorn",~你走在细线上，祭司。我警告你，我的耐心非常、非常有限。惹我可是极不明智。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~And you'll do what, Dorn? Kill me on the spot? We both know you won't.~)
+	DisplayStringHead("C0Drake",~那你要怎样，多恩？当场杀我？我们都知道你不会。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Dorn",~Not yet, perhaps. I do not forget slights - and neither do I forgive.~)
+	DisplayStringHead("Dorn",~也许还不会。我不忘轻慢——也不宽恕。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn1","MYAREA",-1)
 END
@@ -164,27 +164,27 @@ IF
 	Switch("C02DrakeDorn2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Dorn",~Do you fear death, priest?~)
+	DisplayStringHead("Dorn",~你怕死吗，祭司？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Is that a threat?~)
+	DisplayStringHead("C0Drake",~这是威胁？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDorn2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Dorn",~A curiosity, perhaps. The thought occurred to me recently... for those such as yourself that claim to have a place with your gods after death, do you dread the moment that your life ends?~)
+	DisplayStringHead("Dorn",~也许是好奇。最近我想到……像你这样声称死后在神那里有位置的，会不会惧怕生命终结的那一刻？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeDorn2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Dorn",~Or do you await it eagerly, expecting a reward for your blind devotion?~)
+	DisplayStringHead("Dorn",~还是你热切地等着它，指望你盲信的回报？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeDorn2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Well, I do wonder. I suppose I do fear it, perhaps. Every person does, or so I believe, and those who claim otherwise are fooling themselves. Everyone fears death, even if it is only a little.~)
+	DisplayStringHead("C0Drake",~嗯，我确实在想。我看我怕，也许。每个人都会，至少我这么信，那些说不会的是在骗自己。人人都怕死，哪怕只有一点。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeDorn2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Dorn",~A foolish belief. Only the weak are afraid of death, and with your own words, you have proven that. If you believe death is to be feared, then you are as worthless as that faith that you cling on to.~)
+	DisplayStringHead("Dorn",~愚蠢的信念。只有弱者才怕死，而你自己的话已经证明了这点。你要信死该怕，那你跟你抱着的那个信仰一样一文不值。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeDorn2","MYAREA",-1)
 END
@@ -199,23 +199,23 @@ IF
 	Switch("C02DrakeDynaheir1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Your friend Minsc is one of a kind, madam.~)
+	DisplayStringHead("C0Drake",~你那位朋友明斯克是独一无二的，女士。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Dynaheir",~That is... a generous way thou hath put it. Most are not so kind.~)
+	DisplayStringHead("Dynaheir",~这……算是你说得宽厚了。多数人没这么客气。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~I didn't say it was a bad thing. He's got a good sword arm and decent morals. And he brings a bit of life into our grim party, wouldn't you say?~)
+	DisplayStringHead("C0Drake",~我没说那是坏事。他剑臂好，品行也过得去。还给我们这阴沉队伍添了点活气，你不觉得？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Dynaheir",~Minsc is simple, yet his heart is true and he has my respect. I hope thou shalt treat him with the same.~)
+	DisplayStringHead("Dynaheir",~明斯克头脑简单，可他心是真的，我敬重他。我希望你也同样待他。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Worry not, madam. I have plenty of respect for the big lug. More than I have for many others.~)
+	DisplayStringHead("C0Drake",~别担心，女士。我对那大块头敬重得很。比我对许多人都多。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir1","MYAREA",-1)
 END
@@ -228,23 +228,23 @@ IF
 	Switch("C02DrakeDynaheir2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Dynaheir",~Thou hast great respect for our leader <CHARNAME>.~)
+	DisplayStringHead("Dynaheir",~你对我们的首领<CHARNAME>极为敬重。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Is that a statement or a question?~)
+	DisplayStringHead("C0Drake",~这是陈述还是提问？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Dynaheir",~'Twas an observation. I hath noted that thou dost not respect others easily, yet thou art as loyal to <CHARNAME> as Minsc is to me.~)
+	DisplayStringHead("Dynaheir",~是观察。我注意到你不轻易敬重人，可你对<CHARNAME>的忠心，就像明斯克对我一样。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~You have a point. <CHARNAME> is... interesting, to say the least. I'm curious to see how far <PRO_HESHE>'ll go.~)
+	DisplayStringHead("C0Drake",~你说得有理。<CHARNAME>至少算……有意思。我很好奇<PRO_HESHE>能走多远。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Dynaheir",~As am I, Drake. We shall see where our fine leader guides us soon enough.~)
+	DisplayStringHead("Dynaheir",~我也是，德雷克。我们很快就会看到我们这位好首领把我们带往何处。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeDynaheir2","MYAREA",-1)
 END
@@ -259,39 +259,39 @@ IF
 	Switch("C02DrakeEdwin1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~You cheated, Thayan.~)
+	DisplayStringHead("C0Drake",~你作弊，塞尔人。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeEdwin1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Edwin",~What?! How dare you slander me with such absurd insinuations! (How did he know? He must be bluffing!)~)
+	DisplayStringHead("Edwin",~什么？！你竟敢用这种荒唐的暗示诽谤我！（他怎么知道的？他一定是在唬人！）~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~I can count. I've been dealing since you set my last deck on fire in a rage, and I know I didn't deal you six cards. You summoned that one out of nowhere.~)
+	DisplayStringHead("C0Drake",~我会数牌。从你上回一怒烧了我的牌堆起，我一直发牌，我知道我没发给你六张。那一张是你凭空召出来的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Edwin",~Lies. Lies! You are attempting to delay your inevitable defeat at my hands!~)
+	DisplayStringHead("Edwin",~谎话。谎话！你是在拖延你在我手下的必败！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeEdwin1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~I mean, Edwin, really? All we wagered was thirty gold pieces and the last of the Evermead, was it worth it? You can't be that miserly.~)
+	DisplayStringHead("C0Drake",~我是说，埃德温，真的？我们赌的不过三十金币和最后一瓶长青蜜酒，值吗？你不至于这么吝啬。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Edwin",~A Red Wizard's pride is worth more than your empty head can comprehend, you monkey! Do you expect me to leave a mark on my reputation by suffering the indignity of defeat to one such as you?~)
+	DisplayStringHead("Edwin",~红袍巫师的尊严，比你那空脑袋能装的要多得多，你这猴子！你以为我会让名声沾上败给你这种东西的耻辱？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeEdwin1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~You have a reputation?~)
+	DisplayStringHead("C0Drake",~你还有名声？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeEdwin1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Edwin",~Gaaah! What's a mere thirty gold to an esteemed wizard of Thay? Have your coins and your foreign brew and choke on them! Nobody wins! I QUIT!~)
+	DisplayStringHead("Edwin",~啊啊！三十金币对塞尔一位尊贵的巫师算什么？拿去你的钱和你那外地酒，噎死吧！谁也没赢！我不玩了！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",8)
 	SetGlobal("C02DrakeEdwin1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~Figured you just didn't want to lose. I'm willing for a rematch any day, friend.~)
+	DisplayStringHead("C0Drake",~我看你只是不想输。我随时愿意再来一局，朋友。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeEdwin1","MYAREA",-1)
 END
@@ -304,55 +304,55 @@ IF
 	Switch("C02DrakeEdwin2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Edwin",~I have been considering the matter of our unfinished game, priest. I believe I have come to an understanding.~)
+	DisplayStringHead("Edwin",~我一直在琢磨我们那局没下完的棋，祭司。我看我想明白了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~I'm guessing that it's *not* the fact you were losing and cheated to try and save face.~)
+	DisplayStringHead("C0Drake",~我猜*不是*你眼看要输、就作弊想保面子那件事。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Edwin",~I will admit that I had resorted to... tactics out of desperation. But it is YOU who cheated!~)
+	DisplayStringHead("Edwin",~我承认我绝望之下用了些……手段。可作弊的是你！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~...Come again? I have no idea what you're talking about.~)
+	DisplayStringHead("C0Drake",~……再说一遍？我完全不知道你在说什么。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Edwin",~Indeed? Then explain to me how you were capable of making your decisions so accurately, as though you could read my thoughts! Do you deny there was divine interference involved?~)
+	DisplayStringHead("Edwin",~是吗？那你解释解释，你怎么能把每一步都算得那么准，像能读我的心一样！你否认有神力插手？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~*sigh* No, Edwin. I did not cheat. Maybe I took advantage of your tells, but that's all part of the game.~)
+	DisplayStringHead("C0Drake",~*叹息* 不，埃德温。我没作弊。也许我利用了你露的马脚，可那都是棋局的一部分。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Edwin",~Tells? What tells? Explain to me right now! I will leave no weakness to be exploited!~)
+	DisplayStringHead("Edwin",~马脚？什么马脚？马上给我说清楚！我不留任何可被利用的弱点！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~You're a smart man, Edwin, I'll admit it. But you're too afraid to lose even the slightest advantage. When you get a good hand, your expression shows it.~)
+	DisplayStringHead("C0Drake",~你是个聪明人，埃德温，我承认。可你太怕失去哪怕一丁点优势。你拿到好牌，脸上的表情就露出来了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~And when you get a bad hand, you shake like a lotus addict on a diet. Your eyelids start quivering. You mumble to yourself... actually you do that anyway, but I digress.~)
+	DisplayStringHead("C0Drake",~你拿到坏牌，就抖得像节食的黑莲瘾者。你的眼皮开始颤。你自言自语……其实你平时也这样，可我说远了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",90)
 RESPONSE #90
-	DisplayStringHead("C0Drake",~What I mean to say is: you tell your opponent everything. Probably why you never got anywhere back home despite your power.~)
+	DisplayStringHead("C0Drake",~我想说的是：你把一切都告诉了对手。大概这就是你在老家虽有力量却始终没混出头的缘故。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",100)
 RESPONSE #100
-	DisplayStringHead("Edwin",~S-silence! You know nothing about my status in Thay, priest. You have made a grave mistake this day...~)
+	DisplayStringHead("Edwin",~安——安静！你对我在塞尔的地位一无所知，祭司。你今天犯了大错……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",110)
 RESPONSE #110
-	DisplayStringHead("Edwin",~I will ensure that I leave no more 'tells' for you to take advantage of. The next time we gamble, you will be begging me for mercy!~)
+	DisplayStringHead("Edwin",~我保证再不给你留什么可趁的“马脚”。下回我们赌，你会求我饶你！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",120)
 RESPONSE #120
-	DisplayStringHead("C0Drake",~Sure, whatever you say. After all, it's not like a holy man like me would ever cheat... right?~)
+	DisplayStringHead("C0Drake",~当然，你说什么都行。毕竟像我这样的圣人绝不会作弊……对吧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeEdwin2","MYAREA",-1)
 END
@@ -367,31 +367,31 @@ IF
 	Switch("C02DrakeGlint1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Ever heard of the Jansens?~)
+	DisplayStringHead("C0Drake",~听说过詹森家吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Glint",~Jansen, eh? I think I remember one of my cousins being related to them. Why do you ask?~)
+	DisplayStringHead("Glint",~詹森，嗯？我记得我有个表亲跟他们沾亲。你问这个做什么？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~They run a pretty notable business back home in Athkatla. I used to get gnomes knocking on our door trying to sell us turnips and trinkets for outrageous prices. Your family isn't into that sort of business, right?~)
+	DisplayStringHead("C0Drake",~他们在老家阿斯卡特拉做挺出名的买卖。以前老有侏儒敲我们家门，想用离谱的价卖我们萝卜和小玩意。你家族不干那种买卖吧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Glint",~Well, no. We've got cobblers, tailors, builders, farmers, healers, craftsmen, potters, poultry breeders, snake breeders, dragon breeders...~)
+	DisplayStringHead("Glint",~嗯，不干。我们有鞋匠、裁缝、泥瓦匠、农夫、医者、工匠、陶匠、养禽的、养蛇的、养龙的……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Dragon breeders?~)
+	DisplayStringHead("C0Drake",~养龙的？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Glint",~Whoops. I said too much. But back to what I was saying, we don't deal in door-to-door salesmen. Like my dear old pa used to say, we have to maintain some standards.~)
+	DisplayStringHead("Glint",~糟，我说多了。可回到我刚才说的，我们不干上门推销。就像我老爹常说的，我们总得守点规矩。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~Good on you. There's nothing more annoying than having your door knocked on twelve times a day every day by gnomes trying to sell you automatic turnip peelers. I hope your family never goes down that path.~)
+	DisplayStringHead("C0Drake",~说得好。没什么比每天被侏儒敲十二回门、想卖你自动削萝卜机更烦人的了。我希望你家族永远不走那条路。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeGlint1","MYAREA",-1)
 END
@@ -404,19 +404,19 @@ IF
 	Switch("C02DrakeGlint2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~You mentioned a wealth of professions that your family deals in, Glint. Got any brewers?~)
+	DisplayStringHead("C0Drake",~你提过你家族干的行当不少，格林特。有酿酒的吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Glint",~Hmm... now that you mention it, I remember one of my cousins runs a brewery somewhere in Waterdeep. Their trademark brew is the Gardnersonson Tongue-Burner Whiskey. Its spiciness can knock a fully grown gnome off straight off their feet!~)
+	DisplayStringHead("Glint",~嗯……你这么一说，我记得我有个表亲在深水城什么地方开酿酒坊。他们的招牌酒叫“加德纳森灼舌威士忌”。那辣劲能把一个成年侏儒直接掀翻！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Well, considering we've built up quite a camaraderie through our travels together... would you consider cutting a friend a deal?~)
+	DisplayStringHead("C0Drake",~嗯，看我们一路走来交情也够深了……你肯不肯给朋友个优惠？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Glint",~I'll pass the message along. You haven't lived until you've had a taste of the Gardnersonson Tongue-Burner. Just remember to swallow it before you get holes in your tongue!~)
+	DisplayStringHead("Glint",~我把话传过去。你没尝过加德纳森灼舌，就算没活过。只是记得咽下去之前别让舌头上烧出洞！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeGlint2","MYAREA",-1)
 END
@@ -431,43 +431,43 @@ IF
 	Switch("C02DrakeJaheira1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Ye gods, but my throat is parched from all the chanting and shouting I've had to do! Where's my damned flask?~)
+	DisplayStringHead("C0Drake",~众神在上，我念经喊话喊得嗓子都干了！我那该死的酒壶呢？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Jaheira",~Here, Drake. I had taken the opportunity to refill it when we last stopped to rest. Drink up.~)
+	DisplayStringHead("Jaheira",~这儿，德雷克。上回我们停下歇脚时我顺手给它添满了。喝吧。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Ah, you are truly a savior, madam Jaheira. *gulp*~)
+	DisplayStringHead("C0Drake",~啊，你真是救星，贾希拉女士。*灌*~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",10)
 	SetGlobal("C02DrakeJaheira1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Th- *cough* *hack* This is...~)
+	DisplayStringHead("C0Drake",~这——*咳* *呛* 这是……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",10)
 	SetGlobal("C02DrakeJaheira1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Jaheira",~Is there a problem?~)
+	DisplayStringHead("Jaheira",~有问题？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~*pffaaagh!* Augh! Blech! You watered down my ale!~)
+	DisplayStringHead("C0Drake",~*噗啊！* 哎！呸！你把我的麦酒兑水了！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Jaheira",~I assumed that your canteen was filled with water, as any sensible person would have.~)
+	DisplayStringHead("Jaheira",~我以为你水壶里装的是水，任何明白人都会这么想。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~You did this on purpose.~)
+	DisplayStringHead("C0Drake",~你是故意的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeJaheira1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Jaheira",~I most certainly did not, though perhaps 'tis for the best, as your abilities can only be relied on so long as you can properly string two words together. I suggest you drink up. We still have a long walk ahead of us.~)
+	DisplayStringHead("Jaheira",~我绝对不是，不过也许这样最好，因为你的本事只有在你还能把两个词连成句时才靠得住。我建议你喝下去。我们还有很长的路要走。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeJaheira1","MYAREA",90)
 RESPONSE #90
-	DisplayStringHead("C0Drake",~*grumble* Never trusting a druid to fill my flask again... blighted druids and their blighted water...~)
+	DisplayStringHead("C0Drake",~*嘟囔* 再也不信德鲁伊给我添壶了……该死的德鲁伊和他们该死的水……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira1","MYAREA",-1)
 END
@@ -480,39 +480,39 @@ IF
 	Switch("C02DrakeJaheira2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Jaheira",~I hope you are not still angry about the matter of the water, Drake.~)
+	DisplayStringHead("Jaheira",~我希望你没还在为水的事生气，德雷克。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Oh, that? That's nothing. A simple misunderstanding, I know. I forgot all about it.~)
+	DisplayStringHead("C0Drake",~哦，那个？那不算什么。只是场小误会，我知道。我早忘了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Jaheira",~Then what is the cause for all those furtive glances?~)
+	DisplayStringHead("Jaheira",~那那些鬼鬼祟祟的眼神是怎么回事？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Actually, I thought you might've been the one to be angry, madam. I was once taught that an army's march causes great damage to the wild. Looking at you made me remember that.~)
+	DisplayStringHead("C0Drake",~其实，我以为生气的是你，女士。我曾听说军队行军对荒野损害极大。看着你就让我想起这个。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Jaheira",~Is that all? I see no reason why you seemed worried about saying this. If I am angered, it is hardly your fault.~)
+	DisplayStringHead("Jaheira",~就这些？我看你没理由为说这个担心。我要生气，也怪不得你。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~I know it must be uncomfortable to watch. Most of us aren't quite as knowledgeable on how to treat the wild with as much respect as you do.~)
+	DisplayStringHead("C0Drake",~我知道看着一定难受。我们多数人不像你那么懂得如何敬重荒野。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Jaheira",~It does make me uncomfortable, I admit. But I am not so blind as to ignore the necessity. Besides that... I have seen the crusade do worse.~)
+	DisplayStringHead("Jaheira",~我承认，那确实让我难受。可我没瞎到无视必要。再说……我见过圣战军干得更糟。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~As have I. Regardless of our side's faults, the crusade's crimes are far more unforgivable. In your eyes, this is the lesser of two evils. Am I wrong?~)
+	DisplayStringHead("C0Drake",~我也见过。不管我方有什么过错，圣战军的罪要不可饶恕得多。在你眼里，这是两恶中较轻的。我说错了？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Jaheira",~No, that is exactly what I believe. Such is the meaning of serving the balance. We are of one mind in this regard, Drake.~)
+	DisplayStringHead("Jaheira",~不，我正是这么信的。服侍平衡就是这个意思。这点上我们想法一致，德雷克。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeJaheira2","MYAREA",-1)
 END
@@ -527,35 +527,35 @@ IF
 	Switch("C02DrakeKhalid1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~How do you fare, Khalid, my valorous friend? Still shaken from your ordeals at Bridgefort?~)
+	DisplayStringHead("C0Drake",~你怎么样，我英勇的朋友卡立德？还因桥堡那番磨难心神不定？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Khalid",~N-no, not anymore. By Tymora's favor and... and <CHARNAME>'s actions, of course... I survived.~)
+	DisplayStringHead("Khalid",~不——不了，不再了。靠泰摩拉的眷顾和……和<CHARNAME>的作为，当然……我活下来了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~I remember the first time I was trapped in a siege. Only time I was ever genuinely afraid to die. Not from the blades or arrows of my enemy, but a slow torment, watching those around me slowly succumbing to starvation, sickness and despair. I can think of no worse fate...~)
+	DisplayStringHead("C0Drake",~我记得头一回被困在围城里。那是我唯一一次真正怕死。不是怕敌人的刀箭，而是慢慢受折磨，看着身边的人一个个倒在饥饿、病痛和绝望里。我想不出更坏的结局……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Khalid",~P-please, Drake, do n-not go on. It is over. W-we are still alive. There is no need to d-dwell on past horrors.~)
+	DisplayStringHead("Khalid",~求——求你，德雷克，别——别再说下去。都结束了。我——我们还活着。没必要再——再想过去的恐怖。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~How can I not? I know you likely thought the same. Did you ever believe Bridgefort would end up becoming your tomb?~)
+	DisplayStringHead("C0Drake",~我怎么能不想？我知道你大概也这么想过。你以前有没有觉得桥堡会成为你的坟？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Khalid",~P-perhaps I harbored such... such thoughts, from time to time. B-but... I never lost faith. I knew that Jaheira was alive, and that g-gave me hope. N-no... it gave me p-peace.~)
+	DisplayStringHead("Khalid",~也——也许我时不时抱过这——这种念头。可——可我从未失去信心。我知道贾希拉还活着，那——那给了我希望。不——不……那给了我平——平静。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~I see. Well, my brave fellow soldier... what say you to looking back on fonder memories, perhaps over a drink or two?~)
+	DisplayStringHead("C0Drake",~我明白了。嗯，我勇敢的同袍……你看我们回头想想更美好的回忆怎么样，也许就着一两杯酒？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Khalid",~That w-would be n-nice.~)
+	DisplayStringHead("Khalid",~那——那会很——很好。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid1","MYAREA",-1)
 END
@@ -568,43 +568,43 @@ IF
 	Switch("C02DrakeKhalid2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Khalid",~You fight w-well, Drake. B-but you do not consider yourself a warrior... d-do you?~)
+	DisplayStringHead("Khalid",~你打——打得很好，德雷克。可——可你不把自己当战士……是——是吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Mmm. What defines a warrior, I wonder? Is it your skill with your weapon, or your eagerness to leap into battle? I can't say. Do you know what I mean?~)
+	DisplayStringHead("C0Drake",~嗯。什么才算战士，我在想？是你的兵器技艺，还是你冲进战斗的热劲？我说不准。你懂我意思吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeKhalid2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Khalid",~Y-yes, I think I do. I have c-called myself a soldier, a g-guardian, b-but never a w-warrior. I see bloodshed as an e-evil thing, and only engage in it when n-necessary.~)
+	DisplayStringHead("Khalid",~是——是，我想我懂。我称过自己士兵、守——守护者，可——可从没称过战士。我把流血看成恶——恶事，只在必——必要时才动手。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeKhalid2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~I think you have said it better than anyone could, Khalid. Neither of us consider ourselves warriors... we have no taste for battle or for killing. For us, the need to fight is driven by other things. Duty, loyalty, or what have you...~)
+	DisplayStringHead("C0Drake",~我看你说得比谁都透，卡立德。我们俩都不把自己当战士……我们对战斗和杀戮没兴趣。对我们来说，要打是别的东西驱着的。职责、忠诚，或者别的什么……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeKhalid2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Khalid",~W-what do you fight for, Drake?~)
+	DisplayStringHead("Khalid",~你——你为什么而战，德雷克？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Me? Hah, well, I...~)
+	DisplayStringHead("C0Drake",~我？哈，嗯，我……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Khalid",~D-do you not know?~)
+	DisplayStringHead("Khalid",~你——你不知道？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~I wouldn't say that. More like I don't know how to properly define it. Resignation... yes, resignation. That is a good word for it.~)
+	DisplayStringHead("C0Drake",~我不会那么说。更像是不知道该怎么确切界定。认命……对，认命。这词合适。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeKhalid2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Khalid",~R-resignation? W-what do you mean by that?~)
+	DisplayStringHead("Khalid",~认——认命？你——你这是什么意思？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",90)
 RESPONSE #90
-	DisplayStringHead("C0Drake",~Ha! Best that you remain ignorant of its meaning, my friend. I wish you well in the future.~)
+	DisplayStringHead("C0Drake",~哈！你最好还是别懂它的意思，我的朋友。祝你将来一切顺遂。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeKhalid2","MYAREA",-1)
 END
@@ -619,27 +619,27 @@ IF
 	Switch("C02DrakeMinsc1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Minsc",~Ah, it is a good <DAYNIGHT>, is it not, friend Drake? Good for smiting evil for goodness, for justice, for your god... er...~)
+	DisplayStringHead("Minsc",~啊，这是个好<DAYNIGHT>，是吧，德雷克朋友？正适合为善、为正义、为你的神惩恶……呃……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Tyr. It's Tyr.~)
+	DisplayStringHead("C0Drake",~提尔。是提尔。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Minsc",~Yes! That is right! Minsc is sure Tyr will be pleased to see the butts of our enemies receive a rightful kicking.~)
+	DisplayStringHead("Minsc",~对！没错！明斯克确信提尔会高兴看到我们敌人的屁股挨上该挨的踢。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~I'll be sure to tell you if he is.~)
+	DisplayStringHead("C0Drake",~他要是高兴，我一定告诉你。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Minsc",~Let us fight together, Drake! With your hammer and my sword, minions of evil shall tremble!~)
+	DisplayStringHead("Minsc",~我们一起战斗吧，德雷克！有你的锤子和我的剑，邪恶的爪牙会发抖！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Sounds like a plan.~)
+	DisplayStringHead("C0Drake",~听着像个计划。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc1","MYAREA",-1)
 END
@@ -652,23 +652,23 @@ IF
 	Switch("C02DrakeMinsc2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Minsc the Mad. Minsc the Mighty. Minsc the Marvelous. Hmm... still not quite right.~)
+	DisplayStringHead("C0Drake",~疯狂的明斯克。强大的明斯克。了不起的明斯克。嗯……还是不太对。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Minsc",~Minsc is Minsc. I think Drake does not need to add any more words to my name.~)
+	DisplayStringHead("Minsc",~明斯克就是明斯克。我看德雷克不必再往我名字上加词。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Don't mind me. I was just pondering, if by some oddity you became a knight one day, what your most apt sobriquet would be.~)
+	DisplayStringHead("C0Drake",~别管我。我只是在想，万一你哪天稀里糊涂成了骑士，你最贴切的称号会是什么。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Minsc",~Minsc as a knight? I do not think a knight's shiny armor would suit me. Or fit.~)
+	DisplayStringHead("Minsc",~明斯克当骑士？我看骑士那锃亮的铠甲不适合我。也穿不上。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Heh. That's not a bad idea. Minsc the Massive. It works.~)
+	DisplayStringHead("C0Drake",~嘿。这主意不坏。庞大的明斯克。行得通。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMinsc2","MYAREA",-1)
 END
@@ -683,35 +683,35 @@ IF
 	Switch("C02DrakeMkhiin1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~So... goblin, huh?~)
+	DisplayStringHead("C0Drake",~那么……地精，嗯？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Mkhiin",~Last time I checked.~)
+	DisplayStringHead("Mkhiin",~上回我照镜子时还是。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~I've always been curious, what do your lot do in your leisure time? I'm sure raiding villages and burning fields isn't all you do every day.~)
+	DisplayStringHead("C0Drake",~我一直好奇，你们这帮闲下来都干什么？我确信洗劫村子、烧田地不是你们天天干的全部。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Mkhiin",~You trying to be funny, long-legs?~)
+	DisplayStringHead("Mkhiin",~你是想逗乐，长腿？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~No, I was asking a serious question. I just occasionally have a hard time with doing so.~)
+	DisplayStringHead("C0Drake",~不，我是在问个正经问题。只是我偶尔不太会问。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Mkhiin",~If you can't talk, then maybe you should stop trying.~)
+	DisplayStringHead("Mkhiin",~你要不会说话，那也许就该闭嘴。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~...Do you play dice?~)
+	DisplayStringHead("C0Drake",~……你玩骰子吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",4)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Mkhiin",~Shut up.~)
+	DisplayStringHead("Mkhiin",~闭嘴。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin1","MYAREA",-1)
 END
@@ -724,39 +724,39 @@ IF
 	Switch("C02DrakeMkhiin2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Hmm... blue.~)
+	DisplayStringHead("C0Drake",~嗯……蓝的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Mkhiin",~The sky. Right over our heads. Green.~)
+	DisplayStringHead("Mkhiin",~天。就在我们头顶。绿的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Grass, all around us. That one was too easy, madam goblin. Red.~)
+	DisplayStringHead("C0Drake",~草，我们周围全是。那个太简单了，地精女士。红的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Mkhiin",~Apples. Right there, growing on those trees. Yellow.~)
+	DisplayStringHead("Mkhiin",~苹果。就在那儿，长在那些树上。黄的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Goblin. Standing right where I can see her.~)
+	DisplayStringHead("C0Drake",~地精。就站在我看得见的地方。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Mkhiin",~You're not funny.~)
+	DisplayStringHead("Mkhiin",~你不好笑。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~*sigh* I know.~)
+	DisplayStringHead("C0Drake",~*叹息* 我知道。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",8)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Mkhiin",~Game's boring. Let's stop.~)
+	DisplayStringHead("Mkhiin",~游戏没意思了。我们停吧。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~Fine by me.~)
+	DisplayStringHead("C0Drake",~我没意见。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeMkhiin2","MYAREA",-1)
 END
@@ -771,39 +771,39 @@ IF
 	Switch("C02DrakeNeera1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Neera",~Hey! Hey, WIERDO! CAN I ASK YOU TO DO SOMETHING FOR ME?~)
+	DisplayStringHead("Neera",~喂！喂，怪人！我能请你帮我个忙吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~No need to shout, I'm not going deaf yet... though I likely will be soon at this rate.~)
+	DisplayStringHead("C0Drake",~不必喊，我还没聋……不过照这么下去快了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Neera",~S-SORRY! Um, I mean, sorry. I was juuust GOING TO ASK- *ahem* if you could exorcise this GODS-DAMNED VOICE FROM MY-~)
+	DisplayStringHead("Neera",~对——对不起！呃，我是说，抱歉。我只是想问问——*清嗓* 你能不能把这该死的声音从我脑里驱——~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Yes, yes, I get the idea. Unfortunately, my answer is no.~)
+	DisplayStringHead("C0Drake",~是，是，我明白。可惜，我的答案是不行。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Neera",~WHY? Whyyyyy? What if I ask really nicely? Pleeeeease?~)
+	DisplayStringHead("Neera",~为什么？为什么呀呀？要是我好好求你行不行？求——求你啦？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Don't get me wrong, I'd benefit from some quiet too. But that's not how it works. If I know it's a dead spirit haunting you, then maybe...~)
+	DisplayStringHead("C0Drake",~别误会，我也想要点清静。可事情不是那么办的。如果我知道是死魂缠着你，那也许……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Neera",~Hey, I can help with that? Wait a moment, I have to ask. HEY ADOY! ARE YOU ALIVE OR DEAD?!~)
+	DisplayStringHead("Neera",~喂，这我能帮上？等一会儿，我得问一句。喂，阿多伊！你是活的还是死的？！~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Neera",~... Oh, great. NOW he decides to go quiet on me. Ughhh! I'll just go over there for a while. He'll come back soon enough.~)
+	DisplayStringHead("Neera",~……哦，好极了。现在他倒对我沉默了。呃呃呃！我去那边待一会儿。他很快就回来。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~You go do that. Take as loooong as you like. The longer the better.~)
+	DisplayStringHead("C0Drake",~你去吧。想待多久就待多久。越久越好。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeNeera1","MYAREA",-1)
 END
@@ -816,31 +816,31 @@ IF
 	Switch("C02DrakeNeera2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Feeling a little better, princess?~)
+	DisplayStringHead("C0Drake",~好点了吗，公主？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Neera",~Who're you calling a princess? Uh, I mean... yeah. Thanks for asking.~)
+	DisplayStringHead("Neera",~你叫谁公主？呃，我是说……对。谢谢关心。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~Yes, probably for the best. I was growing tired of plugging my ears with corks. It made wearing my helmet unbearable.~)
+	DisplayStringHead("C0Drake",~是，大概这样最好。我塞软木塞塞耳朵都塞烦了。戴着头盔简直受不了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Neera",~Ha ha! It looked hilarious though. I thought you might've been growing wine bottles out of your ears or something.~)
+	DisplayStringHead("Neera",~哈哈！可看着真好笑。我还以为你耳朵里要长出酒瓶来呢。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Hm, that would make things a whole lot more convenient...~)
+	DisplayStringHead("C0Drake",~嗯，那倒会方便得多……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Neera",~I could try a thing or two to make that happen. With my magic, you never know.~)
+	DisplayStringHead("Neera",~我可以用魔法试上一两招让它成真。你也说不准。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~I'll pass.~)
+	DisplayStringHead("C0Drake",~算了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeNeera2","MYAREA",-1)
 END
@@ -855,39 +855,39 @@ IF
 	Switch("C02DrakeSafana1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Safana",~Drake, be a dear and carry my bag for me. My shoulders ache so.~)
+	DisplayStringHead("Safana",~德雷克，好人，帮我扛下包。我肩膀疼得厉害。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Why, certainly, ma'am.~)
+	DisplayStringHead("C0Drake",~哎呀，当然，女士。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Safana",~'Ma'am'? I'll have you know that I'm at my prime, I'm... wait. What are you doing?~)
+	DisplayStringHead("Safana",~“女士”？我得让你知道我正当年，我……等等。你在干什么？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Emptying your bag of your possessions. You never said anything about carrying those.~)
+	DisplayStringHead("C0Drake",~把包里的东西倒出来。你只说要扛包，没说扛里面的东西。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Safana",~Don't be so obtuse, dear. Surely you can do me a favor?~)
+	DisplayStringHead("Safana",~别这么笨，亲爱的。你总肯帮我个忙吧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Do you a favor carrying all these rocks you've got stored at the bottom of this pack?~)
+	DisplayStringHead("C0Drake",~帮你扛这包底下塞着的一堆石头？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Safana",~I thought you could use the workout. You should be grateful, dear.~)
+	DisplayStringHead("Safana",~我以为你正需要练练。你该感激我，亲爱的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~As much as I appreciate the thought, I think you're more in need of gaining some muscle, ma'am. I like women with a little more meat on their limbs.~)
+	DisplayStringHead("C0Drake",~我虽领这份心，可我看你更该长点肉，女士。我喜欢四肢上有点肉的女人。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Safana",~Call me ma'am again, and I'll make sure to fill *your* bag with rocks next time.~)
+	DisplayStringHead("Safana",~再叫我一声女士，下回我保证把*你的*包塞满石头。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana1","MYAREA",-1)
 END
@@ -900,39 +900,39 @@ IF
 	Switch("C02DrakeSafana2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Safana",~You have an... interesting taste in wine, Drake.~)
+	DisplayStringHead("Safana",~你对酒的品味……挺有意思，德雷克。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~The good or bad kind of interesting?~)
+	DisplayStringHead("C0Drake",~好的那种有意思，还是坏的那种？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Safana",~I'm... not sure. I tasted it for the first time when I was still a child. It brings back memories, both good and bad.~)
+	DisplayStringHead("Safana",~我……不确定。我头一回尝它还是孩子。它带回些回忆，好的坏的都有。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Color me interested in something about you for the first time. Do tell.~)
+	DisplayStringHead("C0Drake",~这可是头一回我对你身上什么东西起了兴趣。说说看。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Safana",~I'd rather you entertain me for once, but... why not? This was my mother's favorite wine. Of all the tastes I've ever experienced, this one is... especially vivid to me.~)
+	DisplayStringHead("Safana",~我倒宁愿这回你逗我开心，可……干嘛不？这是我母亲最爱的酒。我尝过的一切味道里，这一种对我……格外鲜明。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Did you... have a good relationship with your mother?~)
+	DisplayStringHead("C0Drake",~你……跟你母亲关系好吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Safana",~Let me say it straight, dear. The women worthy of being on the same level as me can be counted on one hand. My mother was one of them.~)
+	DisplayStringHead("Safana",~我直说吧，亲爱的。够格跟我平起平坐的女人，一只手数得完。我母亲就是其中之一。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~Funnily enough, I think I've gained a bit of respect for you, Safana. Go ahead and finish the bottle. It seems to mean a lot to you.~)
+	DisplayStringHead("C0Drake",~说来好笑，我看我对你多了点敬重，萨法娜。把瓶喝了吧。它对你好像挺要紧。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Safana",~It's a start, at least. I expect you'll come around fully soon enough. In any case... that's very sweet of you, Drake. I'm touched.~)
+	DisplayStringHead("Safana",~至少算个开头。我看你很快就会完全转过弯来。总之……你真好心，德雷克。我被打动了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSafana2","MYAREA",-1)
 END
@@ -947,39 +947,39 @@ IF
 	Switch("C02DrakeRasaad1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Rasaad",~You are strong, Drake. Many warriors rely too much on their weapons and armor, and forget to hone their bodies as well.~)
+	DisplayStringHead("Rasaad",~你很强，德雷克。许多战士太依赖兵器和铠甲，忘了也该锤炼身体。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeRasaad1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~I suppose. Too many knights train to the bare minimum they need to wear their armor without falling over, and leave it at that. More often than not, it gets them killed when all that armor fails them.~)
+	DisplayStringHead("C0Drake",~我看是。太多骑士只练到能穿着铠甲不摔倒的最低限度，就到此为止。结果那身铠甲不顶用时，他们往往就送了命。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Rasaad",~But you are not so dependent on your armor. I have noticed that you are deceptively light on your feet when you fight.~)
+	DisplayStringHead("Rasaad",~可你没那么依赖铠甲。我注意到你打起来脚步轻得出人意料。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Oh, I'm not that much better. But taking part in my share of drunken bar brawls has its advantages. Without armor to protect you or weigh you down, dodging fists and thrown tankards becomes good practice.~)
+	DisplayStringHead("C0Drake",~哦，我也没好到哪去。可参与我那份酒馆斗殴有它的好处。没铠甲护着也没铠甲压着，躲拳头和飞来的酒杯就成了好练习。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Rasaad",~You engage in such activities often, then?~)
+	DisplayStringHead("Rasaad",~那你常干这种事？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Oh, very often. I met some of my best friends by knocking out their teeth. Or getting my teeth punched out by them. It's a refreshing change from the fair duels us Order sods are used to. No rules, no honor, just pure, raw chaos. Thrilling.~)
+	DisplayStringHead("C0Drake",~哦，常得很。我有些最好的朋友就是敲掉他们牙齿认识的。或者被他们敲掉我的牙。比起我们骑士团这些人习惯的体面决斗，这真是提神的变化。没规矩，没荣誉，只有纯粹生猛的混乱。刺激。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Rasaad",~It certainly sounds... different.~)
+	DisplayStringHead("Rasaad",~听着确实……不一样。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~You should come along with me some day. It'd be good practice for the both of us. Not to mention it's fun.~)
+	DisplayStringHead("C0Drake",~你哪天该跟我去。对我们俩都是好练习。更别说好玩。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("Rasaad",~I think I shall pass. Somehow the prospect does not seem... fair.~)
+	DisplayStringHead("Rasaad",~我看我还是算了。不知怎的，这前景看着不……公道。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad1","MYAREA",-1)
 END
@@ -992,35 +992,35 @@ IF
 	Switch("C02DrakeRasaad2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~A Calishite fortune teller once told me that all things are predetermined, their tales already written in the book of fate. Do you believe in such a thing?~)
+	DisplayStringHead("C0Drake",~一个卡林杉算命婆曾对我说，万物皆已前定，其故事早写在命运之书上。你信这种事吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Rasaad",~If it is true, then it means that I was doomed from the very beginning.~)
+	DisplayStringHead("Rasaad",~要是真的，那意味着我从一开始就注定完了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~What makes you say that?~)
+	DisplayStringHead("C0Drake",~你为什么这么说？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("Rasaad",~Is it not obvious? I lost my father while I was but a child. I lost my brother to my own fists. All my life, I have faced tragedy. If what that fortune teller claimed is true, then my actions have meant nothing. Those tragedies were always meant to be.~)
+	DisplayStringHead("Rasaad",~还不明显？我还是孩子就没了父亲。我用自己的拳头失去了哥哥。我这一生都在面对惨事。那算命的要没说错，那我做的一切都毫无意义。那些惨事本来就注定。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Even if that were the case, it hardly means that you are doomed, does it? Perhaps the page which tells the tale of your happiness has yet to be turned.~)
+	DisplayStringHead("C0Drake",~就算如此，也不见得意味着你就完了，对吧？也许写着你的幸福那页还没翻过来。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("Rasaad",~I only fear that I will never be able to read it, for I suspect that my own death will come first.~)
+	DisplayStringHead("Rasaad",~我只怕我永远读不到它，因为我怀疑我先等来的是自己的死。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~But if such a tale truly exists, then it means you are meant to see it, don't you think? I wouldn't give up so easily yet. Your tale has yet to end.~)
+	DisplayStringHead("C0Drake",~可要真有那样的故事，那意味着你注定会看到它，你不觉得？我还不会这么轻易放弃。你的故事还没完。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("Rasaad",~You may be right, Drake. I truly hope so.~)
+	DisplayStringHead("Rasaad",~你也许说得对，德雷克。我真希望如此。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",-1)
 END
@@ -1035,31 +1035,31 @@ IF
 	Switch("C02DrakeViconia1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Viconia",~That revolting slop you called dinner last night was just a few steps short of being inedible.~)
+	DisplayStringHead("Viconia",~你昨晚管叫晚饭的那锅恶心糊糊，离不能吃只差几步。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~My thanks for the critique.~)
+	DisplayStringHead("C0Drake",~多谢点评。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Viconia",~I expect that you will do better. If I must endure one more serving of stew that is displeasing to both the eye and nose, I shall serve a stew cooked from your own flesh.~)
+	DisplayStringHead("Viconia",~我希望你做得更好。要我再吃一份看着闻着都难受的炖菜，我就拿你的肉炖一锅。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~My thanks for the critique.~)
+	DisplayStringHead("C0Drake",~多谢点评。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Viconia",~Bah! Has anyone ever told you that you surfacers all lack backbone?~)
+	DisplayStringHead("Viconia",~呸！有没有人告诉过你，你们地表人个个没脊梁？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~My thanks for the critique.~)
+	DisplayStringHead("C0Drake",~多谢点评。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Viconia",~Shar! This one's insolence is beyond reckoning! I pray you shall deliver him to a dark end one day.~)
+	DisplayStringHead("Viconia",~莎尔！这家伙的无礼无法估量！我祈求你哪天给他个黑暗的结局。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia1","MYAREA",-1)
 END
@@ -1072,43 +1072,43 @@ IF
 	Switch("C02DrakeViconia2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Viconia",~It astounds me that one such as you continues to live to this day. You are as tenacious as those insects you surfacers call... what was it? Cockroaches?~)
+	DisplayStringHead("Viconia",~我很惊讶，像你这样的居然活到今天。你跟你们地表人叫的那种虫子一样顽强……叫什么来着？蟑螂？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Hm-hm. My thanks for the compliment.~)
+	DisplayStringHead("C0Drake",~嗯哼。多谢夸奖。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Viconia",~Do not dare to go down this path again with me, jaluk, I have no patience for it. Besides, I just offered you a compliment. You should be grateful.~)
+	DisplayStringHead("Viconia",~别再用这套跟我说话，jaluk，我没那耐心。再说，我刚是夸你。你该感激。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Funnily enough, Viconia, I actually am. For you to give me a compliment for once, that's... not quite like you. Perhaps it is a sign that my last attempt at cooking has shown improvement?~)
+	DisplayStringHead("C0Drake",~说来好笑，维康尼亚，我还真感激。你难得夸我一回，这……不像你。也许这是说，我上回做饭有长进？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Viconia",~You flatter yourself, Drake. It bemuses me how closely the taste of mushrooms on the surface resembles that of dirt. No, I am merely surprised that despite your obsession with dulling your senses through indulgence in drink, you still somehow manage to outlive those around you.~)
+	DisplayStringHead("Viconia",~你太抬举自己了，德雷克。地表蘑菇的味道跟泥土像得让我好笑。不，我只是惊讶，你虽一门心思靠酒把感官弄钝，却不知怎的还能活得比周围人久。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~It is impressive, isn't it? I certainly think so. But it is a blessing and a curse...~)
+	DisplayStringHead("C0Drake",~这挺了不起，是吧？我确实这么想。可这是福也是祸……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Viconia",~Oh? Do explain.~)
+	DisplayStringHead("Viconia",~哦？你倒说说。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~A sad thing it is to outlive your peers. Those close to me have died, and so I drink to their memory.~)
+	DisplayStringHead("C0Drake",~活得比同辈久是件伤心事。我亲近的人都死了，所以我喝酒纪念他们。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~The more I think of them, the more I drink... and the more I drink, the more I think of them... and so it goes on... and on... and soon, I end up wishing I could join them.~)
+	DisplayStringHead("C0Drake",~我越想他们，喝得越多……喝得越多，越想他们……就这么下去……下去……很快就恨不得能跟他们去了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",90)
 RESPONSE #90
-	DisplayStringHead("Viconia",~Bah! I withdraw any compliment I bestowed upon you. You are just a pathetic wretch slowly waiting to die. This conversation has lost its appeal to me.~)
+	DisplayStringHead("Viconia",~呸！我收回刚给你的夸奖。你不过是个慢悠悠等死的可怜虫。这谈话对我没吸引力了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeViconia2","MYAREA",-1)
 END
@@ -1123,35 +1123,35 @@ IF
 	Switch("C02DrakeVoghiln1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~Nice beard, Voghiln.~)
+	DisplayStringHead("C0Drake",~胡子不错，沃吉尔恩。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("Voghiln",~Ho ho! You have a good eye, Drake. I do not claim to have the finest features among men, but this beard, ja... it is my greatest pride.~)
+	DisplayStringHead("Voghiln",~嚯嚯！你眼力好，德雷克。我不自称男人里长得最好的，可这胡子，对……是我最大的骄傲。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Voghiln",~What of you, my friend? I see that you bear the shadow of a beard. Have you never allowed it to grow?~)
+	DisplayStringHead("Voghiln",~你呢，我的朋友？我看你留着胡茬的影子。你就没让它长起来过？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Oh, I've tried. Sadly, my highborn mother disapproves. This is about as much as I can get away with.~)
+	DisplayStringHead("C0Drake",~哦，试过。可惜我出身高贵的母亲不同意。这差不多是我能混到的极限了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Voghiln",~Ah, that is a shame. I recall mine father telling me once. "A man is not a man without his beard."~)
+	DisplayStringHead("Voghiln",~唉，真可惜。我记得我父亲曾对我说过：“没有胡子的男人不算男人。”~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~You know, just looking at yours makes me jealous. Those fine, lush strands of hair on your chin, flowing in the breeze. I almost want to touch them...~)
+	DisplayStringHead("C0Drake",~你知道，光看着你的就让我羡慕。你下巴上那些细密浓茂的须丝，在风里飘。我几乎想去摸……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("Voghiln",~Uhm...~)
+	DisplayStringHead("Voghiln",~呃……~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~*laugh* Just messing with you.~)
+	DisplayStringHead("C0Drake",~*笑* 逗你玩的。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln1","MYAREA",-1)
 END
@@ -1164,27 +1164,27 @@ IF
 	Switch("C02DrakeVoghiln2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("Voghiln",~So, Drake, you are from the southern lands, ja? Perhaps you can tell Voghiln a thing or two about Amnian women?~)
+	DisplayStringHead("Voghiln",~那么，德雷克，你从南边地方来，对吧？也许你能给沃吉尔恩讲讲安姆女人？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~I could tell you a lot of things, depending on what you're interested in. About the women of the city, anyway.~)
+	DisplayStringHead("C0Drake",~看你对什么有兴趣，我能讲很多。至少城里女人的事。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("Voghiln",~Ja, allow me to think... perhaps you could tell me about the women of your Order? The Radiant Heart, was it?~)
+	DisplayStringHead("Voghiln",~对，让我想想……也许你能讲讲你们骑士团里的女人？是叫光辉之心吧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Heh, you've set a pretty high bar right away, my friend. Sadly, I'm not sure how much luck you'll have there. My female seniors are all proper ladies with noble names and positions.~)
+	DisplayStringHead("C0Drake",~嘿，你一开口就把门槛设得挺高，我的朋友。可惜，我不确定你在那儿能有多少运气。我那些女性上级全是名门出身、有爵位有职位的正经淑女。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("Voghiln",~Perhaps you speak truth, my friend, but as they say, there is no fun without challenge, ja?~)
+	DisplayStringHead("Voghiln",~也许你说的是实话，我的朋友，可俗话说，没挑战就没乐趣，对吧？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Heh. I'd love to see you flounder if nothing else. Come to Athkatla some time to see for yourself. We can share a drink together at my favorite bars.~)
+	DisplayStringHead("C0Drake",~嘿。别的不说，我倒很想看你出丑。哪天来阿斯卡特拉自己看看。我们可以在我最爱的几家酒馆一起喝一杯。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVoghiln2","MYAREA",-1)
 END
@@ -1203,35 +1203,35 @@ IF
 	Switch("C02DrakeEmily1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("X3Emily",~Drake, do you have a moment?~)
+	DisplayStringHead("X3Emily",~德雷克，你有空吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Aye, more than one. What's on your mind, blonde?~)
+	DisplayStringHead("C0Drake",~有，不止一点。你在想什么，金发姑娘？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("X3Emily",~I have a name, you know. It's Emily. Anyway... how do you feel about this whole war business?~)
+	DisplayStringHead("X3Emily",~我有名字的。我叫艾米莉。总之……你对这整场战争怎么看？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Asking a soldier about war? Now that's a loaded question if ever I heard one.~)
+	DisplayStringHead("C0Drake",~问当兵的战争的事？这可是个一开口就说不完的问题。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("X3Emily",~I'm not judging. I understand the sense of duty you must have. I was just wondering if you had doubts.~)
+	DisplayStringHead("X3Emily",~我不是在评判。我明白你一定有的责任感。我只是想知道你有没有怀疑。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Why? Because our foes have a sense of right just as much as we have?~)
+	DisplayStringHead("C0Drake",~为什么？因为我们的敌人跟我们一样有自己的一套是非？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("X3Emily",~Yes, that... exactly it. You took the words out of my mouth.~)
+	DisplayStringHead("X3Emily",~对，那个……正是。你把我要说的说出来了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("C0Drake",~Don't think too hard on it, blonde. If you do, you'll never stop. Take that from someone who understands war.~)
+	DisplayStringHead("C0Drake",~别想太深，金发姑娘。你要真想，就停不下来。这话从一个懂战争的人嘴里出来。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily1","MYAREA",-1)
 END
@@ -1244,39 +1244,39 @@ IF
 	Switch("C02DrakeEmily2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("X3Emily",~I can't do it, Drake. How can I ignore hurting people who aren't evil?~)
+	DisplayStringHead("X3Emily",~我做不到，德雷克。我怎么能无视伤害那些并不邪恶的人？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Difficult, is it not? The most difficult battles are never against those you hate.~)
+	DisplayStringHead("C0Drake",~难，是吧？最难打的仗，从来不是跟你恨的人打。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("X3Emily",~I know we're on the right. I stand by it, and that's why I fight. But... I know our foes must feel the same. I can feel it.~)
+	DisplayStringHead("X3Emily",~我知道我们站在对的一边。我坚持这点，所以我才打。可……我知道我们的敌人一定也这么觉得。我感觉得到。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~And yet, if you allow others to decide for you what's right, in a way, you have already lost.~)
+	DisplayStringHead("C0Drake",~可你要让别人替你决定什么是对的，某种意义上，你早就输了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("X3Emily",~Is that how you can bring yourself to fight so easily?~)
+	DisplayStringHead("X3Emily",~你就是这样才能轻松地打起来？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~I'm here because I believed opposing the crusade was the right choice. Those who stand against me simply made the wrong ones.~)
+	DisplayStringHead("C0Drake",~我在这儿，是因为我相信反对圣战军是对的选择。跟我作对的那些人只是选错了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~Sometimes... the wrong choice is not always evil in nature. That, you'll have to accept, and find the courage to fight regardless. That is war.~)
+	DisplayStringHead("C0Drake",~有时候……错的选择本质上并不总是恶的。这你得接受，并且无论如何都要找到勇气去打。这就是战争。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",70)
 RESPONSE #70
-	DisplayStringHead("X3Emily",~And there is truly no conciliation? Is there no other way than for one side to destroy the other?~)
+	DisplayStringHead("X3Emily",~就真没和解的余地？除了让一方毁掉另一方，就没别的路？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",80)
 RESPONSE #80
-	DisplayStringHead("C0Drake",~You ever find the answer to that question, blonde... you let me know.~)
+	DisplayStringHead("C0Drake",~你哪天找到这问题的答案，金发姑娘……告诉我一声。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily2","MYAREA",-1)
 END
@@ -1289,23 +1289,23 @@ IF
 	Switch("C02DrakeEmily3","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~If doubts still plague you, blonde, just remember—they chose their side, just as you have. Where that takes them is not up to you.~)
+	DisplayStringHead("C0Drake",~怀疑还缠着你的话，金发姑娘，就记住——他们选了他们的边，就像你一样。那把他们带到哪儿，不由你定。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily3","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("X3Emily",~I understand. Thank you for listening to me all this time.~)
+	DisplayStringHead("X3Emily",~我明白。谢谢你一直听我说。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily3","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~It’s reassuring to confide with another who about your doubts.~)
+	DisplayStringHead("C0Drake",~跟另一个人倾诉你的疑虑，让人安心。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily3","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("X3Emily",~Yes, that’s—hang on, who are you speaking of, me or you?~)
+	DisplayStringHead("X3Emily",~是，那——等等，你说的是谁，我，还是你？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily3","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Well... I wonder.~)
+	DisplayStringHead("C0Drake",~嗯……我在想。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeEmily3","MYAREA",-1)
 END
@@ -1320,31 +1320,31 @@ IF
 	Switch("C02DrakeSirene1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~You look tired, lady Mercy.~)
+	DisplayStringHead("C0Drake",~你看着累了，慈悲女士。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Sirene",~Aye. Rest has not come easily to me as of late. Too many battles fought, the blood spilled remaining in my thoughts.~)
+	DisplayStringHead("C0Sirene",~是。近来我难得安歇。打的仗太多，流过的血还留在我脑子里。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~The burdens of war are a poor fit for one such as you.~)
+	DisplayStringHead("C0Drake",~战争的担子对你这种人实在不合身。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Sirene",~Perhaps.~)
+	DisplayStringHead("C0Sirene",~也许吧。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~And yet you would remain regardless?~)
+	DisplayStringHead("C0Drake",~可你还是会留下？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Sirene",~If I do not put my personal feelings aside and choose to remain a bystander forever, then nothing will change. More will suffer and die. It is not my desire to fight, but if I do not, my guilt would haunt me for every moment that I live.~)
+	DisplayStringHead("C0Sirene",~如果我不把个人感受放到一边、选择永远当旁观者，那就什么都不会变。会有更多人受苦、死去。我不是想打仗，可我不打，我活着的每一刻都会被愧疚缠着。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~I cannot say I envy the responsibilities of an Ilmater worshipper.~)
+	DisplayStringHead("C0Drake",~我不能说我羡慕伊尔玛塔信徒的责任。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene1","MYAREA",-1)
 END
@@ -1357,27 +1357,27 @@ IF
 	Switch("C02DrakeSirene2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Sirene",~You are a priest, Drake, yet I have never seen you pray. Might I ask why?~)
+	DisplayStringHead("C0Sirene",~你是祭司，德雷克，可我从未见你祈祷。能问问为什么吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~I pray for others, sometimes. But usually only when they come to me asking for words of reassurance. I don't pray for myself.~)
+	DisplayStringHead("C0Drake",~我有时替别人祈祷。可通常只在他们来找我要几句宽慰话时。我不为自己祈祷。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Sirene",~Do you find no comfort from prayer? From hearing the voice of Tyr, your patron, just as Ilmater answers me when I pray?~)
+	DisplayStringHead("C0Sirene",~祈祷不能给你安慰？不能让你听到你的主神提尔的声音，就像我祈祷时伊尔玛塔回应我那样？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~A prayer's only worth as much as you believe in it. I've seen it all. People pray for wealth, comfort, safety, happiness... they want the gods to solve all their problems, answer all their questions. Has it ever worked for anyone? For you?~)
+	DisplayStringHead("C0Drake",~祈祷的价值只跟你信它多少一样。我什么都见过。人们求财富、安逸、平安、幸福……他们要神解决他们所有问题，回答他们所有疑问。这对谁真管用过？对你管用过？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Sirene",~I do not know. But I do know it gives me some measure of peace, when I feel as though I have been answered.~)
+	DisplayStringHead("C0Sirene",~我不知道。可我知道，当我感觉自己得了回应时，它确实给了我几分平静。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeSirene2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~Aye, and if it helps, then more power to you, lady Mercy. I'm not the type to sit around and wait for an answer. If Tyr sees fit to give me anything, whether it be power or guidance, then I'll give him my thanks and use it in his name. But I'd rather trust in my own ability more than anything... even the gods.~)
+	DisplayStringHead("C0Drake",~是，要真管用，那你就更该如此，慈悲女士。我不是那种坐着等答案的人。提尔要觉得该给我什么，不管是力量还是指引，我就谢他，以他之名用它。可我更愿信我自己的本事，胜过一切……连神也算上。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",7)
 	SetGlobal("C02DrakeSirene2","MYAREA",-1)
 END
@@ -1392,31 +1392,31 @@ IF
 	Switch("C02DrakeVerrsza1","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("L#1DVer",~I'm getting thirsty. Pass me some of that good stuff.~)
+	DisplayStringHead("L#1DVer",~我渴了。递点那好东西给我。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("C0Drake",~Golden Sands brew, or Dragon's Breath?~)
+	DisplayStringHead("C0Drake",~金沙酿，还是龙息？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("L#1DVer",~I don't care. Just give me something. My throat's killing me.~)
+	DisplayStringHead("L#1DVer",~我不在乎。随便给我点。我嗓子要命。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("C0Drake",~Golden Sands it is. Make sure not to spill any. We'll drink together.~)
+	DisplayStringHead("C0Drake",~那就金沙。别洒了。我们一起喝。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("L#1DVer",~Heh. You know, for a priest, you're not all that bad. I thought people like you were born with sticks up your backsides. What happened to yours?~)
+	DisplayStringHead("L#1DVer",~嘿。你知道，作为一个祭司，你还不算太糟。我以为你这类人天生屁股里插着棍子。你那根怎么了？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("C0Drake",~I pawned it off for a few coppers and a dose of common sense.~)
+	DisplayStringHead("C0Drake",~我当了几个铜板和一份常识。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("L#1DVer",~I'd say that's a good deal.~)
+	DisplayStringHead("L#1DVer",~我得说这买卖不错。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza1","MYAREA",-1)
 END
@@ -1429,31 +1429,31 @@ IF
 	Switch("C02DrakeVerrsza2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~You've got a bare patch. There, look. The fur's all burned off.~)
+	DisplayStringHead("C0Drake",~你这儿有块没毛的。那儿，看。毛全烧光了。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",10)
 RESPONSE #10
-	DisplayStringHead("L#1DVer",~Bah! I still can't believe I let that happen to me. I made sure that the scum that did this paid dearly.~)
+	DisplayStringHead("L#1DVer",~呸！我还是不信我竟让人这么干了。我确保干这事的那烂人付了大代价。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",20)
 RESPONSE #20
-	DisplayStringHead("C0Drake",~The older men back home used to come by the temples to ask us to get rid of their bald spots. Couldn't heal those either. I guess your fur works the same way.~)
+	DisplayStringHead("C0Drake",~老家有些上了年纪的男人常到神殿来，求我们除掉他们的秃斑。那些也治不了。我看你的毛也一样。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",30)
 RESPONSE #30
-	DisplayStringHead("L#1DVer",~Anyone who dares to damage my fur deserves to die. Scars can look pretty in the right places, but nothing could make this look good.~)
+	DisplayStringHead("L#1DVer",~敢伤我毛的都该死。疤痕在合适的地方能好看，可这地方没什么能救。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",40)
 RESPONSE #40
-	DisplayStringHead("C0Drake",~Look on the bright side. At least it wasn't on your head. You can cover it up.~)
+	DisplayStringHead("C0Drake",~往好处想。至少不在你头上。你能盖住。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",50)
 RESPONSE #50
-	DisplayStringHead("L#1DVer",~You saw nothing.~)
+	DisplayStringHead("L#1DVer",~你什么都没看见。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",60)
 RESPONSE #60
-	DisplayStringHead("C0Drake",~Right. I saw nothing.~)
+	DisplayStringHead("C0Drake",~对。我什么都没看见。~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",5)
 	SetGlobal("C02DrakeVerrsza2","MYAREA",-1)
 END

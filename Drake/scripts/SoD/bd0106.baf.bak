@@ -1,0 +1,44 @@
+IF
+  Global("C02DrakeSpawns","BD0106",0)
+  BeenInParty("C0Drake")
+THEN
+  RESPONSE #100
+    MoveGlobal("BD0106","C0Drake",[389.289])
+    ApplySpellRES("bdresurr","C0Drake")
+    SmallWait(1)
+    ActionOverride("C0Drake",Face(S))
+	ApplySpellRES("bdrejuve","C0Drake")
+    ChangeEnemyAlly("C0Drake",NEUTRAL)
+    ChangeSpecifics("C0Drake",ALLIES)
+    ActionOverride("C0Drake",SetGlobal("C0DrakeJoined","locals",0))
+    ActionOverride("C0Drake",SetGlobal("bd_retreat","locals",0))
+    ActionOverride("C0Drake",SaveObjectLocation("LOCALS","bd_default_loc",Myself))
+    ActionOverride("C0Drake",ChangeAIScript("C02Drake",OVERRIDE))
+    ActionOverride("C0Drake",ChangeAIScript("DEFAULT",CLASS))
+    ActionOverride("C0Drake",ChangeAIScript("",RACE))
+    ActionOverride("C0Drake",ChangeAIScript("",GENERAL))
+    ActionOverride("C0Drake",ChangeAIScript("",DEFAULT))
+    ActionOverride("C0Drake",SetDialog("C02Drake"))
+	ActionOverride("C0Drake",SetPlayerSound(Myself,~When asked about his past, DRAKE gives a sardonic laugh and responds that history would breathe easier if his past was left forgotten. A cleric of Tyr in his mid-thirties, second son of the Caulfield family, former ensign in the Amnian militia and, with a touch of irony when mentioning it, recruit of the Radiant Heart auxiliary, he considers himself 'that thing they can't get rid of' within the Order. He openly admits that his unorthodox views on the tenets of the Order as well as the distribution of justice makes him something of a social pariah with both his fellows of the Radiant Heart and his family, almost all of whom have a history of service within the Order. According to him, while him being stationed outside of Amn was officially a mission to root out evil that plagued the Sword Coast, he believes it was nothing more than a formal means of sending him away and allowing his superiors to forget about him. Such an assignment seems to be to his preference, however, as he believes justice is best served with the edge of a blade - or in his case, the head of a hammer.
+  
+  Though Drake was prepared to return to Amn after the resolution of the iron crisis, the threat of the Shining Lady's crusade has given him cause to remain at Baldur's Gate and take part in the march to Dragonspear. He seems eager to find out the reasons behind the crusade's existence.~,EXISTANCE5))
+    SetGlobal("C02DrakeSpawns","BD0106",1)
+    Continue()
+END
+
+IF
+  Global("C02DrakeSpawns","BD0106",0)
+  !BeenInParty("C0Drake")
+THEN
+  RESPONSE #100
+    CreateCreature("C02Drake",[389.289],NW)
+    ApplySpell("C0Drake",0)
+    SetGlobal("C02DrakeSpawns","BD0106",1)
+	ChangeSpecifics("C0Drake",ALLIES)
+	ActionOverride("C0Drake",ChangeAIScript("C02Drake",OVERRIDE))
+	ActionOverride("C0Drake",ChangeAIScript("DEFAULT",CLASS))
+	ActionOverride("C0Drake",ChangeAIScript("",RACE))
+	ActionOverride("C0Drake",ChangeAIScript("",GENERAL))
+	ActionOverride("C0Drake",ChangeAIScript("",DEFAULT))
+	Continue()
+END

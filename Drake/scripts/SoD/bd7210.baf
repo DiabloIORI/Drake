@@ -6,5 +6,5 @@ IF
 THEN
   RESPONSE #100
 	SetGlobal("C02DrakeMorenthene","GLOBAL",1)
-	DisplayStringHead("C0Drake",~Well bless my unworthy soul... now THIS is an incredible sight.~)
+	DisplayStringHead("C0Drake",~哎呀，保佑我这不配的灵魂……这可真是了不起的景象。~)
 END

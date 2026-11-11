@@ -29,7 +29,7 @@ IF
 THEN
 	RESPONSE #100
 	SetGlobal("Shout","LOCALS",1)
-	DisplayStringHead(Myself,~Fine work, men. We shall leave the rest up to <CHARNAME>.~)
+	DisplayStringHead(Myself,~干得好，弟兄们。剩下的就交给<CHARNAME>。~)
 	EscapeArea()
 END
 
@@ -41,7 +41,7 @@ IF
 THEN
 	RESPONSE #100
 	SetGlobal("Shout","LOCALS",1)
-	DisplayStringHead(Myself,~Fine work, men. We shall leave the rest up to <CHARNAME>.~)
+	DisplayStringHead(Myself,~干得好，弟兄们。剩下的就交给<CHARNAME>。~)
 	EscapeArea()
 END
 
@@ -53,7 +53,7 @@ IF
 THEN
 	RESPONSE #100
 	SetGlobal("Shout","LOCALS",1)
-	DisplayStringHead(Myself,~Fine work, men. We shall leave the rest up to <CHARNAME>.~)
+	DisplayStringHead(Myself,~干得好，弟兄们。剩下的就交给<CHARNAME>。~)
 	EscapeArea()
 END
 

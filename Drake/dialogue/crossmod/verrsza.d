@@ -5,16 +5,16 @@ See("L#1Verr")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0DrakeVerr","GLOBAL",0)~ THEN BC0Drake C0DrakeVerr1
-~You know, rakshasa, there are paintings in the High Halls of the Radiant Heart that depict your kind.~
+~你知道吗，罗刹，光辉之心的高堂里挂着描绘你们这类东西的画。~
 DO ~SetGlobal("C0DrakeVerr","GLOBAL",1)~
-== L#1VerrB ~Really? (grin) I'm not stupid enough to assume they're there as a sign of respect. Enlighten me, human. Why do they exist?~
-== BC0Drake ~As a warning, of course. Some scholars believe that celestial beings that become corrupted, or willingly stray down the path of evil, are cursed to become your kind in their next life. It serves as a lesson that even the greatest forces of good are not immune to the lure of darkness.~
-== L#1VerrB ~Interesting. Good to know that even the most righteous can be knocked down a peg or two. (laugh)~
-== BC0Drake ~If such a belief is true, then I wonder, Verr'Sza - were you such a being in a previous life? What evil did you commit to become the beast in human shape you are now?~
-== L#1VerrB ~Hopefully, something devious and exciting. But I'm not the sort who easily believes in that sort of nonsense.~
-== BC0Drake ~Neither am I. Because if such a tale were true, the thought that something like you could have once been something pure and good sickens me. Better that you were always the creature you are now, so I would have no pity on you on the day you die.~
-== L#1VerrB ~Heh. You're surprisingly cold for a holy man. I can almost respect that.~
-== BC0Drake ~Don't expect me to return the gesture... fiend.~
+== L#1VerrB ~真的？（咧嘴笑）我还没蠢到以为那是表示敬重。给我讲讲，人类。它们为什么存在？~
+== BC0Drake ~当然是作警示用的。有些学者相信，那些堕落、或自愿走入邪恶之路的天界存在，会在下一世被诅咒变成你们这种东西。这故事是告诫人：再伟大的善之力，也躲不开黑暗的引诱。~
+== L#1VerrB ~有意思。很高兴知道哪怕最正直的人也能被压下一两分。（笑）~
+== BC0Drake ~若这说法是真的，那我倒想知道，维尔萨——你前世是不是那种存在？你造了什么恶，才变成如今这副披着人形的野兽？~
+== L#1VerrB ~但愿是件又狡猾又刺激的事。不过我可不是会信这种胡话的人。~
+== BC0Drake ~我也不是。因为若那故事是真的，想到你这种东西也曾纯洁善良，我就恶心。你最好一直都是现在这副模样，这样到你死那天，我也不会可怜你。~
+== L#1VerrB ~呵。一个圣职者居然这么冷，我几乎要敬你一分。~
+== BC0Drake ~别指望我回敬……邪物。~
 EXIT
 
 CHAIN IF ~InParty("L#1Verr")
@@ -24,16 +24,16 @@ See("L#1Verr")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0DrakeVerr","GLOBAL",1)~ THEN BC0Drake C0DrakeVerr2
-~The rich folk do like decorating their homes and clothing with furs. Does it ever make you nervous when you see one?~
+~富人们就爱用皮毛装饰宅子和衣裳。你看见一件会不会发怵？~
 DO ~SetGlobal("C0DrakeVerr","GLOBAL",2)~
-== L#1VerrB ~Not really. Should it?~
-== BC0Drake ~Aren't you ever worried someone would like to make a nice, warm coat out of that shiny black fur of yours? Or perhaps a blanket to tuck themselves in and keep warm at night?~
+== L#1VerrB ~不怎么。该发怵吗？~
+== BC0Drake ~你就没担心过有人想拿你那身亮黑皮毛做件暖和的外套？或者做条毯子，夜里裹着取暖？~
 == BC0Drake IF ~GlobalGT("L#1VerrRomanceTalk","GLOBAL",8)
 OR(2)
 Global("L#1VerrRomanceActive","GLOBAL",1)
-Global("L#1VerrRomanceActive","GLOBAL",2)~ THEN ~Though I suppose you already do the latter well enough while alive. For <CHARNAME>, anyway.~
-== L#1VerrB ~(grin) I'd love to see someone try. I'd skin them first.~
-== BC0Drake ~Is it the reverse where you come from, I wonder? Beasts wearing human hide? I could certainly see it being the case, if you're indicative of anything.~
-== L#1VerrB ~I'm a hunter, not a savage, human. The only skin I wear comes with the whole living body. It's much... warmer that way.~
-== BC0Drake ~Heh, fair enough. You may be a crazy, mangy beast of a cat, but at least you know your business. That's something, at least.~
+Global("L#1VerrRomanceActive","GLOBAL",2)~ THEN ~不过我猜你活着的时候，后一件事已经做得很好了。至少对<CHARNAME>来说是。~
+== L#1VerrB ~（咧嘴笑）我倒很想看谁试试。我会先剥了他的皮。~
+== BC0Drake ~我倒好奇你们那儿是不是反过来？野兽披着人皮？若以你为样板，我完全相信有这回事。~
+== L#1VerrB ~我是猎人，不是野人，人类。我唯一穿的皮，是连着整具活身子的。那样……暖和多了。~
+== BC0Drake ~呵，说得有理。你也许是只疯疯癫癫、疥疮满身的猫科畜生，可至少你懂自己的行当。这总算有点可取。~
 EXIT

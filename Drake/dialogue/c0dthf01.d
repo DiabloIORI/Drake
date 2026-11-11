@@ -2,28 +2,28 @@ BEGIN C0DTHF02
 
 CHAIN IF WEIGHT #-1
 ~Global("C0DrakeStoneheart","GLOBAL",2)~ THEN C0DTHF02 t1
-~So what do you think, Vail? Sure this will work?~
+~你怎么看，韦尔？确定这能成？~
 DO ~SetGlobal("C0DrakeStoneheart","GLOBAL",3)~
-== C0DTHF01 ~I think you should shut your trap and keep plotting these routes. We've got precious little time to waste as is.~
-== C0DTHF02 ~You seem pretty eager to bring them down. It'd be a whole lot easier if we sat back and let them come out into the open.~
-== C0DTHF01 ~And risk the Shadow Thieves' being accused of the matter? I think not, fool.~
-== C0DTHF02 ~Call me a fool if you may, Vail, but your plan is wholly inefficient. One way or another, the Dukes are doomed. We may as well strike later when our enemies reveal themselves.~
-== C0DTHF01 ~The Shadowmaster would have my head if I did as you suggest. Know your place and keep your idiocy to yourself.~
-== C0DTHF02 ~Ha! You're one to talk. How many missions would you have failed if not for my assistance? You would have died long before you reached your current status within the guild.~
-== C0DTHF01 ~You think I don't see right through you, Gideon? I know you've craved my position since I saw you first enter the guild hall. I dare you to try anything to sabotage me. You won't even get a word off before my blade reaches your neck.~
-== C0DTHF02 ~Do you really want to start this now, Vail? I warn you, not one guildmate will miss you if I blasted you into the next realm.~
-== C0DTHF03 ~...be that as it may, this is hardly the time, don't you think... Aiden, Gideon?~
-== C0DTHF01 ~You presume to order me around, Klaus?~
-== C0DTHF03 ~No, not that. It's just that... we have guests. Uninvited guests.~
-== C0DTHF02 ~So we do. What's this then? Lost sheep?~
+== C0DTHF01 ~我看你该闭嘴，接着规划这些路线。我们可没多少时间可浪费。~
+== C0DTHF02 ~你好像挺急着把他们搞掉。我们要是坐等他们自己走到明处，会容易得多。~
+== C0DTHF01 ~然后冒影贼被查问的风险？我看不行，蠢货。~
+== C0DTHF02 ~随你叫我蠢货，韦尔，可你这计划全无效率。无论如何，公爵们难逃一死。我们不如等敌人自己露出来时再动手。~
+== C0DTHF01 ~我要是照你说的办，影主会要我的头。认清你的位置，把你的白痴话收着。~
+== C0DTHF02 ~哈！你倒有脸说。要不是我帮衬，你有多少任务会失败？你在公会里没爬到今天这位置之前早该死掉了。~
+== C0DTHF01 ~你以为我看不透你，吉迪恩？我头一回见你进公会大厅，就知道你惦记我这位置。你敢动什么手脚害我，我倒要看你敢不敢。你话还没出口，我的刃就到脖子了。~
+== C0DTHF02 ~你真想现在就开始，韦尔？我警告你，我要是把你轰到下一个位面去，公会里没有一个同伴会想念你。~
+== C0DTHF03 ~……话虽如此，现在可不是时候，你们不觉得吗……艾登，吉迪恩？~
+== C0DTHF01 ~你竟敢对我发号施令，克劳斯？~
+== C0DTHF03 ~不，不是那个。只是……我们有客人。不请自来的客人。~
+== C0DTHF02 ~果然是。这是什么？走失的羊？~
 END
-++ ~We're here to stop you.~ EXTERN C0DSTONE t1.1
-++ ~Time to die, Shadow Thieves.~ EXTERN C0DSTONE t1.1
-++ ~Um, we might be in the wrong place...~ EXTERN C0DSTONE t1.1
+++ ~我们是来阻止你们的。~ EXTERN C0DSTONE t1.1
+++ ~该死的时候到了，影贼。~ EXTERN C0DSTONE t1.1
+++ ~呃，我们可能走错地方了……~ EXTERN C0DSTONE t1.1
 
 CHAIN C0DSTONE t1.1
-~Aiden Vail and company, you are charged with the crimes of acting in the name of the Shadow Thieves and for attempts to instigate war between Baldur's Gate and Amn. By order of the Council of Six, you will submit or die.~
-== C0DTHF01 ~Council dogs, are you? Well, you're a little far from home, and down here, no one will hear you scream. Gideon! Klaus! Show these fools the might of the Shadow Thieves!~
+~艾登·韦尔及同伙，你们被控以影贼之名行事、并企图挑起博德之门与安姆之间的战争。按六人议会之令，你们要么伏首，要么受死。~
+== C0DTHF01 ~议会走狗，是吧？那你们离家可有点远，在这下面，没人听得见你们尖叫。吉迪恩！克劳斯！让这些蠢货看看影贼的厉害！~
 DO ~Enemy()
 ActionOverride("C0DTHF02",Enemy())
 ActionOverride("C0DTHF03",Enemy())~ EXIT

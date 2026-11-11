@@ -4,15 +4,15 @@ See("C0Drake")
 !StateCheck("X3Vien",CD_STATE_NOTVALID)
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 Global("CrossDraVien","LOCALS",0)~ THEN X3VienB VienDrake1
-~So I am to believe you are a human *noble*, as it were, Drake? I'm unconvinced.~
+~那么我该相信你是个所谓的人类*贵族*了，德雷克？我可不信。~
 DO ~SetGlobal("CrossDraVien","LOCALS",1)~
-== BC0Drake ~You are hardly the first, lady pointy-ears. My family was once of common birth. For my part, I find the whole 'nobility' concept to be pretentious.~
-== X3VienB ~It is Lady Vienxay Starlight, not "pointy-ears", human. Unlike you, I demand respect and hold myself with dignity.~
-== BC0Drake ~Dignity, eh? What's this about exile I hear, then?~
-== X3VienB ~Over a misunderstanding. An error that will be corrected.~
-== BC0Drake ~Is that so? I suppose it is your right to seek justice against this murderer that made you their scapegoat, then... *If* you truly are innocent, that is.~
-== X3VienB ~Hrmph. Of course I am innocent. Still, I suppose you are more tolerable than most humans.~
-== BC0Drake ~Ha! I've heard that one more than a few times as well. We'll see if it comes to last.~
+== BC0Drake ~你绝不是头一个这么说的，尖耳朵女士。我家祖上本是平民出身。至于我，我觉得“贵族”这整套概念就是装腔作势。~
+== X3VienB ~是维恩赛·星光女士，不是“尖耳朵”，人类。不像你，我要求尊重，也自重身份。~
+== BC0Drake ~尊严，嗯？那我还听说你被流放了，这又是怎么回事？~
+== X3VienB ~源于一场误会。一个终会被纠正的错误。~
+== BC0Drake ~是这样吗？那去找那个拿你当替罪羊的凶手讨公道，算是你的权利……当然，前提是你真清白。~
+== X3VienB ~哼。我当然是清白的。不过，你倒比大多数人类更能忍。~
+== BC0Drake ~哈！这话我也听过不止一回。看它能不能长久吧。~
 EXIT
 
 CHAIN IF ~InParty("X3Vien")
@@ -21,16 +21,16 @@ See("C0Drake")
 !StateCheck("X3Vien",CD_STATE_NOTVALID)
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 Global("CrossDraVien","LOCALS",1)~ THEN X3VienB VienDrake2
-~How can one claim the title of a justice-upholding zealot in a realm so full of injustice, I wonder?~
+~我真想知道，在一个如此不义的国度里，一个人怎么能自称是匡扶正义的狂热信徒？~
 DO ~SetGlobal("CrossDraVien","LOCALS",2)~
-== BC0Drake ~I suppose this clumsy attempt at a rhetorical question is another barb aimed at me.~
-== X3VienB ~Merely my own musings. I am surprised you are not struck down by lightning for simply existing. Your god must pay you little heed.~
-== BC0Drake ~Or perhaps 'tis because there are gods more merciful than you know.~
-== X3VienB ~Doubtful. Why, the injustice of my own situation is so great, and yet you do not seem to even care. So much for the mercy that your god claims to have.~
-== BC0Drake ~Was it not your dependence on another that led to your current situation to begin with?~
-== X3VienB ~That was... it... you know nothing of my affairs, human.~
-== BC0Drake ~Only because you insist upon lying. Both to yourself and others... Madam Starshine.~
-== X3VienB ~It's *Lady* Starlight, human.~
+== BC0Drake ~我猜这句笨拙的反问，又是冲我来的刺。~
+== X3VienB ~只是我自个儿的瞎琢磨。我奇怪你怎么没因为活着就被雷劈了。你的神想必不太管你。~
+== BC0Drake ~又或者，是因为有些神比你所能知道的更慈悲。~
+== X3VienB ~未必。你看，我自己处境之冤屈如此之大，你却好像根本不在意。你那位神自称的慈悲，也不过如此。~
+== BC0Drake ~最初把你害到如今这地步的，不就是你依赖了别人吗？~
+== X3VienB ~那是……那是……你对我这些事一无所知，人类。~
+== BC0Drake ~只因为你偏要撒谎。对自己，也对别人……星光女士。~
+== X3VienB ~是*星光女士*，人类。~
 EXIT
 
 CHAIN IF ~InParty("X3Vien")
@@ -39,14 +39,14 @@ See("C0Drake")
 !StateCheck("X3Vien",CD_STATE_NOTVALID)
 !StateCheck("C0Drake",CD_STATE_NOTVALID)
 Global("CrossDraVien","LOCALS",2)~ THEN X3VienB VienDrake3
-~Your human brews are simply *hideous*.~
+~你们人类的酒简直*难喝至极*。~
 DO ~SetGlobal("CrossDraVien","LOCALS",3)~
-== BC0Drake ~Aye, many are. Though after having enough, the only thing hideous is the inevitable hangover next dawn.~
-== X3VienB ~Assuming one can even stomach that many. Ugh. I long for the rich, shimmering Elverquisst of my homeland.~
-== BC0Drake ~Do tell me should you get your hands on any.~
-== X3VienB ~That would be as wasteful as feeding it to a horse. Elven liquors are for tongues far more refined than yours.~
-== BC0Drake ~I would not presume to make assumptions on what my tongue can savor.~
-== X3VienB ~Ugh. Your mind is as disgusting as your beard. Or did you say that purely to get a rise out of me?~
-== BC0Drake ~Yes. And 'twas a success, too, from the looks of it.~
-== X3VienB ~You. Are. Insufferable. Even as humans go.~
+== BC0Drake ~是，不少都难喝。可喝得够多之后，唯一难熬的就是第二天清早躲不掉的宿醉。~
+== X3VienB ~前提是有人真灌得下那么多。唉。我真想念家乡那醇厚闪亮的艾尔弗奎斯特。~
+== BC0Drake ~你要是弄到手，可一定告诉我。~
+== X3VienB ~那跟拿它喂马一样糟蹋。精灵的美酒是给比你精细得多的舌头喝的。~
+== BC0Drake ~我不敢妄断我的舌头能品出什么。~
+== X3VienB ~唉。你的心思跟你的胡子一样恶心。还是你纯粹就想惹我上火？~
+== BC0Drake ~是。而且看样子还挺成功。~
+== X3VienB ~你。真。叫人受不了。就算按人类的标准也算。~
 EXIT
