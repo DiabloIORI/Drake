@@ -19,7 +19,7 @@ COPY_EXISTING ~C0DAR1.ARE~ ~OVERRIDE~
   END
 
 // Journal
-ADD_JOURNAL TITLE (@0) @1 @2 USING ~%MOD_FOLDER%/translations/english/journal.tra~
+ADD_JOURNAL TITLE (@0) @1 @2 USING ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
 LOAD_TRA ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
 OUTER_SET %Drake_BG1_Quest_1% = RESOLVE_STR_REF (@1)
 OUTER_SET %Drake_BG1_Quest_2% = RESOLVE_STR_REF (@2)
@@ -182,7 +182,7 @@ ADD_CRE_ITEM ~c0dring~ #40 #0 #0 ~NONE~ ~rring~
 
 // JOURNAL
 
-ADD_JOURNAL TITLE (@0) @1 @2 USING ~Drake/translations/english/drake.tra~
+ADD_JOURNAL TITLE (@0) @1 @2 USING ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
 
 // Items
 

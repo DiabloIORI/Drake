@@ -2,7 +2,7 @@ COPY ~Drake/areas/sod~ ~override~
 COPY ~Drake/items/sod~ ~override~
 
 // Journal
-ADD_JOURNAL TITLE (@4) @5 @6 USING ~%MOD_FOLDER%/translations/english/journal.tra~
+ADD_JOURNAL TITLE (@4) @5 @6 USING ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
 LOAD_TRA ~%MOD_FOLDER%/translations/%LANGUAGE%/journal.tra~
 OUTER_SET %Drake_SoD_Recruit_Journal% = RESOLVE_STR_REF (@3)
 OUTER_SET %Drake_SoD_Quest_1% = RESOLVE_STR_REF (@5)
