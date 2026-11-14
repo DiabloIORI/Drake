@@ -257,7 +257,8 @@ SAY DESC ~这把锤子似乎有几分知觉，靠近心怀恶意的人时会泛�
 
 重量：4~
 
-COPY ~双手剑~ ~override~
+COPY ~drake/items/sod/c02dsw2h.itm~ ~override~
+  WRITE_ASCII 0x3a ~C02DSW2H~ #8  // internal resref, must match the slot in c02elrik.cre
 SAY NAME1 ~双手剑~
 SAY NAME2 ~炽烈正义 +3~
 SAY DESC ~埃利克·红港爵士的受用兵器，他是骑士团的老练骑士。据说它燃烧的红焰会追索心中有恶的人，连同他们的血肉一起把罪烧净。
