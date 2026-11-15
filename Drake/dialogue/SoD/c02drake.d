@@ -22,7 +22,7 @@ CHAIN C02DRAKE j1
 DO ~ClearAllActions() StartCutsceneMode() StartCutscene("c02dcut1")~ EXIT
 
 CHAIN C02Drake j2
-~也许不认识我。可我认识你——<CHARNAME>，活着的那位传奇<PRO_HIMHER>本人。你来了我很高兴。~
+~也许不认识我。可我认识你——<CHARNAME>，活着的那位传奇<PRO_HESHE>本人。你来了我很高兴。~
 = ~来，坐下，朋友。我有一两句话要跟你说。~
 DO ~ClearAllActions() StartCutsceneMode() StartCutscene("c02dcut1")~ EXIT
 
@@ -85,7 +85,7 @@ END
 ++ ~我这就走了。~ + j0
 
 CHAIN C02DRAKE j5.1
-~更好的问法是我没听说过你什么，我的朋友。你，杀死神子萨雷沃克的人，这座城的英雄，传言是谋杀之神的子嗣……~
+~更好的问法是我没听说过你什么，我的朋友。你，杀死神子萨雷沃克的人，这座城的英雄，传言是谋杀之王的子嗣……~
 = ~嘿。我也许说多了。不过别怕，<CHARNAME>。你到底是不是死去的巴尔腰里蹦出来的，是你自己的事，不关我的。我只是……对你看着这么寻常感到着迷。当然，是好话。~
 END
 ++ ~光辉之心骑士团是什么？~ + j5.2

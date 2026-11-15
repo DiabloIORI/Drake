@@ -315,7 +315,7 @@ END
 ++ ~我倒宁愿不去想。那会让事情更难办。~ + t5.8
 
 CHAIN C02DRAKJ t5.5
-~那一定很难受。尤其对一个生自谋杀之神的人。可这非常可敬。~
+~那一定很难受。尤其对一个生自谋杀之王的人。可这非常可敬。~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.6
@@ -323,7 +323,7 @@ CHAIN C02DRAKJ t5.6
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.7
-~哼。谋杀之神的子孙说得好。我看某种扭曲意义上，你确实有那资格。~
+~哼。谋杀之王的子孙说得好。我看某种扭曲意义上，你确实有那资格。~
 EXTERN C02DRAKJ t5.9
 
 CHAIN C02DRAKJ t5.8
@@ -1710,7 +1710,7 @@ CHAIN IF ~Global("C02DrakeVoghilnRestTalk","GLOBAL",1)
 IsValidForPartyDialogue(Myself) IsValidForPartyDialogue("Voghiln")~ THEN BDVOGHIJ voghresttalk
 ~你剑臂有力，德雷克，可沃吉尔恩从不在比力气上退让！~
 DO ~IncrementGlobal("C02DrakeVoghilnRestTalk","GLOBAL",1)~
-== C02DRAKJ ~大话，路斯坎人，可瓶子还没空一半。我总会尝到胜利的酒。举臂，吟游诗人！~
+== C02DRAKJ ~大话，陆斯坎人，可瓶子还没空一半。我总会尝到胜利的酒。举臂，吟游诗人！~
 == BDVOGHIJ ~嚯嚯，这才是沃吉尔恩懂的话！再来！~
 END
 ++ ~这儿怎么了？~ EXTERN C02DRAKJ voghresttalk1

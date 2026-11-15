@@ -992,7 +992,7 @@ IF
 	Switch("C02DrakeRasaad2","MYAREA")
 THEN
 RESPONSE #1
-	DisplayStringHead("C0Drake",~一个卡林杉算命婆曾对我说，万物皆已前定，其故事早写在命运之书上。你信这种事吗？~)
+	DisplayStringHead("C0Drake",~一个卡林珊算命婆曾对我说，万物皆已前定，其故事早写在命运之书上。你信这种事吗？~)
 	SetGlobalTimer("BD_BANTER_DELAY","MYAREA",6)
 	SetGlobal("C02DrakeRasaad2","MYAREA",10)
 RESPONSE #10
